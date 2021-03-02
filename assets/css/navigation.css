@@ -1,0 +1,278 @@
+/* Sidebar
+   ==========================================*/
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #0dcaf0;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:focus {
+  
+  outline: dotted 0px;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.w3-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.w3-animate-opacity {
+  animation: opac 0.8s;
+}
+/* Navbar
+     ======================================================*/
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.navicon {
+  list-style: none;
+}
+
+.navicon li a {
+  color: #fff;
+  margin: 0;
+}
+
+.fa-stack[data-count]:after {
+  position: absolute;
+  right: 0%;
+  top: 1%;
+  content: attr(data-count);
+  font-size: 50%;
+  padding: .6em;
+  border-radius: 999px;
+  line-height: .75em;
+  color: white;
+  background: rgba(255, 0, 0, .85);
+  text-align: center;
+  min-width: 2em;
+  font-weight: bold;
+}
+
+/* Dropdowns */
+
+/* ========================================== */
+
+.dropdown-pad {
+  padding: 0.8rem 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif
+}
+
+nav.drpdown {
+  top: 20%;
+  left: 50%;
+  background: #1b1b1b;
+  width: 400px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px
+}
+
+nav.drpdown label {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  display: block;
+  cursor: pointer
+}
+
+.button span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s
+}
+
+.button span.rotate {
+  transform: rotate(-180deg)
+}
+
+nav.drpdown ul {
+  background: #1b1b1b;
+  list-style: none;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+  padding-inline-start: 0;
+}
+
+[id^=btn]:checked+ul {
+  display: block
+}
+
+nav.drpdown ul li {
+  line-height: 40px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+nav.drpdown ul li label {
+  font-size: 13px
+}
+
+nav.drpdown ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  display: block
+}
+
+nav.drpdown ul li a:hover, nav.drpdown ul li label:hover {
+  color: red
+}
+
+nav.drpdown ul ul {
+  position: static
+}
+
+nav.drpdown ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none
+}
+
+nav.drpdown ul ul li a {
+  color: #e6e6e6;
+  font-size: 13px
+}
+
+nav.drpdown ul li span {
+  font-size: 16px;
+  float: right;
+  margin-top: 13px;
+  padding: 0 10px;
+  transition: 0.5s
+}
+
+nav.drpdown ul li span.rotate {
+  transform: rotate(-180deg)
+}
+
+nav.drpdown input.fordrpdown {
+  display: none
+}
+
+/* MegaMenu */
+
+/* ========================================== */
+
+.megamenu li.search {
+  padding: .25rem 1rem;
+}
+
+
+.card.light {
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 0 rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 0;
+  color: #000;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 1px solid #000;
+
+}
+
+.card.light:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  background: rgb(240, 240,240);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
