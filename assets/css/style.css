@@ -6,6 +6,7 @@
 @import "filter.css";
 @import "upload.css";
 @import "rating.css";
+@import "model.css";
 
 .b-check {
   border: 1px solid red;

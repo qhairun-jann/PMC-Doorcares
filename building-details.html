@@ -272,72 +272,72 @@
                             </div>
 
                             <hr class="mt-5" />
-                            <h3>Building Facilities</h3>
-                            <div class="table-responsive text-start">
-                                <table class="table table-dark table-striped table-hover">
-                                    <!-- <thead>
-                                    <tr>
-                                      <td colspan="6">
-                                        <h5 class="text-center">10 last accessed users</h5>
-                                      </td>
-                                    </tr>
-                                  </thead> -->
-                                    <thead>
+                            <h3>Building utilities</h3>
 
-                                        <tr class="align-middle">
-                                            <td class="py-3">
-                                                <h6 class="m-0">Utility</h6>
-                                            </td>
-                                            <td class="text-center">
-                                                <h6 class="m-0">Company name</h6>
-                                            </td>
-                                            <td>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <tr class="align-middle" style="cursor: pointer;">
-                                            <td>Cable TV</td>
-                                            <td class="text-center"></td>
-                                            <td class="text-center"><button class="btn btn-outline-info btn-sm">
-                                                    View/Edit </button> </td>
-                                        </tr>
-
-                                        <tr class="align-middle" style="cursor: pointer;">
-                                            <td>Electricity</td>
-                                            <td class="text-center">-</td>
-                                            <td class="text-center"><button class="btn btn-outline-info btn-sm">
-                                                    View/Edit </button> </td>
-                                        </tr>
-
-                                        <tr class="align-middle" style="cursor: pointer;">
-                                            <td>Gas</td>
-                                            <td class="text-center">-</td>
-                                            <td class="text-center"><button class="btn btn-outline-info btn-sm">
-                                                    View/Edit </button> </td>
-                                        </tr>
-
-                                        <tr class="align-middle" style="cursor: pointer;">
-                                            <td>Internet</td>
-                                            <td class="text-center">-</td>
-                                            <td class="text-center"><button class="btn btn-outline-info btn-sm">
-                                                    View/Edit </button> </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row justify-content-end">
-                                <div class="col-4">
-                                    <button class="w-100 btn btn-primary" type="submit">
-                                        Edit/Save
-                                        <i class="far fa-arrow-alt-circle-right"></i>
-                                    </button>
-                                </div>
-                            </div>
 
                         </form>
+                        <div class="table-responsive text-start">
+                            <table class="table table-dark table-striped table-hover">
+                                <thead>
+
+                                    <tr class="align-middle">
+                                        <td class="py-3">
+                                            <h6 class="m-0">Utilities</h6>
+                                        </td>
+                                        <td class="text-center">
+                                            <h6 class="m-0">Company name</h6>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class="align-middle">
+                                        <td>Cable TV</td>
+                                        <td class="text-center" id="a1">-</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-outline-info btn-sm w-50" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal" onclick="handleViewEdit(event)"  type="button">
+                                                View/Edit </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="align-middle">
+                                        <td>Electricity</td>
+                                        <td class="text-center" id="a2">-</td>
+                                        <td class="text-center"><button class="btn btn-outline-info btn-sm w-50"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
+                                                View/Edit </button> </td>
+                                    </tr>
+
+                                    <tr class="align-middle">
+                                        <td>Gas</td>
+                                        <td class="text-center" id="a3">-</td>
+                                        <td class="text-center"><button class="btn btn-outline-info btn-sm w-50"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
+                                                View/Edit </button> </td>
+                                    </tr>
+
+                                    <tr class="align-middle">
+                                        <td>Internet</td>
+                                        <td class="text-center" id="a4">-</td>
+                                        <td class="text-center"><button class="w-50 btn btn-outline-info btn-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
+                                                View/Edit </button> </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row justify-content-end mt-5">
+                            <div class="col-4">
+                                <button class="w-100 btn btn-primary" type="submit">
+                                    Edit/Save
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -346,6 +346,49 @@
             <p>&copy; <span id="year"></span>
                 Copyright by Jann Properties</p>
         </footer>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Company name list</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)">Company A</td>
+                                </tr>
+                                <tr>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company B</td>
+                                </tr>
+                                <tr>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company C</td>
+                                </tr>
+                                <tr>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company D</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -355,6 +398,16 @@
         includeHTML();
     </script>
     <script>
+        var companyNameElement
+        function handleViewEdit(event) {
+            companyNameElement = event.target
+        }
+        function handleModal(event) {
+            theParentElement = companyNameElement.parentElement
+            theTargetedELement = theParentElement.parentElement.children[1]
+            theTargetedELement.innerHTML = event.target.innerHTML
+        }
+
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
