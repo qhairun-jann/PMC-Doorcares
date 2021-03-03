@@ -1,0 +1,34 @@
+.dropdown {
+    /* local mixin */
+    @mixin block{
+
+    }
+
+    &__building{
+        @include block;
+
+        &__select {
+
+            &__option {
+
+            }
+        }
+        &__button {
+
+        }
+
+    }
+    &__location{
+        @include block;
+
+
+    }
+
+    &__down-icon {
+
+    }
+}
+
+.b-check {
+
+}

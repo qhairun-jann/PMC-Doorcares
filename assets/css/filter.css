@@ -110,7 +110,7 @@ li:hover a.hasDropdown:after {
   overflow: hidden;
   padding: 5px 6px;
   /* white-space: nowrap; */
-  /* flex: 0 0 33.33%; */
+  flex: 0 0 33.33%;
 }
 .container__listItem a{
   padding: 0 !important;

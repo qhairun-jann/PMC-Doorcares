@@ -6,3 +6,69 @@
 @import "filter.css";
 @import "upload.css";
 @import "rating.css";
+
+.b-check {
+  border: 1px solid red;
+}
+
+.width-fit {
+  width: fit-content;
+}
+
+.building__highlight-title {
+  background-color: #0b5ed7;
+  border-radius: 5px;
+  padding: 0.4rem 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.building__title {
+  font-size: 1.75rem;
+  margin: 0.4rem 0;
+}
+
+.building__title--h1 {
+  text-align: left;
+  width: fit-content;
+  margin: 1.5rem 0;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.grid-gap-1 {
+  grid-gap: 0.4rem;
+}
+.grid-gap-2 {
+  grid-gap: 0.8rem;
+}
+.grid-gap-3 {
+  grid-gap: 1rem;
+}
+.grid-gap-4 {
+  grid-gap: 1.4rem;
+}
+.grid-start-1 {
+  grid-column-start: 1;
+}
+.grid-start-2 {
+  grid-column-start: 2;
+}
+.grid-start-3 {
+  grid-column-start: 3;
+}
+.grid-start-4 {
+  grid-column-start: 4;
+}
+.col-span-1 {
+  grid-column-end: span 1;
+}
+.col-span-2 {
+  grid-column-end: span 2;
+}
+.col-span-3 {
+  grid-column-end: span 3;
+}
