@@ -8,12 +8,52 @@
 @import "rating.css";
 @import "model.css";
 
+.btn__anchor {
+  border: 1px solid #17A2B8;
+  color: #17A2B8;
+  border-radius: 1rem;
+  padding: .6rem;
+  transition: .3s;
+}
+.btn__anchor-text-info {
+  color: #17A2B8;
+}
+.btn__anchor:hover {
+  color: white;
+  background-color: #17A2B8;
+}
+.size-1 {
+  font-size: .5rem;
+}
+.size-2 {
+  font-size: 1rem;
+}
+.size-3 {
+  font-size: 1.4rem;
+}
+.size-4 {
+  font-size: 1.8rem;
+}
 .b-check {
   border: 1px solid red;
 }
 
 .width-fit {
   width: fit-content;
+}
+
+.border-radius-1 {
+  border-radius: 5px;
+}
+.border-radius-2 {
+  border-radius: 10px;
+}
+.border-radius-3 {
+  border-radius: 16px;
+}
+
+.bg-blue-1 {
+  background-color: #0d6efd;
 }
 
 .building__highlight-title {

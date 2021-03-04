@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>All units</title>
+  <meta name="description" content="A description.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-white bg-dark">
+  <div class="sticky-top" includeHtml="navbar.html"></div>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="mb-5">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-sm-10">
+
+            <div class="row ">
+                <input class="form-control col mx-3 my-4 " type=" text" placeholder="Search" aria-label="Search" />
+            </div>
+
+            <div class="filter js-navbar">
+              <nav class="menu p-0">
+                <ul>
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2"
+                      href="#">Category</a>
+                    <section class="filter-container ">
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">Block</a></li>
+                          </ul>
+                          <!--
+                            Doc : purpose of this code below -> Display next list (inside hasDropdown)
+                            <ul>
+                            <li class="filterbtn__li"><a href="#">Offers</a></li>
+                            <li class="filterbtn__li"><a href="#">Payments</a></li>
+                            <li class="filterbtn__li"><a href="#">Document Checklist</a></li>
+                            <li class="filterbtn__li"><a href="#">Tenancy Agreements</a></li>
+                          </ul> -->
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2" href="#">Unit
+                      number</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">Unit number</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2"
+                      href="#">Occupancy status</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">Rented Vacant</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2" href="#">Expiry
+                      date</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">-</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2" href="#">Rent
+                      amount</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">-</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2"
+                      href="#">Furnishing</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2" href="#">Landlord
+                      name</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">-</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2"
+                      href="#">Subscription status</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">Basic Standard Premium</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+
+                  <li class="menu__block">
+                    <a class="hasDropdown justify-content-center bg-blue-1 text-white border-radius-2" href="#">Tenant
+                      name</a>
+                    <section class="filter-container ">
+
+                      <div class="container__list">
+                        <input class="form-control type=" text" placeholder="Search" aria-label="Search" />
+                        <div class="mt-3 d-flex filterbtn">
+                          <ul class="filterbtn__ul">
+                            <li class="filterbtn__li"><a href="#">-</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+
+
+                </ul>
+              </nav>
+            </div>
+
+
+            <div class="row mx-0">
+              <div class="col-4 offset-8 text-end">
+                <button class="btn btn-outline-info m-3  w-50"> EDIT </button>
+            </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+              <div class="col-12">
+                <button class="selected" style="display: none;" id="role"></button>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <div class="table-responsive text-start">
+                  <table class="table table-dark table-striped table-hover">
+                    <thead>
+                      <tr class="align-middle">
+                        <td class="py-3">
+                          <h6 class="m-0">Building Name</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Location</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Total blocks</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Total Units</h6>
+                        </td>
+                        <td>
+                          <h6 class="m-0">Available Units</h6>
+                        </td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <td>KL Gateway</td>
+                        <td>Bangsar South </td>
+                        <td>xx</td>
+                        <td><a href="#"> xx(view) </a></td>
+                        <td><a href="#"> xx(view) </a></td>
+                        <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
+                        </td>
+                      </tr>
+                      <tr class="align-middle" onclick="location.href='user-details.html'" style="cursor: pointer;">
+                        <td>KL Gateway</td>
+                        <td>Bangsar South </td>
+                        <td>xx</td>
+                        <td><a href="#"> xx(view) </a></td>
+                        <td><a href="#"> xx(view) </a></td>
+                        <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
+                        </td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div includeHtml="footer.html"></div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/includefile.js"></script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>
