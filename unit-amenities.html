@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Rent/sale details </title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5">
+            <div class="container mt-5">
+                <form class="row">
+
+                    <main class="col-12 text-start row g-2 mt-0 justify-content-center ">
+                        <!-- style="position: relative;right: 1rem;" -->
+                        <section class="col-3 ">
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Kitchen cabinet
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Matress
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Refrigerator
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Sofa
+                                </label>
+                            </div>
+
+                        </section>
+
+                        <section class="col-3  ">
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="air-condition">
+                                <label class="form-check-label" for="air-condition">
+                                    Air condition
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="bed-frame">
+                                <label class="form-check-label" for="bed-frame">
+                                    Bed frame
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Curtain
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Dining table
+                                </label>
+                            </div>
+
+                        </section>
+
+
+                        <section class="col-3  ">
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Wardbore
+                                </label>
+                            </div>
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Water heater
+                                </label>
+                            </div>
+
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Hood
+                                </label>
+                            </div>
+
+                            <div class="form-check ps-5">
+                                <input class="form-check-input" type="checkbox" value="" id="idx">
+                                <label class="form-check-label" for="idx">
+                                    Tv
+                                </label>
+                            </div>
+
+
+                        </section>
+
+
+
+                    </main>
+
+                    <main class="col-12 text-start row g-2 mt-4 justify-content-center ">
+                        <!-- style="position: relative;right: 1rem;" -->
+                        <section class="offset-3 col-3 ">
+                        </section>
+                        <section class="col-3  ps-4">
+                            <button class="btn btn-outline-primary text-center w-50"> Save </button>
+                        </section>
+
+                    </main>
+                    <!-- <main class="col-12 text-start row g-2 mt-5 justify-content-center ">
+                        <section class="offset-3 col-3 ">
+                        
+                        </section>
+                    </main> -->
+                </form>
+
+            </div>
+        </section>
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includeHTML();
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+</body>
+
+</html>

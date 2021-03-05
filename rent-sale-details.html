@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Rent/sale details </title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <section class="mb-5">
+            <div class="container mt-2">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+
+                        <form class="needs-validation text-start">
+
+                            <div class="row g-4 mt-0 ">
+                                <div class="col-12 mb-0">
+                                    <h3> Rent </h3>
+                                </div>
+                                <div class="col-4">
+                                    <label for="security-rent" class="form-label"> Security deposit (rent) </label>
+                                    <input type="text" class="form-control" id="security-rent">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="rental-monthly" class="form-label"> Rental (monthly) </label>
+                                    <input type="text" class="form-control" id="rental-monthly">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="contract-period" class="form-label"> Contract period</label>
+                                    <select class="form-control form-select" id="contract-period">
+                                        <option selected> Selected </option>
+                                        <option>-</option>
+                                        <option>-</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 pt-5">
+                                    <h3> Sale </h3>
+                                </div>
+                                <div class="col-4">
+                                    <label for="security-sale" class="form-label"> Security deposit(sale) </label>
+                                    <input type="text" class="form-control" id="security-sale">
+                                </div>
+
+                                <div class="col-4">
+                                    <label for="rental-monthly" class="form-label"> Selling price </label>
+                                    <input type="text" class="form-control" id="rental-monthly">
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includeHTML();
+    </script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+</body>
+
+</html>
