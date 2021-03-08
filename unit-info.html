@@ -29,18 +29,17 @@
                             <div class="row g-4 mt-0 ">
                                 <div class="col-4">
                                     <label for="username" class="form-label">Block</label>
-                                    <input type="text" class="form-control" id="username" value="johndoe" >
+                                    <input type="text" class="form-control" id="username" value="johndoe">
                                 </div>
 
                                 <div class="col-4">
                                     <label for="passport" class="form-label">Level/Floor</label>
-                                    <input type="text" class="form-control" id="passport" value="B777666" >
+                                    <input type="text" class="form-control" id="passport" value="B777666">
                                 </div>
 
                                 <div class="col-4">
                                     <label for="unit-number" class="form-label">Unit number</label>
-                                    <input type="text" class="form-control" id="unit-number" value="1234567890"
-                                        >
+                                    <input type="text" class="form-control" id="unit-number" value="1234567890">
                                 </div>
 
                                 <div class="col-4">
@@ -88,10 +87,12 @@
                                 <div class="col-4">
                                     <label for="car-part-number" class="form-label position-relative ">Car part number
                                         <button class="btn btn-outline-info btn-sm position-absolute"
-                                            style="transform: translate(6px, -8px);">
+                                            style="transform: translate(6px, -8px);"
+                                            onclick="handleAddSlot(event)"
+                                            >
                                             +Add slot
                                         </button></label>
-                                    <input type="text" class="form-control" id="car-part-number" >
+                                    <input type="text" class="form-control" id="car-part-number">
                                 </div>
                             </div>
                             <div class="row gy-3 mt-2">
@@ -111,7 +112,7 @@
                                     </div>
 
                                 </div>
-                                
+
                                 <div class="col-4">
                                     <label for="upgrade1" class="form-label">If no, then is Landlord willing to
                                         upgrade</label>
@@ -164,22 +165,10 @@
     <script src="assets/js/includefile.js"></script>
     <script>
         includeHTML();
-    </script>
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-                    $('#imagePreview').hide();
-                    $('#imagePreview').fadeIn(650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
+
+        function handleAddSlot(event) {
+            event.preventDefault()
         }
-        $("#imageUpload").change(function () {
-            readURL(this);
-        });
     </script>
 </body>
 
