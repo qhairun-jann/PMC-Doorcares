@@ -27,126 +27,135 @@
                         <form class="needs-validation text-start">
 
                             <div class="row g-4 mt-0 ">
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="username" class="form-label">Block</label>
-                                    <input type="text" class="form-control" id="username" value="johndoe">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="passport" class="form-label">Level/Floor</label>
-                                    <input type="text" class="form-control" id="passport" value="B777666">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="unit-number" class="form-label">Unit number</label>
-                                    <input type="text" class="form-control" id="unit-number" value="1234567890">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="listing-ID" class="form-label">Listing ID</label>
-                                    <input type="text" class="form-control" id="listing-ID" value="">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="furnishing" class="form-label">Furnishing</label>
-                                    <input type="text" class="form-control" id="furnishing" value="">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="type" class="form-label">Type</label>
-                                    <input type="number" class="form-control" id="type" value="">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="Sqft" class="form-label">Sqft</label>
-                                    <input type="text" class="form-control" id="Sqft">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="bedrooms" class="form-label"> Bedrooms </label>
-                                    <input type="text" class="form-control" id="bedrooms">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="utility-room" class="form-label">Utility room</label>
-                                    <input type="text" class="form-control" id="utility-room">
+                                    <select class="form-control form-select" id="status">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="bathroom" class="form-label">Bathroom</label>
-                                    <input type="text" class="form-control" id="bathroom">
+                                    <select class="form-control form-select" id="bathroom">
+                                        <option value="" selected> - </option>
+                                    </select>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="car-park-slot" class="form-label">Cark park slot</label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" id="car-park-slot">
+                                        <select class="form-control form-select" id="car-park-slot">
+                                            <option value="" selected> - </option>
+                                        </select>
+                                        <!-- <input type="number" class="form-control" id="car-park-slot"> -->
                                     </div>
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
                                     <label for="car-part-number" class="form-label position-relative ">Car part number
                                         <button class="btn btn-outline-info btn-sm position-absolute"
-                                            style="transform: translate(6px, -8px);"
-                                            onclick="handleAddSlot(event)"
-                                            >
+                                            style="transform: translate(6px, -8px);" onclick="handleAddSlot(event)">
                                             +Add slot
                                         </button></label>
-                                    <input type="text" class="form-control" id="car-part-number">
-                                </div>
-                            </div>
-                            <div class="row gy-3 mt-2">
-                                <div class="col-4 form-check">
-                                    <label for="market" class="form-label ">Fit for market</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="market" id="market-yes">
-                                        <label class="form-check-label" for="market-yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="market" id="market-no">
-                                        <label class="form-check-label" for="market-no">
-                                            No
-                                        </label>
-                                    </div>
-
+                                    <select class="form-control form-select" id="car-park-slot">
+                                        <option value="" selected> - </option>
+                                    </select>
+                                    <!-- <input type="text" class="form-control" id="car-part-number"> -->
                                 </div>
 
-                                <div class="col-4">
+                                <div class="col-6 col-md-4">
+                                    <label for="market" class="form-label">Fit for market</label>
+                                    <div class="input-group">
+                                        <select class="form-control form-select" id="market">
+                                            <option value="" > - </option>
+                                            <option value="Yes" > Yes </option>
+                                            <option value="No" > No </option>
+                                        </select>
+                                        <!-- <input type="number" class="form-control" id="car-park-slot"> -->
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-md-4">
                                     <label for="upgrade1" class="form-label">If no, then is Landlord willing to
-                                        upgrade</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="upgrade1" id="upgrade1-yes">
-                                        <label class="form-check-label" for="upgrade1-yes">
-                                            Yes
-                                        </label>
+                                        upgrade? </label>
+                                    <div class="input-group">
+                                        <select class="form-control form-select" id="upgrade1">
+                                            <option value="" > - </option>
+                                            <option value="Yes" > Yes </option>
+                                            <option value="No" > No </option>
+                                        </select>
+                                        <!-- <input type="number" class="form-control" id="car-park-slot"> -->
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="upgrade1" id="upgrade1-no">
-                                        <label class="form-check-label" for="upgrade1-no">
-                                            No
-                                        </label>
-                                    </div>
-
                                 </div>
-                                <div class="col-4">
-                                    <label for="upgrade1" class="form-label">Landlord willing to upgrade</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="upgrade2" id="upgrade2-yes">
-                                        <label class="form-check-label" for="upgrade2-yes">
-                                            Yes
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="upgrade2" id="upgrade2-no">
-                                        <label class="form-check-label" for="upgrade2-no">
-                                            No
-                                        </label>
-                                    </div>
 
+                                <div class="col-6 col-md-4">
+                                    <label for="upgrade2" class="form-label">Landlord willing to upgrade?</label>
+                                    <div class="input-group">
+                                        <select class="form-control form-select" id="upgrade2">
+                                            <option value="" > - </option>
+                                            <option value="Yes" > Yes </option>
+                                            <option value="No" > No </option>
+                                        </select>
+                                        <!-- <input type="number" class="form-control" id="car-park-slot"> -->
+                                    </div>
                                 </div>
-                            </div>
+
                     </div>
 
                     </form>
