@@ -8,22 +8,29 @@
 @import "rating.css";
 @import "model.css";
 
+.child-p-1 > * {
+  padding: 0.5rem;
+}
+.child-p-2 > * {
+  padding: 1rem;
+}
+
 .btn__anchor {
-  border: 1px solid #17A2B8;
-  color: #17A2B8;
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
   border-radius: 1rem;
-  padding: .6rem;
-  transition: .3s;
+  padding: 0.6rem;
+  transition: 0.3s;
 }
 .btn__anchor-text-info {
-  color: #17A2B8;
+  color: #17a2b8;
 }
 .btn__anchor:hover {
   color: white;
-  background-color: #17A2B8;
+  background-color: #17a2b8;
 }
 .size-1 {
-  font-size: .5rem;
+  font-size: 0.5rem;
 }
 .size-2 {
   font-size: 1rem;
@@ -80,6 +87,10 @@
   grid-template-columns: auto auto auto;
 }
 
+.bg-black-1 {
+  background-color: #2c3034;
+}
+
 .grid-gap-1 {
   grid-gap: 0.4rem;
 }
@@ -92,16 +103,16 @@
 .grid-gap-4 {
   grid-gap: 1.4rem;
 }
-.grid-start-1 {
+.col-start-1 {
   grid-column-start: 1;
 }
-.grid-start-2 {
+.col-start-2 {
   grid-column-start: 2;
 }
-.grid-start-3 {
+.col-start-3 {
   grid-column-start: 3;
 }
-.grid-start-4 {
+.col-start-4 {
   grid-column-start: 4;
 }
 .col-span-1 {

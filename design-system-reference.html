@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Tenancy details </title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+
+
+        <h1> GRID TABLE </h1>
+
+        <article class="text-start p-3" style="border:1px solid #d63384">
+
+            <code class="text-white" >&lt;article class="grid grid-cols-3 m-3 text-start child-p-1"&gt;<br>
+                &lt;!-- row-1 --&gt;<br>
+                &lt;section class="bg-black-1 col-start-1 col-span-1"&gt; Building name &lt;/section&gt;<br>
+                &lt;section class="bg-black-1 col-start-2 col-span-2"&gt; Unit number &lt;/section&gt;<br>
+                &lt;section class="col-start-1 col-span-1"&gt; - &lt;/section&gt;<br>
+                &lt;section class="col-start-2 col-span-2"&gt; - &lt;/section&gt;<br>
+                &lt;!-- row-2 --&gt;
+                &lt;section class="bg-black-1 col-start-1 col-span-1"&gt; Tenant name &lt;/section&gt;<br>
+                &lt;section class="bg-black-1 col-start-2 col-span-2"&gt; Landlord Name &lt;/section&gt;<br>
+                &lt;section class="col-start-1 col-span-1"&gt; Mr. A &lt;/section&gt;<br>
+                &lt;section class="col-start-2 col-span-2"&gt; Mr. A &lt;/section&gt;<br>
+                &lt;!-- row-3--&gt;<br>
+                &lt;section class="bg-black-1 col-start-1 col-span-1"&gt; Tenant start date &lt;/section&gt;<br>
+                &lt;section class="bg-black-1 col-start-2 col-span-1"&gt; Tenancy end date &lt;/section&gt;<br>
+                &lt;section class="bg-black-1 col-start-3 col-span-1"&gt; Status &lt;/section&gt;<br>
+                &lt;section class="col-start-1 col-span-1"&gt; 01-01-2021 &lt;/section&gt;<br>
+                &lt;section class="col-start-2 col-span-1"&gt; 01-01-2022 &lt;/section&gt;<br>
+                &lt;section class="col-start-3 col-span-1"&gt; Open &lt;/section&gt;<br>
+                &lt;/article&gt;</code></>
+
+
+        </article>
+
+
+        <article class="grid grid-cols-3 m-3 text-start child-p-1">
+            <!-- row-1 -->
+            <section class="bg-black-1 col-start-1 col-span-1"> Building name </section>
+            <section class="bg-black-1 col-start-2 col-span-2"> Unit number </section>
+            <section class="col-start-1 col-span-1"> - </section>
+            <section class="col-start-2 col-span-2"> - </section>
+            <!-- row-2 -->
+            <section class="bg-black-1 col-start-1 col-span-1"> Tenant name </section>
+            <section class="bg-black-1 col-start-2 col-span-2"> Landlord Name </section>
+            <section class="col-start-1 col-span-1"> Mr. A </section>
+            <section class="col-start-2 col-span-2"> Mr. A </section>
+            <!-- row-3-->
+            <section class="bg-black-1 col-start-1 col-span-1"> Tenant start date </section>
+            <section class="bg-black-1 col-start-2 col-span-1"> Tenancy end date </section>
+            <section class="bg-black-1 col-start-3 col-span-1"> Status </section>
+            <section class="col-start-1 col-span-1"> 01-01-2021 </section>
+            <section class="col-start-2 col-span-1"> 01-01-2022 </section>
+            <section class="col-start-3 col-span-1"> Open </section>
+
+        </article>
+
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/includefile.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

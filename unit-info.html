@@ -26,7 +26,7 @@
                         <hr />
                         <form class="needs-validation text-start">
 
-                            <div class="row g-4 mt-0 ">
+                            <div class="row g-4 mt-0">
                                 <div class="col-6 col-md-4">
                                     <label for="username" class="form-label">Block</label>
                                     <select class="form-control form-select" id="status">
@@ -97,70 +97,83 @@
                                     </select>
                                 </div>
 
-                                <div class="col-6 col-md-4">
-                                    <label for="car-park-slot" class="form-label">Cark park slot</label>
-                                    <div class="input-group">
-                                        <select class="form-control form-select" id="car-park-slot">
-                                            <option value="" selected> - </option>
-                                        </select>
-                                        <!-- <input type="number" class="form-control" id="car-park-slot"> -->
-                                    </div>
-                                </div>
 
-                                <div class="col-6 col-md-4">
+
+
+
+
+                            </div>
+                            <hr class="my-5">
+                            <div class="row g-4 mt-0">
+                                <fieldset class="col-6 col-md-4" id="fieldset-car">
                                     <label for="car-part-number" class="form-label position-relative ">Car part number
-                                        <button class="btn btn-outline-info btn-sm position-absolute"
+                                        <!-- <button class="btn btn-outline-info btn-sm position-absolute"
                                             style="transform: translate(6px, -8px);" onclick="handleAddSlot(event)">
                                             +Add slot
-                                        </button></label>
-                                    <select class="form-control form-select" id="car-park-slot">
-                                        <option value="" selected> - </option>
-                                    </select>
-                                    <!-- <input type="text" class="form-control" id="car-part-number"> -->
-                                </div>
+                                        </button> -->
+                                    </label>
+                                    <!-- <select class="form-control form-select" id="car-park-slot">
+                                        <option value="1" selected> 1 </option>
+                                        <option value="2" > 2 </option>
+                                        <option value="3" > 3 </option>
+                                        <option value="4" > 4 </option>
+                                    </select> -->
+                                    <input type="number" class="form-control" id="car-part-number" value="1" min="1"
+                                        max="10" onchange="handleChangeCarSlot(event)">
+                                </fieldset>
 
-                                <div class="col-6 col-md-4">
+                                <fieldset class="col-6 col-md-4 slot__number">
+                                    <label for="car-park-slot-1" class="form-label">Cark park slot 1</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="car-park-slot-1 ">
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <hr class="my-5">
+                            <div class="row mt-0 g-4">
+
+                                <fieldset class="col-12 col-md-6 col-xl-4">
                                     <label for="market" class="form-label">Fit for market</label>
                                     <div class="input-group">
                                         <select class="form-control form-select" id="market">
-                                            <option value="" > - </option>
-                                            <option value="Yes" > Yes </option>
-                                            <option value="No" > No </option>
+                                            <option value=""> - </option>
+                                            <option value="Yes"> Yes </option>
+                                            <option value="No"> No </option>
                                         </select>
                                         <!-- <input type="number" class="form-control" id="car-park-slot"> -->
                                     </div>
-                                </div>
+                                </fieldset>
 
-                                <div class="col-6 col-md-4">
+                                <fieldset class="col-12 col-md-6 col-xl-4">
                                     <label for="upgrade1" class="form-label">If no, then is Landlord willing to
                                         upgrade? </label>
                                     <div class="input-group">
                                         <select class="form-control form-select" id="upgrade1">
-                                            <option value="" > - </option>
-                                            <option value="Yes" > Yes </option>
-                                            <option value="No" > No </option>
+                                            <option value=""> - </option>
+                                            <option value="Yes"> Yes </option>
+                                            <option value="No"> No </option>
                                         </select>
                                         <!-- <input type="number" class="form-control" id="car-park-slot"> -->
                                     </div>
-                                </div>
+                                </fieldset>
 
-                                <div class="col-6 col-md-4">
+                                <fieldset class="col-12 col-md-6 col-xl-4">
                                     <label for="upgrade2" class="form-label">Landlord willing to upgrade?</label>
                                     <div class="input-group">
                                         <select class="form-control form-select" id="upgrade2">
-                                            <option value="" > - </option>
-                                            <option value="Yes" > Yes </option>
-                                            <option value="No" > No </option>
+                                            <option value=""> - </option>
+                                            <option value="Yes"> Yes </option>
+                                            <option value="No"> No </option>
                                         </select>
                                         <!-- <input type="number" class="form-control" id="car-park-slot"> -->
                                     </div>
-                                </div>
+                                </fieldset>
 
+                            </div>
+
+                        </form>
                     </div>
-
-                    </form>
                 </div>
-            </div>
             </div>
         </section>
         <footer class="mt-auto text-white-50">
@@ -178,6 +191,57 @@
         function handleAddSlot(event) {
             event.preventDefault()
         }
+
+
+        function handleChangeCarSlot(event) {
+            event.preventDefault()
+            carPartNumberElement = event.target
+            carSlotCount = carPartNumberElement.value
+            const arraySlotNumber = document.querySelectorAll(".slot__number");
+            if (arraySlotNumber.length < 0) {
+                return
+            }
+
+            carPartNumberElement = document.getElementById("fieldset-car")
+
+            async function AddLoop() {
+                async function removeLoop() {
+                    let indexx = null
+                    for (let i = 0; i < arraySlotNumber.length; i++) {
+                        arraySlotNumber[i].remove();
+                        indexx = i
+                    }
+                    return indexx
+                }
+
+                await removeLoop();
+                for (let index = 0; index < carSlotCount; index++) {
+                    console.log('carSlotCount:', carSlotCount)
+                    let fieldset = document.createElement("fieldset");
+                    fieldset.classList.add("col-6", "col-md-4", "slot__number")
+                    let carParkSlotELement = `<label for="car-park-slot-${index+1}" class="form-label">Cark park slot ${index+1} </label>
+                        <div class="input-group">
+                             <input type="text" class="form-control" id="car-park-slot-${index+1} ">
+                        </div>`
+                    fieldset.innerHTML = carParkSlotELement
+
+                    // inject next to fieldset#fieldset-car html element
+                    function insertAfter(newNode, existingNode) {
+                        existingNode.parentNode.appendChild(newNode)
+                    }
+                    insertAfter(fieldset, carPartNumberElement)
+                }
+
+                return
+            }
+            AddLoop()
+
+
+
+        }
+
+
+
     </script>
 </body>
 
