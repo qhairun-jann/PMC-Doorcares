@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Tenancy details </title>
+    <title> static design system </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,16 +15,72 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark" >
     <div class="sticky-top" includeHtml="navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app" >
 
+        <!-- ### This document not update automaticly -- manually update by Wan Afnan ### -->
+        <h1> Web Page Template </h1>
 
-        <h1> GRID TABLE </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
+            <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+
+                    &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                    &lt;title&gt; Tenancy details &lt;/title&gt;
+                    &lt;meta name="description" content="A description."&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                
+                    &lt;!-- CSS --&gt;
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" /&gt;
+                    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" /&gt;
+                    &lt;link href="assets/css/style.css" rel="stylesheet" /&gt;
+                    &lt;/head&gt;
+                
+                    &lt;body class="p-0 bg-dark h-100 text-center text-white bg-dark"&gt;
+                    &lt;div class="sticky-top" includeHtml="navbar.html"&gt;&lt;/div&gt;
+                        &lt;main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column"&gt;
+                        &lt;article class="" id="vue-app" &gt;
+                        
+                        &lt;/article&gt;
+                        &lt;footer class="mt-auto text-white-50"&gt;
+                        &lt;p&gt;&amp;copy; &lt;span id="year"&gt;&lt;/span&gt;
+                        Copyright by Jann Properties&lt;/p&gt;
+                        &lt;/footer&gt;
+                        &lt;/main&gt;
+                    &lt;/body&gt;
+                
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                    &lt;!-- &lt;script src="assets/js/main.js"&gt;&lt;/script&gt; --&gt;
+                    &lt;script src="assets/js/includefile.js"&gt;&lt;/script&gt;
+                    &lt;script&gt;
+                      includeHTML();
+                    &lt;/script&gt;
+
+                    &lt;script src="https://cdn.jsdelivr.net/npm/vue@2"&gt;&lt;/script&gt;
+                    &lt;script&gt;
+                        var app = new Vue({
+                        el: '#vue-app',
+                        data: {
+                            noData: '',
+                            abcArray: ['a', 'b', 'c', 'd']
+                        }})
+                    &lt;/script&gt;
+
+                &lt;/html&gt;</code></pre>
+        </article>
+
+        <br><br>
+        <h1> Grid Table </h1>
 
         <article class="text-start p-3" style="border:1px solid #d63384">
 
-            <code class="text-white" >&lt;article class="grid grid-cols-3 m-3 text-start child-p-1"&gt;<br>
+            <code class="text-white">
+
+                &lt;article class="grid grid-cols-3 m-3 text-start p-child-1"&gt;<br>
                 &lt;!-- row-1 --&gt;<br>
                 &lt;section class="bg-black-1 col-start-1 col-span-1"&gt; Building name &lt;/section&gt;<br>
                 &lt;section class="bg-black-1 col-start-2 col-span-2"&gt; Unit number &lt;/section&gt;<br>
@@ -44,35 +100,217 @@
                 &lt;section class="col-start-3 col-span-1"&gt; Open &lt;/section&gt;<br>
                 &lt;/article&gt;</code></>
 
+            <br><br>
+            <article class="grid grid-cols-3 m-3 text-start p-child-1">
+                <!-- row-1 -->
+                <section class="bg-black-1 col-start-1 col-span-1"> Building name </section>
+                <section class="bg-black-1 col-start-2 col-span-2"> Unit number </section>
+                <section class="col-start-1 col-span-1"> - </section>
+                <section class="col-start-2 col-span-2"> - </section>
+                <!-- row-2 -->
+                <section class="bg-black-1 col-start-1 col-span-1"> Tenant name </section>
+                <section class="bg-black-1 col-start-2 col-span-2"> Landlord Name </section>
+                <section class="col-start-1 col-span-1"> Mr. A </section>
+                <section class="col-start-2 col-span-2"> Mr. A </section>
+                <!-- row-3-->
+                <section class="bg-black-1 col-start-1 col-span-1"> Tenant start date </section>
+                <section class="bg-black-1 col-start-2 col-span-1"> Tenancy end date </section>
+                <section class="bg-black-1 col-start-3 col-span-1"> Status </section>
+                <section class="col-start-1 col-span-1"> 01-01-2021 </section>
+                <section class="col-start-2 col-span-1"> 01-01-2022 </section>
+                <section class="col-start-3 col-span-1"> Open </section>
+
+            </article>
+        </article>
+        <br><br>
+        <h1> responsive Table </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
+
+
+            <pre><code>&lt;div class="col-12 text-start table-responsive"&gt;
+                &lt;table class="table table-dark table-striped "&gt;
+                &lt;thead&gt;
+                &lt;tr class="align-middle"&gt;
+                &lt;td class="py-3"&gt;
+                &lt;h6 class="m-0"&gt;User name&lt;/h6&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;h6 class="m-0"&gt;Role Tenant&lt;/h6&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;h6 class="m-0"&gt;Building name&lt;/h6&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;h6 class="m-0"&gt;Unit number&lt;/h6&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;tr class="align-middle"&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;td&gt; Tenant &lt;/td&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class="align-middle"&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;td&gt; Tenant &lt;/td&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;td&gt; - &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;</code></pre>
+
+            <br><br>
+
+
+
+
+
+            <div class="col-12 text-start table-responsive">
+                <table class="table table-dark table-striped ">
+                    <thead>
+                        <tr class="align-middle">
+                            <td class="py-3">
+                                <h6 class="m-0">User name</h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0">Role Tenant</h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0">Building name</h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0">Unit number</h6>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle">
+                            <td> - </td>
+                            <td> Tenant </td>
+                            <td> - </td>
+                            <td> - </td>
+                        </tr>
+                        <tr class="align-middle">
+                            <td> - </td>
+                            <td> Tenant </td>
+                            <td> - </td>
+                            <td> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </article>
+        <br><br>
+        <h1> inputs </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
 
+            <pre><code>
+            &lt;div class="row"&gt;
+                &lt;fieldset class="col-6 size-3"&gt;
+                    &lt;label for="email" class="form-label text-white"&gt;Select date&lt;/label&gt;
+                    &lt;input type="date" class="form-control" id="date" value="2018-07-22"&gt;
+                    &lt;/fieldset&gt;
+                    &lt;fieldset class="col-6 size-3"&gt;
+                    &lt;label for="email" class="form-label text-white"&gt;Input text&lt;/label&gt;
+                    &lt;input type="text" class="form-control" id="date" value="2018-07-22"&gt;
+                &lt;/fieldset&gt;
+                
+                &lt;fieldset class="col-6 size-3"&gt;
+                    &lt;select class="form-control form-select" id="status"&gt;
+                    &lt;option value="" selected&gt;Category&lt;/option&gt;
+                    &lt;option&gt;All&lt;/option&gt;
+                    &lt;option&gt;Viewings&lt;/option&gt;
+                    &lt;option&gt;Offers&lt;/option&gt;
+                    &lt;option&gt;Payments&lt;/option&gt;
+                    &lt;option&gt;TA/Contracts&lt;/option&gt;
+                    &lt;option&gt;Check in&lt;/option&gt;
+                    &lt;option&gt;Maintenance&lt;/option&gt;
+                    &lt;option&gt;Check out&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/fieldset&gt;
+            &lt;/div&gt;</code></pre>
 
-        <article class="grid grid-cols-3 m-3 text-start child-p-1">
-            <!-- row-1 -->
-            <section class="bg-black-1 col-start-1 col-span-1"> Building name </section>
-            <section class="bg-black-1 col-start-2 col-span-2"> Unit number </section>
-            <section class="col-start-1 col-span-1"> - </section>
-            <section class="col-start-2 col-span-2"> - </section>
-            <!-- row-2 -->
-            <section class="bg-black-1 col-start-1 col-span-1"> Tenant name </section>
-            <section class="bg-black-1 col-start-2 col-span-2"> Landlord Name </section>
-            <section class="col-start-1 col-span-1"> Mr. A </section>
-            <section class="col-start-2 col-span-2"> Mr. A </section>
-            <!-- row-3-->
-            <section class="bg-black-1 col-start-1 col-span-1"> Tenant start date </section>
-            <section class="bg-black-1 col-start-2 col-span-1"> Tenancy end date </section>
-            <section class="bg-black-1 col-start-3 col-span-1"> Status </section>
-            <section class="col-start-1 col-span-1"> 01-01-2021 </section>
-            <section class="col-start-2 col-span-1"> 01-01-2022 </section>
-            <section class="col-start-3 col-span-1"> Open </section>
-
+            <div class="row ">
+                <fieldset class="col-6 size-3">
+                    <label for="email" class="form-label text-white">Select date</label>
+                    <input type="date" class="form-control" id="date" value="2018-07-22">
+                </fieldset>
+                <fieldset class="col-6 size-3">
+                    <label for="email" class="form-label text-white">Input text</label>
+                    <input type="text" class="form-control" id="date" value="">
+                </fieldset>
+                <fieldset class="col-6 size-3">
+                    <label for="status" class="form-label text-white mt-4">Category</label>
+                    <select class="form-control form-select" id="status">
+                        <option value="" selected>Category</option>
+                        <option>All</option>
+                        <option>Viewings</option>
+                        <option>Offers</option>
+                        <option>Payments</option>
+                        <option>TA/Contracts</option>
+                        <option>Check in</option>
+                        <option>Maintenance</option>
+                        <option>Check out</option>
+                    </select>
+                </fieldset>
+            </div>
         </article>
 
-        <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
+        <br><br><br>
+        <h1 class="">   Responsive 1 Upload Button + 1 row 4 Box </h1>
+        <article class="text-start p-3"   style="border:1px solid #d63384" >
+
+            <pre><code>
+                &lt;div class="row gy-4 mt-3"&gt;
+                &lt;section class="col-12 text-xl-start"&gt;
+                    &lt;form method="post" enctype="multipart/form-data" &gt;
+                      &lt;label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"&gt; + Upload File &lt;/label&gt;
+                      &lt;input type="file" id="upload" hidden name="file-upload-field" &gt;
+                    &lt;/form&gt;
+                    &lt;/section&gt;
+                    &lt;hr&gt;
+                &lt;section class="col-12 col-lg-6 col-xl-3" /v-for="(item,key) in pdfArray"&gt;
+                    &lt;p class="size-2 m-1 pointer"&gt;
+                    /{/{item/}/}
+                    &lt;/p&gt;
+                    &lt;figure class="col-12 position-relative pointer border"&gt;
+                      &lt;div class="d-flex justify-content-center align-items-center" style="height: 240px;"&gt;
+                      &lt;h3&gt; center &lt;/h3&gt;
+                      &lt;/div&gt;
+                    &lt;/figure&gt;
+                &lt;/section&gt;
+                &lt;/div&gt;</code></pre>
+
+                <br><br><br>
+
+            <div class="row gy-4 mt-3">
+                <section class="col-12 text-center text-xl-start">
+                    <form method="post" enctype="multipart/form-data" >
+                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File </label>
+                        <input type="file" id="upload" hidden name="file-upload-field" >
+                    </form>
+                </section>
+                <hr>
+                <section class="col-12 col-lg-6 col-xl-3" v-for="(item,key) in pdfArray">
+                    <p class="size-2 m-1 pointer">
+                        {{item}}
+                    </p>
+                    <figure class="col-12 position-relative pointer border">
+
+                        <div class="d-flex justify-content-center align-items-center" style="height: 240px;">
+                            <h3> center </h3>
+                        </div>
+                    </figure>
+                </section>
+            </div>
+        </article>
+
+        <br><br><br>
+
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -80,6 +318,16 @@
     <script src="assets/js/includefile.js"></script>
     <script>
         includeHTML();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#vue-app',
+            data: {
+                noData: '',
+                pdfArray: ['TV manual', 'AC manual', 'Refrigerator manual', 'Microwave oven manual']
+            }
+        })
     </script>
 </body>
 

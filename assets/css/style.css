@@ -7,12 +7,36 @@
 @import "upload.css";
 @import "rating.css";
 @import "model.css";
+@import "unitPictures.css";
 
-.child-p-1 > * {
+.p-child-1 > * {
   padding: 0.5rem;
 }
-.child-p-2 > * {
+
+.p-child-2 > * {
   padding: 1rem;
+}
+
+.m-child-1 > * {
+  margin: 0.5rem;
+}
+
+.m-child-2 > * {
+  margin: 1rem;
+}
+
+.my-child-1 > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-child-2 > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pointer {
+ cursor: pointer; 
 }
 
 .btn__anchor {

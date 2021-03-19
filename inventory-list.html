@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Property condition </title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <div class="sticky-top" includeHtml="navbar.html"></div>
+    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
+        <article class="p-2" id="vue-app">
+            <div class="row">
+                <fieldset class="col-6 size-3">
+                    <label for="email" class="form-label text-white">Tenancy start date</label>
+                    <input type="date" class="form-control" id="date" value="2018-07-22">
+                </fieldset>
+                <fieldset class="col-6 size-3">
+                    <label for="email" class="form-label text-white">Tenancy end date</label>
+                    <input type="text" class="form-control" id="date" value="2018-07-22">
+                </fieldset>
+                <div class="col-12 my-3"></div>
+
+                <fieldset v-for="data in payload" class="py-3 text-start">
+                    <h3>{{data.header}} </h3>
+                    <hr>
+                    <a :href="`${item.link}`" v-for="item in data.body" >
+                        <p > {{item.name}} </p>
+                    </a>
+                </fieldset>
+            </div>
+        </article>
+        <footer class="mt-auto text-white-50">
+            <p>&copy; <span id="year"></span>
+                Copyright by Jann Properties</p>
+        </footer>
+    </main>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="assets/js/main.js"></script> -->
+<script src="assets/js/includefile.js"></script>
+<script>
+    includeHTML();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script>
+    var app = new Vue({
+        el: '#vue-app',
+        data: {
+            payload: [
+                {
+                    header: "Areas",
+                    body: [
+                        { name: 'Entrance', link: "entrance.html" },
+                        { name: 'Living', link: "#" },
+                        { name: 'Dining', link: "#" },
+                        { name: 'Kitchen', link: "#" },
+                        { name: 'Yard', link: "#" },
+                        { name: 'Balcony', link: "#" },
+                    ]
+                },
+                {
+                    header: "Rooms",
+                    body: [
+                        { name: 'Beds', link: "#" },
+                        { name: 'Bath', link: "#" },
+                        { name: 'Utility', link: "#" },
+                    ]
+                },
+                {
+                    header: "Meter readings",
+                    body: [
+                        { name: 'Electricity', link: "meter-readings.html" },
+                        { name: 'Water', link: "meter-readings.html" },
+                        { name: 'Gas', link: "meter-readings.html" },
+                    ]
+                },
+
+            ]
+
+        }
+    })
+</script>
