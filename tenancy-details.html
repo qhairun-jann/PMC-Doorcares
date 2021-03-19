@@ -18,22 +18,27 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top" includeHtml="navbar.html"></div>
     <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column">
-        <h1 class="mt-5 text-white text-center">Tenancy agreement details</h1>     
-        <hr />
+        <h1 class="mt-5 text-white text-center">Tenancy agreement details</h1>
+
         <div class="row">
-            <p class="text text-lg-start mt-2">Tenant name</p>
-            <div class="col-md-6">
-                <div class="avatar-upload d-flex">                
-                    <div class="avatar-preview">                      
-                        <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
-                        </div>
-                    </div>
-                    <div class="align-self-center ms-3">
-                        <h5>John Doe Alexander</h5>
-                    </div>
-                </div>
+            <div class="col-12">
+                <hr />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
+                <p class="text-lg-start mt-2">Building name</p>
+                <p class="text-lg-start mt-0">-</p>
+            </div>
+            <div class="col-md-5">
+                <p class="text-lg-start mt-2">Unit Number</p>
+                <p class="text-lg-start mt-0">-</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+            <p class="text-lg-start mt-0">Tenant name</p>
+            <div class="col-md-5">
                 <div class="avatar-upload d-flex">
                     <div class="avatar-preview">
                         <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
@@ -44,31 +49,111 @@
                     </div>
                 </div>
             </div>
-            <hr />
-
-
+            <div class="col">
+                <div class="col-md-5">
+                    <div class="avatar-upload d-flex">
+                        <div class="avatar-preview">
+                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                            </div>
+                        </div>
+                        <div class="align-self-center ms-3">
+                            <h5>John Doe Alexander</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <article class="grid grid-cols-3 m-3 text-start p-child-1">
-            <!-- row-1 -->
-            <section class="bg-black-1 col-start-1 col-span-1"> Building name </section>
-            <section class="bg-black-1 col-start-2 col-span-2"> Unit number </section>
-            <section class="col-start-1 col-span-1"> - </section>
-            <section class="col-start-2 col-span-2"> - </section>
-            <!-- row-2 -->
-            <section class="bg-black-1 col-start-1 col-span-1"> Tenant name </section>
-            <section class="bg-black-1 col-start-2 col-span-2"> Landlord Name </section>
-            <section class="col-start-1 col-span-1"> Mr. A </section>
-            <section class="col-start-2 col-span-2"> Mr. A </section>
-            <!-- row-3-->
-            <section class="bg-black-1 col-start-1 col-span-1"> Tenant start date </section>
-            <section class="bg-black-1 col-start-2 col-span-1"> Tenancy end date </section>
-            <section class="bg-black-1 col-start-3 col-span-1"> Status </section>
-            <section class="col-start-1 col-span-1"> 01-01-2021 </section>
-            <section class="col-start-2 col-span-1"> 01-01-2022 </section>
-            <section class="col-start-3 col-span-1"> Open </section>
-
-        </article>
-        
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+            <div class="col-md-5">
+                <p class="text-lg-start mt-0">Tenancy start date</p>
+                <p class="text-muted text-lg-start mt-0">dd/mm/yyyy</p>
+            </div>
+            <div class="col-md-5">
+                <p class="text-lg-start mt-0">Tenancy end date</p>
+                <p class="text-muted text-lg-start mt-0">dd/mm/yyyy</p>
+            </div>
+        </div>
+        <div class="row">
+            <hr />
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <p class="text-ms-center">Tenancy agreement</p>
+                    <img id="passportImg" src="assets/img/tenancy-agree-sample.jpg" class="rounded mt-3" alt="Passport"
+                        width="300px" />
+                    <label for="passportCopy" class="custom-file-upload btn btn-primary w-300px mt-3">
+                        <i class="fas fa-cloud-upload-alt"></i> Update
+                    </label>
+                    <input type='file' style="display:none;" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive text-start mt-5">
+                <table class="table table-dark table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td>
+                                <h6>Building name </h6>
+                            </td>
+                            <td>
+                                <h6>Unit number</h6>
+                            </td>
+                            <td>
+                                <h6>Tenant name</h6>
+                            </td>
+                            <td>
+                                <h6>Landlord Name</h6>
+                            </td>
+                            <td>
+                                <h6>Tenant start dat</h6>
+                            </td>
+                            <td>
+                                <h6>Tenancy end date </h6>
+                            </td>
+                            <td>
+                                <h6>Status</h6>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle" onclick="location.href='offer-details.html'" style="cursor: pointer;">
+                            <td>12-03-2021</td>
+                            <td>Tylermiller</td>
+                            <td>Paradise Residence</td>
+                            <td>-</td>
+                            <td>Offer pending</td>
+                            <td>Yes</td>
+                            <td>Rudy</td>
+                        </tr>
+                        <tr class="align-middle" onclick="location.href='offer-details.html'" style="cursor: pointer;">
+                            <td>12-03-2021</td>
+                            <td>Tylermiller</td>
+                            <td>Paradise Residence</td>
+                            <td>-</td>
+                            <td>Offer accepted</td>
+                            <td>Yes</td>
+                            <td>Rudy</td>
+                        </tr>
+                        <tr class="align-middle" onclick="location.href='offer-details.html'" style="cursor: pointer;">
+                            <td>12-03-2021</td>
+                            <td>Tylermiller</td>
+                            <td>Paradise Residence</td>
+                            <td>-</td>
+                            <td>Offer rejected</td>
+                            <td>No</td>
+                            <td>Rudy</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
         <footer class="mt-auto text-white-50">
             <p>&copy; <span id="year"></span>
                 Copyright by Jann Properties</p>
