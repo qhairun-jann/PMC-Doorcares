@@ -15,62 +15,425 @@
 </head>
 
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top" includeHtml="navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app">
-        <form class="text-start">
-            <article class="row my-child-1">
-                <div class="col-12 col-md-6 col-xl-3 text-center" v-for="(btn,index) in buttons" :key="index">
-                    <button class="btn btn-outline-info btn-lg my-2" v-bind:class="{ active: index === btnActive }"
-                        @click="handleClick" :id="index" style="width: 70%;">
-                        {{ btn }}
-                    </button>
-                </div>
-                <hr class="col-12">
-            </article>
-            <article class="row my-child-1">
-                <fieldset class="col-6 col-xl-3">
-                    <label for="email" class="form-label text-white">Username</label>
-                    <input type="text" class="form-control" placeholder="Username">
-                </fieldset>
+    <nav class="sticky-top" includeHtml="navbar.html"></nav>
+    <main class="cover-container d-flex h-100 mx-auto flex-column" id="vue-app">
+        <article class="text-start container my-5">
+            <section class="row justify-content-center">
+                <section class="col-sm-10">
+                    <section class="row my-child-1" class="nav nav-tabs " id="nav-tab" role="tablist">
+                        <div class="col-12 col-md-4 text-center" v-for="(btn,index) in buttons" :key="index">
+                            <button class="btn btn-outline-info btn-lg my-2"
+                                v-bind:class="{ active: index === btnActive }" @click="handleClick" :id="index"
+                                style="width: 70%;">
+                                {{ btn }}
+                            </button>
+                        </div>
+                        <hr class="col-12">
+                    </section>
+                    <form>
+                        <!-- LANDLORD -->
 
-                <fieldset class="col-6 col-xl-3">
-                    <label for="Role" class="form-label text-white">Role</label>
-                    <input type="text" class="form-control" placeholder="role">
-                </fieldset>
+                        <article v-if="btnActive === 0">
+                            <section class="row">
+                                <section class="col-12">
+                                    <section class="row justify-content-center align-items-center my-child-1">
+                                        <div class="col-3 col-md-3 col-lg-2  ">
+                                            <img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100%"
+                                                height="100px" />
+                                        </div>
+                                        <div class="col-9 col-md-9 col-lg-3 text-center my-1">
+                                            <h5 class="fw-bold text-start">LANDLORD LONG NAME</h5>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 my-1 text-lg-start ">
+                                            <select class="form-control form-select py-1" id="status">
+                                                <option value="" selected>Verification status</option>
+                                                <option>Verified</option>
+                                                <option>Not verified</option>
+                                            </select>
 
-                <fieldset class="col-6 col-xl-3">
-                    <label class="form-label text-white">Email ID</label>
-                    <input type="text" class="form-control" placeholder="email ID">
-                </fieldset>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
+                                            <button class="btn btn-outline-info w-100">+Add Co-Owner</button>
+                                        </div>
+                                    </section>
+                                </section>
+                                <hr class="col-12 mt-2">
+                            </section>
+                            <section class="row my-child-1">
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Username</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
 
-                <fieldset class="col-6 col-xl-3">
-                    <label class="form-label text-white">Contact number</label>
-                    <input type="text" class="form-control" placeholder="contact number">
-                </fieldset>
-            </article>
-            <article class="row my-child-1">
-                <fieldset class="col-6 col-xl-3">
-                    <label for="email" class="form-label text-white">Nationality</label>
-                    <input type="text" class="form-control" placeholder="Username">
-                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="Role" class="form-label text-white">Role</label>
+                                    <input type="text" class="form-control" placeholder="role">
+                                </fieldset>
 
-                <fieldset class="col-6 col-xl-3">
-                    <label for="dob" class="form-label text-white">Date of Birth</label>
-                    <input type="date" class="form-control" placeholder="Date of Birth">
-                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Email ID</label>
+                                    <input type="text" class="form-control" placeholder="email ID">
+                                </fieldset>
 
-                <fieldset class="col-6 col-xl-3">
-                    <label class="form-label text-white">Passport number</label>
-                    <input type="text" class="form-control" placeholder="Passport number">
-                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Contact number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Gender</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Nationality</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
 
-                <fieldset class="col-6 col-xl-3">
-                    <label class="form-label text-white">IC number</label>
-                    <input type="text" class="form-control" placeholder="IC number">
-                </fieldset>
-            </article>
-        </form>
-        <footer class="mt-auto text-white-50">
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="dob" class="form-label text-white">Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Passport number</label>
+                                    <input type="text" class="form-control" placeholder="Passport number">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">IC number</label>
+                                    <input type="text" class="form-control" placeholder="IC number">
+                                </fieldset>
+                            </section>
+                            <section class="row my-child-1">
+                                <div class="col-12 mt-5">
+                                    <h2>Corresponding address</h2>
+                                </div>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Block</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Level</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Unit</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Building name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Street name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Residential area</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Post code</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">City</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">State</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Country</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                            </section>
+                        </article>
+                        <article v-if="btnActive === 1">
+                            <section class="row">
+                                <section class="col-12">
+                                    <section class="row justify-content-center align-items-center my-child-1">
+                                        <div class="col-3 col-md-3 col-lg-2  ">
+                                            <img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100%"
+                                                height="100px" />
+                                        </div>
+                                        <div class="col-9 col-md-9 col-lg-3 text-center my-1">
+                                            <h5 class="fw-bold text-start">LANDLORD LONG NAME</h5>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 my-1 text-lg-start ">
+                                            <select class="form-control form-select py-1" id="status">
+                                                <option value="" selected>Verification status</option>
+                                                <option>Verified</option>
+                                                <option>Not verified</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
+                                            <button class="btn btn-outline-info w-100">+Add Co-Owner</button>
+                                        </div>
+                                    </section>
+                                </section>
+                                <hr class="col-12 mt-2">
+                            </section>
+
+                            <section class="row my-child-1">
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Username</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="Role" class="form-label text-white">Role</label>
+                                    <input type="text" class="form-control" placeholder="role">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Email ID</label>
+                                    <input type="text" class="form-control" placeholder="email ID">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Contact number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Gender</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Nationality</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="dob" class="form-label text-white">Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Passport number</label>
+                                    <input type="text" class="form-control" placeholder="Passport number">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">IC number</label>
+                                    <input type="text" class="form-control" placeholder="IC number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Bank name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="dob" class="form-label text-white">Bank account number</label>
+                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Credit card number</label>
+                                    <input type="text" class="form-control" placeholder="Passport number">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Company name</label>
+                                    <input type="text" class="form-control" placeholder="IC number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Occupation</label>
+                                    <input type="text" class="form-control" placeholder="IC number">
+                                </fieldset>
+                            </section>
+                            <section class="row my-child-1">
+                                <div class="col-12 mt-5">
+                                    <h2>Corresponding address</h2>
+                                </div>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Block</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Level</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Unit</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Building name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Street name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Residential area</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Post code</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">City</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">State</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Country</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                            </section>
+
+                        </article>
+
+                        <article v-if="btnActive === 2">
+                            <section class="row my-child-1">
+                                <section class="col-12">
+                                    <section class="row justify-content-start align-items-center">
+                                        <div class="col-3 col-md-3 col-lg-2  ">
+                                            <img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100%"
+                                                height="100px" />
+                                        </div>
+                                        <div class="col-9 col-md-9 col-lg-3 my-1">
+                                            <h5 class="fw-bold text-start">PIC LONG NAME</h5>
+                                        </div>
+                                        <!-- <div class="col-12 col-md-6 col-lg-4 my-1 text-lg-start ">
+                            
+
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
+                                           
+                                        </div> -->
+                                    </section>
+                                </section>
+                                <hr class="col-12 mt-2 mb-3">
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Username</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Role</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Email ID</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Contact Number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Gender</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Nationality</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Date of birth</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Passport number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">IC number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Bank name</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Bank account number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">Credit card number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label class="form-label text-white">REN number</label>
+                                    <input type="text" class="form-control" placeholder="contact number">
+                                </fieldset>
+                            </section>
+                            <section class="row my-child-1">
+                                <div class="col-12 mt-5">
+                                    <h2>Corresponding address</h2>
+                                </div>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Block</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Level</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Unit</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Building name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Street name</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Residential area</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Post code</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">City</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">State</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="email" class="form-label text-white">Country</label>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </fieldset>
+                            </section>
+                        </article>
+
+                    </form>
+                </section>
+            </section>
+        </article>
+        <footer class="mt-5 text-white-50">
             <p>&copy; <span id="year"></span>
                 Copyright by Jann Properties</p>
         </footer>
@@ -91,12 +454,17 @@
         el: '#vue-app',
         data: {
             btnActive: 0,
-            buttons: ['All', 'New', 'In Progress', 'Resolved'],
+            buttons: [
+                'Landlord',
+                'Tenant',
+                'PIC',
+            ],
+
         },
         methods: {
             handleClick(event) {
                 document.getElementById(this.btnActive).classList.remove('active')
-                this.btnActive = event.target.id
+                this.btnActive = parseInt(event.target.id)
                 event.target.classList.add('active')
             }
         }

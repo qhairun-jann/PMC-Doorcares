@@ -20,7 +20,7 @@
         <article class="row justify-content-center">
             <fieldset class="col-5 ">
                 <label for="email" class="form-label text-white size-3">Choose Tenancy Date</label>
-                <input type="date" class="b-check form-control" id="date" value="2018-07-22">
+                <input type="date" class="form-control" id="date" value="2018-07-22">
             </fieldset>
         </article>
         <article class="row text-start table-responsive">
@@ -39,17 +39,16 @@
                         <th>
                             <h6 class="m-0">PIC</h6>
                         </th>
-    
+
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="align-middle">
+                    <tr class="align-middle pointer" onclick="window.location.href='user-detail.html'" >
                         <td> Mr.Lan </td>
                         <td> - </td>
-                        <td> Mr.Lan  </td>
-                        <td> Mr.Pi  </td>
+                        <td> Mr.Lan </td>
+                        <td> Mr.Pi </td>
                     </tr>
-               
                 </tbody>
             </table>
         </article>
@@ -70,6 +69,8 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script>
+    
+
     var app = new Vue({
         el: '#vue-app',
         data: {
