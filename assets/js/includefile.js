@@ -1,36 +1,30 @@
-function includeHTML() {
+
+
+  function includehtml() {
     var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
+      if(z[i].getAttribute("data-footer") === "year")
+        console.log(z[i].innerHTML = `&copy; ${new Date().getFullYear()} Copyright by Jann Properties`)
       elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("includeHtml");
+      file = elmnt.getAttribute("includehtml");
       if (file) {
-        /*make an HTTP request using the attribute value as the file name:*/
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4) {
             if (this.status == 200) {elmnt.innerHTML = this.responseText;}
             if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /*remove the attribute, and call this function once more:*/
-            elmnt.removeAttribute("includeHtml");
-            includeHTML();
+            elmnt.removeAttribute("includehtml");
+            includehtml();
           }
         }      
         xhttp.open("GET", file, true);
         xhttp.send();
-        /*exit the function:*/
         return;
       }
     }
   };
 
-
-
-//   Get Full Year
-// ===================================================================
-  document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
 //   Sidebar Opens

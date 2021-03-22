@@ -15,7 +15,7 @@
 </head>
 
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <nav class="sticky-top" includeHtml="navbar.html"></nav>
+    <nav class="sticky-top fixedtop" includehtml="navbar.html"></nav>
     <article class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app">
         <main class="row text-start mt-4" v-for="(item,index) in figures" :key="index">
             <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-between">
@@ -52,7 +52,7 @@
 <!-- <script src="assets/js/main.js"></script> -->
 <script src="assets/js/includefile.js"></script>
 <script>
-    includeHTML();
+    includehtml();
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>

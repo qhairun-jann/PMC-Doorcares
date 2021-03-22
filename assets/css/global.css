@@ -8,30 +8,24 @@ body {
   padding-top: 5rem;
   font-size: .875rem;
 }
-
-
 .bg-gray {
   background: #f0f0f0;
 }
-
 .h-100 {
   height: 100vh !important;
 }
 .w-300px{
   width: 300px !important;
 }
-
 .feather {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
 }
-
 .bdr-radius-right {
   border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
 }
-
 .img-circle {
   background-color: #efefef;
   margin-bottom: 10px;
@@ -39,20 +33,21 @@ body {
   border-radius: 50% !important;
   max-width: 100%;
 }
-
-/* table {
-  table-layout : fixed;
-} */
-
+.fixedtop {
+  position: fixed;
+  width: 100% !important;
+}
 .desktop {
   display: block ;
 }
 .mobile {
   display: none ;
 }
-
 .fixed-width {
   width: 199px;
+}
+.nav-center {
+  justify-content: center;
 }
 
 /* modal */
