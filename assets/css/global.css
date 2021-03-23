@@ -50,6 +50,17 @@ body {
   justify-content: center;
 }
 
+.app-link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.app-link:hover {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
 /* modal */
 /* ================================= */
 .btn-close {
