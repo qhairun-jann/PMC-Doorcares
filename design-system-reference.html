@@ -15,9 +15,9 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark" >
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top" includeHtml="navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app" >
+    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app">
 
         <!-- ### This document not update automaticly -- manually update by Wan Afnan ### -->
         <h1> Web Page Template </h1>
@@ -29,7 +29,7 @@
                     &lt;head&gt;
                     &lt;meta charset="utf-8"&gt;
                     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                    &lt;title&gt; Tenancy details &lt;/title&gt;
+                    &lt;title&gt; --- &lt;/title&gt;
                     &lt;meta name="description" content="A description."&gt;
                     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
                 
@@ -41,8 +41,8 @@
                 
                     &lt;body class="p-0 bg-dark h-100 text-center text-white bg-dark"&gt;
                     &lt;div class="sticky-top" includeHtml="navbar.html"&gt;&lt;/div&gt;
-                        &lt;main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column"&gt;
-                        &lt;article class="" id="vue-app" &gt;
+                        &lt;main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app" &gt;
+                        &lt;article class=""  &gt;
                         
                         &lt;/article&gt;
                         &lt;footer class="mt-auto text-white-50"&gt;
@@ -261,8 +261,8 @@
         </article>
 
         <br><br><br>
-        <h1 class="">   Responsive 1 Upload Button + 1 row 4 Box </h1>
-        <article class="text-start p-3"   style="border:1px solid #d63384" >
+        <h1 class=""> Responsive 1 Upload Button + 1 row 4 Box </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
 
             <pre><code>
                 &lt;div class="row gy-4 mt-3"&gt;
@@ -285,13 +285,14 @@
                 &lt;/section&gt;
                 &lt;/div&gt;</code></pre>
 
-                <br><br><br>
+            <br><br><br>
 
             <div class="row gy-4 mt-3">
                 <section class="col-12 text-center text-xl-start">
-                    <form method="post" enctype="multipart/form-data" >
-                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File </label>
-                        <input type="file" id="upload" hidden name="file-upload-field" >
+                    <form method="post" enctype="multipart/form-data">
+                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File
+                        </label>
+                        <input type="file" id="upload" hidden name="file-upload-field">
                     </form>
                 </section>
                 <hr>
@@ -308,7 +309,100 @@
                 </section>
             </div>
         </article>
+        <br><br>
+        <h1> video </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
 
+            <pre><code>
+                    &lt;video width="320" height="240" controls&gt;
+                        &lt;source src="assets/videos/vid-room-1.mp4" type="video/mp4"&gt;
+                        Your browser does not support the video tag.
+                    &lt;/video&gt;
+            </code></pre>
+
+            <video width="320" height="240" controls>
+                <source src="assets/videos/vid-room-1.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+        </article>
+
+        <br><br><br>
+        <h1 class=""> responsive 4 button row </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
+
+            <pre><code>
+                &lt;section class="row"&gt;
+                        &lt;div class="col-12 col-md-6 col-xl-3 text-center" v-for="(btn,index) in buttons" :key="index"&gt;
+                            &lt;button class="btn btn-outline-info btn-lg my-2" v-bind:class="{ active: index === btnActive }"
+                            @click="handleClick" :id="index" style="width: 70%;"&gt;
+                             {/{ btn }/}
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                &lt;/section&gt;
+                <br>
+
+                &lt;script src="https://cdn.jsdelivr.net/npm/vue@2"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                var app = new Vue({
+                    el: '#vue-app',
+                    data: {
+                        btnActive: 0,
+                        buttons: ['All', 'New', 'In Progress', 'Resolved'],
+                    },
+                    methods: {
+                        handleClick(event) {
+                            document.getElementById(this.btnActive).classList.remove('active')
+                            this.btnActive = event.target.id
+                            event.target.classList.add('active')
+                        }
+                    }
+                })
+                &lt;/script&gt;
+            </code></pre>
+            <br><br><br>
+            <section class="row">
+                <div class="col-12 col-md-6 col-xl-3 text-center" v-for="(btn,index) in buttons" :key="index">
+                    <button class="btn btn-outline-info btn-lg my-2" v-bind:class="{ active: index === btnActive }"
+                        @click="handleClick" :id="index" style="width: 70%;">
+                        {{ btn }}
+                    </button>
+                </div>
+            </section>
+        </article>
+
+        <br><br><br>
+        <h1 class=""> Display User </h1>
+        <article class="text-start p-3" style="border:1px solid #d63384">
+
+            <pre><code>
+                &lt;article class="row"&gt;
+                    &lt;section class="col-12"&gt;
+                        &lt;div class="float-start"&gt;
+                             &lt;img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" height="100px" /&gt;
+                        &lt;/div&gt;
+                        &lt;div class="float-start mx-2" style="margin-top: 2.1rem;"&gt;
+                            &lt;h3&gt;User name&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div class="clearfix"&gt;&lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/article&gt;
+            </code></pre>
+            <br><br>
+            <article class="row">
+                <section class="col-12">
+                    <div class="float-start">
+                        <img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" height="100px" />
+                    </div>
+                    <div class="float-start mx-2" style="margin-top: 2.1rem;">
+                        <h3>User name</h3>
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+            </article>
+
+
+        </article>
         <br><br><br>
 
     </main>
@@ -324,8 +418,17 @@
         var app = new Vue({
             el: '#vue-app',
             data: {
-                noData: '',
-                pdfArray: ['TV manual', 'AC manual', 'Refrigerator manual', 'Microwave oven manual']
+                pdfArray: ['TV manual', 'AC manual', 'Refrigerator manual', 'Microwave oven manual'],
+                btnActive: 0,
+                buttons: ['All', 'New', 'In Progress', 'Resolved'],
+            },
+            methods: {
+                handleClick(event) {
+                    document.getElementById(this.btnActive).classList.remove('active')
+                    this.btnActive = event.target.id
+                    event.target.classList.add('active')
+
+                }
             }
         })
     </script>
