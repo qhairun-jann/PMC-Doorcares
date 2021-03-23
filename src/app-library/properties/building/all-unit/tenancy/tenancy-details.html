@@ -11,13 +11,13 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="../../../../../../assets/css/style.css" rel="stylesheet" />
 
 </head>
 
 <body class="p-0 bg-dark h-100 text-white bg-dark">
-    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mt-5 mx-auto flex-column">
         <section class="container mb-5">
             <h1 class="mt-5 text-white text-center">Tenancy agreement details</h1>
             <div class="row">
@@ -40,7 +40,7 @@
                     <div class="avatar-upload d-flex">
                         <div class="avatar-preview">
                             <div id="imagePreview" class="img-fluid"
-                                style="background-image: url(assets/img/avatar.svg);">
+                                style="background-image: url(../../../../../../assets/img/avatar.svg);">
                             </div>
                         </div>
                         <div class="align-self-center ms-3">
@@ -52,7 +52,7 @@
                     <p class="text-start">Landlord name</p>
                     <div class="avatar-upload d-flex">
                         <div class="avatar-preview">
-                            <div id="imagePreview" style="background-image: url(assets/img/avatar.svg);">
+                            <div id="imagePreview" style="background-image: url(../../../../../../assets/img/avatar.svg);">
                             </div>
                         </div>
                         <div class="align-self-center ms-3">
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-sm-8">
                     <p>Tenancy agreement</p>
-                    <img src="assets/img/tenancy-agree-sample.jpg" class="rounded mt-3 img-fluid" alt="tenancy" />
+                    <img src="../../../../../../assets/img/tenancy-agree-sample.jpg" class="rounded mt-3 img-fluid" alt="tenancy" />
                     <input type='file' style="display:none;" />
                 </div>
             </div>
@@ -113,8 +113,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="align-middle" onclick="location.href='offer-details.html'"
-                                style="cursor: pointer;">
+                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
                                 <td>12-03-2021</td>
                                 <td>Tylermiller</td>
                                 <td>Paradise Residence</td>
@@ -123,8 +122,7 @@
                                 <td>Yes</td>
                                 <td>Rudy</td>
                             </tr>
-                            <tr class="align-middle" onclick="location.href='offer-details.html'"
-                                style="cursor: pointer;">
+                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
                                 <td>12-03-2021</td>
                                 <td>Tylermiller</td>
                                 <td>Paradise Residence</td>
@@ -133,8 +131,7 @@
                                 <td>Yes</td>
                                 <td>Rudy</td>
                             </tr>
-                            <tr class="align-middle" onclick="location.href='offer-details.html'"
-                                style="cursor: pointer;">
+                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
                                 <td>12-03-2021</td>
                                 <td>Tylermiller</td>
                                 <td>Paradise Residence</td>
@@ -150,12 +147,12 @@
 
             </div>
         </section>
-        <div includehtml="footer.html" class="mt-auto"></div>
+        <div includehtml="/src/footer.html" class="mt-auto"></div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/includefile.js"></script>
+    <script src="../../../../../../assets/js/main.js"></script>
+    <script src="../../../../../../assets/js/includefile.js"></script>
     <script>
         includehtml();
     </script>
