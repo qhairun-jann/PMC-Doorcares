@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Building Details | Doorcares</title>
+    <title>Building Details | PMC Doorcares</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,144 +18,61 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-100 h-100 p-3 mt-5 mx-auto flex-column">
-        <section class="mb-5">
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-sm-10">
-
-                        <div class="row mb-3 float-none">
-                            <div class="col-12">
-                                <h3 class="building__title--h1 float-start"> Building Name, Location</h3>
-                                <button class="building__title--h1 btn btn-primary float-end">View all units</button>
-                            </div>
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">Building Details</h1>
+                    <hr />
+                    <div class="row my-5 justify-content-between text-start">
+                        <div class="col align-self-center">
+                            <h5>KL Gateway Residences</h5>
+                            <p>Bangsar South, Kuala Lumpur</p>
                         </div>
-                        <div class="row">
-                            <div class="col-lg col-md-12 mb-2 d-flex flex-column">
-                                <div class="float-none">
-                                    <p class="float-start building__title"> Pictures </p>
-                                    <a class="float-end btn btn-primary"> Upload pictures </a>
-                                </div>
-                                <div class="card">
-                                    <img src="/assets/img/placeholder.png" width="100%">
-                                </div>
-
-                            </div>
-                            <div class="col-lg col-md-12 mb-2 d-flex flex-column">
-                                <div class="float-none">
-                                    <p class="float-start building__title"> Videos </p>
-                                    <a class="float-end btn btn-primary"> Upload Video </a>
-                                </div>
-                                <div class="card">
-                                    <img src="/assets/img/placeholder.png" width="100%">
-                                </div>
-
-                            </div>
-                            <div class="col-lg col-md-12 mb-2 d-flex flex-column">
-                                <div class="float-none">
-                                    <p class="float-start building__title"> 360&#176; </p>
-                                    <a class="float-end btn btn-primary"> Upload VR </a>
-                                </div>
-                                <div class="card">
-                                    <img src="/assets/img/placeholder.png" width="100%">
-                                </div>
-
-                            </div>
+                        <div class="col text-end align-self-center">
+                            <a href="/src/app-library/properties/building/all-unit/all-unit.html"
+                                class="btn btn-primary">View all units</a>
                         </div>
-                        <hr class="mt-5" />
-                        <form class="needs-validation text-start">
-                            <div class="row g-3">
-                                <div class="row g-3 mt-0">
-                                    <div class="col-12">
-                                        <h3>Building's details</h3>
-                                    </div>
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Building Name</label>
-                                        <input type="text" class="form-control" id="username" value="john doe">
-                                    </fieldset>
+                    </div>
+                    <hr />
+                    <div class="row mt-5">
+                        <div class="col-lg col-md-12 mb-2 d-flex flex-column">
+                            <div class="float-none">
+                                <p class="float-start building__title"> Pictures </p>
+                                <a class="float-end btn btn-primary"> Upload pictures </a>
+                            </div>
+                            <div class="card">
+                                <img src="/assets/img/placeholder.png" width="100%">
+                            </div>
 
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="passport" class="form-label">Unit Number</label>
-                                        <input type="text" class="form-control" id="passport" value="B777666D">
-                                    </fieldset>
+                        </div>
+                        <div class="col-lg col-md-12 mb-2 d-flex flex-column">
+                            <div class="float-none">
+                                <p class="float-start building__title"> Videos </p>
+                                <a class="float-end btn btn-primary"> Upload Video </a>
+                            </div>
+                            <div class="card">
+                                <img src="/assets/img/placeholder.png" width="100%">
+                            </div>
 
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Street name</label>
-                                        <input type="text" class="form-control" id="ic" value="KL Street">
-                                    </fieldset>
+                        </div>
+                        <div class="col-lg col-md-12 mb-2 d-flex flex-column">
+                            <div class="float-none">
+                                <p class="float-start building__title"> 360&#176; </p>
+                                <a class="float-end btn btn-primary"> Upload VR </a>
+                            </div>
+                            <div class="card">
+                                <img src="/assets/img/placeholder.png" width="100%">
+                            </div>
 
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Residential area</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Post code</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">State</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Country</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Developer</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Type</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Tenure</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Total blocks</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Total levels</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                    <fieldset class="col-6 col-md-4">
-                                        <label for="" class="form-label">Total units</label>
-                                        <input type="text" class="form-control" id="" value="">
-                                    </fieldset>
-
-                                </div>
-
-                        </form>
-
-                        <hr class="mt-5" />
-                        <form class="needs-validation text-start">
-                            <div class="row g-3">
-                                <!-- <div class="row g-3 mt-0"> -->
+                        </div>
+                    </div>
+                    <hr class="mt-5" />
+                    <form class="needs-validation text-start">
+                        <div class="row g-3">
+                            <div class="row g-3 mt-0">
                                 <div class="col-12">
-                                    <h3>Building management</h3>
+                                    <h3>Building's details</h3>
                                 </div>
-
-                                <fieldset class="col-12">
-                                    <label for="Management" class="form-label">
-                                        <h4>Management company</h4>
-                                    </label>
-                                    <select class="form-control form-select" id="Management">
-                                        <option selected value="">Choose</option>
-                                        <option>------</option>
-                                        <option>------</option>
-                                    </select>
-                                </fieldset>
-
                                 <fieldset class="col-6 col-md-4">
                                     <label for="" class="form-label">Building Name</label>
                                     <input type="text" class="form-control" id="username" value="john doe">
@@ -192,147 +109,233 @@
                                 </fieldset>
 
                                 <fieldset class="col-6 col-md-4">
-                                    <label for="" class="form-label">Contact Person</label>
+                                    <label for="" class="form-label">Developer</label>
                                     <input type="text" class="form-control" id="" value="">
                                 </fieldset>
 
                                 <fieldset class="col-6 col-md-4">
-                                    <label for="" class="form-label">Contact Number</label>
-                                    <input type="number" class="form-control" id="" value="">
+                                    <label for="" class="form-label">Type</label>
+                                    <input type="text" class="form-control" id="" value="">
                                 </fieldset>
 
                                 <fieldset class="col-6 col-md-4">
-                                    <label for="" class="form-label">Email</label>
+                                    <label for="" class="form-label">Tenure</label>
                                     <input type="text" class="form-control" id="" value="">
                                 </fieldset>
+
+                                <fieldset class="col-6 col-md-4">
+                                    <label for="" class="form-label">Total blocks</label>
+                                    <input type="text" class="form-control" id="" value="">
+                                </fieldset>
+
+                                <fieldset class="col-6 col-md-4">
+                                    <label for="" class="form-label">Total levels</label>
+                                    <input type="text" class="form-control" id="" value="">
+                                </fieldset>
+
+                                <fieldset class="col-6 col-md-4">
+                                    <label for="" class="form-label">Total units</label>
+                                    <input type="text" class="form-control" id="" value="">
+                                </fieldset>
+
                             </div>
 
-                            <hr class="mt-5" />
+                    </form>
 
-                            <div class="row mt-3">
-                                <div class="col-12">
-                                    <h3>Building Facilities</h3>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="security">
-                                        <label class="form-check-label" for="security">24 hours security</label>
-                                    </fieldset>
-
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">-
-                                        </label>
-                                    </fieldset>
-
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">-</label>
-                                    </fieldset>
-
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">- </label>
-                                    </fieldset>
-                                </div>
-                                <div class="col-12  col-md-6 ">
-                                    <!-- <h4 class="mb-3"></h4> -->
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">-</label>
-                                    </fieldset>
-
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">-
-                                        </label>
-                                    </fieldset>
-
-                                    <fieldset class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="">
-                                        <label class="form-check-label" for="">-</label>
-                                    </fieldset>
-
-                                </div>
+                    <hr class="mt-5" />
+                    <form class="needs-validation text-start">
+                        <div class="row g-3">
+                            <!-- <div class="row g-3 mt-0"> -->
+                            <div class="col-12">
+                                <h3>Building management</h3>
                             </div>
 
-                            <hr class="mt-5" />
-                            <h3>Building utilities</h3>
+                            <fieldset class="col-12">
+                                <label for="Management" class="form-label">
+                                    <h4>Management company</h4>
+                                </label>
+                                <select class="form-control form-select" id="Management">
+                                    <option selected value="">Choose</option>
+                                    <option>------</option>
+                                    <option>------</option>
+                                </select>
+                            </fieldset>
 
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Building Name</label>
+                                <input type="text" class="form-control" id="username" value="john doe">
+                            </fieldset>
 
-                        </form>
-                        <div class="table-responsive text-start">
-                            <table class="table table-dark table-striped table-hover">
-                                <thead>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="passport" class="form-label">Unit Number</label>
+                                <input type="text" class="form-control" id="passport" value="B777666D">
+                            </fieldset>
 
-                                    <tr class="align-middle">
-                                        <td class="py-3">
-                                            <h6 class="m-0">Utilities</h6>
-                                        </td>
-                                        <td class="text-center">
-                                            <h6 class="m-0">Company name</h6>
-                                        </td>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Street name</label>
+                                <input type="text" class="form-control" id="ic" value="KL Street">
+                            </fieldset>
 
-                                    <tr class="align-middle">
-                                        <td>Cable TV</td>
-                                        <td class="text-center" id="a1">-</td>
-                                        <td class="text-center">
-                                            <button class="btn btn-outline-info btn-sm w-md-50" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal" onclick="handleViewEdit(event)"  type="button">
-                                                View/Edit </button>
-                                        </td>
-                                    </tr>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Residential area</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
 
-                                    <tr class="align-middle">
-                                        <td>Electricity</td>
-                                        <td class="text-center" id="a2">-</td>
-                                        <td class="text-center"><button class="btn btn-outline-info btn-sm w-md-50"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
-                                                View/Edit </button> </td>
-                                    </tr>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Post code</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
 
-                                    <tr class="align-middle">
-                                        <td>Gas</td>
-                                        <td class="text-center" id="a3">-</td>
-                                        <td class="text-center"><button class="btn btn-outline-info btn-sm w-md-50"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
-                                                View/Edit </button> </td>
-                                    </tr>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">State</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
 
-                                    <tr class="align-middle">
-                                        <td>Internet</td>
-                                        <td class="text-center" id="a4">-</td>
-                                        <td class="text-center"><button class="w-md-50 btn btn-outline-info btn-sm"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="handleViewEdit(event)" type="button">
-                                                View/Edit </button> </td>
-                                    </tr>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
 
-                                </tbody>
-                            </table>
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Contact Person</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
+
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Contact Number</label>
+                                <input type="number" class="form-control" id="" value="">
+                            </fieldset>
+
+                            <fieldset class="col-6 col-md-4">
+                                <label for="" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="" value="">
+                            </fieldset>
                         </div>
-                        <div class="row justify-content-end mt-5">
-                            <div class="col-4">
-                                <button class="w-100 btn btn-primary" type="submit">
-                                    Edit/Save
-                                    <i class="far fa-arrow-alt-circle-right"></i>
-                                </button>
+
+                        <hr class="mt-5" />
+
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <h3>Building Facilities</h3>
                             </div>
+                            <div class="col-12 col-md-6">
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="security">
+                                    <label class="form-check-label" for="security">24 hours security</label>
+                                </fieldset>
+
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">-
+                                    </label>
+                                </fieldset>
+
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">-</label>
+                                </fieldset>
+
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">- </label>
+                                </fieldset>
+                            </div>
+                            <div class="col-12  col-md-6 ">
+                                <!-- <h4 class="mb-3"></h4> -->
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">-</label>
+                                </fieldset>
+
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">-
+                                    </label>
+                                </fieldset>
+
+                                <fieldset class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="">
+                                    <label class="form-check-label" for="">-</label>
+                                </fieldset>
+
+                            </div>
+                        </div>
+
+                        <hr class="mt-5" />
+                        <h3>Building utilities</h3>
+
+
+                    </form>
+                    <div class="table-responsive text-start">
+                        <table class="table table-dark table-striped table-hover">
+                            <thead>
+
+                                <tr class="align-middle">
+                                    <td class="py-3">
+                                        <h6 class="m-0">Utilities</h6>
+                                    </td>
+                                    <td class="text-center">
+                                        <h6 class="m-0">Company name</h6>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr class="align-middle">
+                                    <td>Cable TV</td>
+                                    <td class="text-center" id="a1">-</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-outline-info btn-sm w-md-50" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" onclick="handleViewEdit(event)"
+                                            type="button">
+                                            View/Edit </button>
+                                    </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                    <td>Electricity</td>
+                                    <td class="text-center" id="a2">-</td>
+                                    <td class="text-center"><button class="btn btn-outline-info btn-sm w-md-50"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            onclick="handleViewEdit(event)" type="button">
+                                            View/Edit </button> </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                    <td>Gas</td>
+                                    <td class="text-center" id="a3">-</td>
+                                    <td class="text-center"><button class="btn btn-outline-info btn-sm w-md-50"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            onclick="handleViewEdit(event)" type="button">
+                                            View/Edit </button> </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                    <td>Internet</td>
+                                    <td class="text-center" id="a4">-</td>
+                                    <td class="text-center"><button class="w-md-50 btn btn-outline-info btn-sm"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            onclick="handleViewEdit(event)" type="button">
+                                            View/Edit </button> </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row justify-content-end mt-5">
+                        <div class="col-4">
+                            <button class="w-100 btn btn-primary" type="submit">
+                                Edit/Save
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
-
-
+        <div includehtml="/src/footer.html" class="mt-auto"></div>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -351,16 +354,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)">Company A</td>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="handleModal(event)">Company A</td>
                                 </tr>
                                 <tr>
-                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company B</td>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="handleModal(event)">Company B</td>
                                 </tr>
                                 <tr>
-                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company C</td>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="handleModal(event)">Company C</td>
                                 </tr>
                                 <tr>
-                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close" onclick="handleModal(event)" >Company D</td>
+                                    <td class="modal-company-item" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="handleModal(event)">Company D</td>
                                 </tr>
 
 
