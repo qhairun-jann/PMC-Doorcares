@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Check In, Renewal and Check Out | PMC Doorcares</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body class="p-0 bg-dark h-100 bg-dark">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+        <article class="container ">
+            <section class="row justify-content-center">
+                <section class="col-md-10">
+                    <h1 class="mt-5 text-white text-center">Check in, Renewal and Check Out</h1>
+                    <hr class="bg-white" />
+                    <div class="filter js-navbar">
+                        <ul class="nav nav-pills nav-fill nav-center">
+                            <li class="nav-item nav-link fixed-width me-5" >
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Choose start tenancy year
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="javascript:void">
+                                                <input class="form-control" type="date" placeholder="Search"
+                                                    aria-label="Search" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            
+                            
+                            <li class="nav-item nav-link fixed-width ms-1">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Choose end tenancy year 
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="javascript:void">
+                                                <input class="form-control" type="date" placeholder="Search"
+                                                    aria-label="Search" /></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="table-responsive mt-5">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <th >
+                                    Tenancy start date
+                                </th>
+                                <th>
+                                    Date of check in
+                                </th>
+                                <th>
+                                    Time of check in
+                                </th>
+                                <th>
+                                    Tenancy end date
+                                </th>
+                                <th >
+                                    Date of check out
+                                </th>
+                                <th >
+                                    Time of check out
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle">
+                                    <td>12-03-2021</td>
+                                    <td>00:00</td>
+                                    <td>12-03-2021</td>
+                                    <td>12-03-2021</td>
+                                    <td>12-03-2021</td>
+                                    <td>00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <div includehtml="/src/footer.html" class="mt-auto"></div>
+    </main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="/assets/js/includefile.js"></script>
+<script>
+    includehtml();
+</script>
+<script>
+    var app = new Vue({
+        el: '#vue-app',
+        data: {
+            noData: '',
+        }
+    })
+
+</script>
+
+</html>
