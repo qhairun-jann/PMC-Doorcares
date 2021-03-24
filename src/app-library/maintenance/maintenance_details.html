@@ -10,135 +10,169 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app">
-        <article class="row">
-            <section class="col-12">
-                <div class="float-start"> <img src="assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px"
-                        height="100px" /></div>
-                <div class="float-start mx-2" style="margin-top: 1.8rem;">
-                    <h3>Tenant name</h3>
+<body class="p-0 bg-dark h-100 bg-dark">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+        <article class="container">
+            <section class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="mt-5 text-white text-center">Maintenance Details</h1>
+                    <hr class="bg-white"/>
+                    <div class="d-flex my-4">
+                        <div class="align-self-center">
+                            <img src="/assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" />
+                        </div>
+                        <div class="align-self-center">
+                            <h3 class="text-white ms-5 my-0">Tenant name</h3>
+                        </div>
+                    </div>
+                    <hr class="bg-white" />
+                    <div class="table-responsive mt-5">
+                        <table class="table table-dark table-striped ">
+                            <tbody>
+                                <tr class="align-middle">
+                                    <th class="ps-2"> Status </th>
+                                    <td>
+                                        <fieldset>
+                                            <select class="form-control form-select" id="status">
+                                                <option selected> Select Status </option>
+                                                <option>Resolved</option>
+                                                <option>New</option>
+                                                <option>In progress</option>
+                                            </select>
+                                        </fieldset>
+                                    </td>
+
+                                </tr>
+                                <tr class="align-middle">
+                                    <th class="ps-2"> Applied date </th>
+                                    <td> DD-MM-YYYY </td>
+
+                                </tr>
+                                <tr class="align-middle">
+                                    <th class="ps-2"> Message </th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p class="fw-bold" v-if="misc === 'picture'">Picture : </p>
+                                        <p class="fw-bold" v-if="misc === 'video'"> Video : </p>
+
+                                        <img src="/assets/pictures/pic-room-1.jpg" class="w-100" height="370px" alt=".."
+                                            v-if="misc === 'picture'">
+                                        <video class="w-100" height="370px" controls v-if="misc === 'video'">
+                                            <source src="/assets/videos/vid-room-1.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="timeline mt-5">
+                        <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3"
+                            data-name="cat3, unit3, bldng3, date3">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1">
+                            <div class="content">
+                                <small>5/5/2021 | 6:30pm</small>
+                                <h2>Title</h2>
+                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
-                <hr />
             </section>
-            <section class="col-12 text-start table-responsive">
-                <table class="table table-dark table-striped ">
-                    <tbody>
-                        <tr class="align-middle">
-                            <th class="ps-2"> Status </th>
-                            <td>
-                                <fieldset class="col-6 size-2">
-                                    <select class="form-control form-select" id="status">
-                                        <option value="" selected> Select Status </option>
-                                        <option>Resolved</option>
-                                        <option>New</option>
-                                        <option>In progress</option>
-                                    </select>
-                                </fieldset>
-                            </td>
-
-                        </tr>
-                        <tr class="align-middle">
-                            <th class="ps-2"> Applied date </th>
-                            <td> DD-MM-YYYY </td>
-
-                        </tr>
-                        <tr class="align-middle">
-                            <th class="ps-2"> Message </th>
-                            <td> ------------------------------ </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <p class="fw-bold" v-if="misc === 'picture'">Picture : </p>
-                                <p class="fw-bold" v-if="misc === 'video'"> Video : </p>
-
-                                <img src="assets/pictures/pic-room-1.jpg" class="w-100" height="370px" alt=".."
-                                    v-if="misc === 'picture'">
-                                <video class="w-100" height="370px" controls v-if="misc === 'video'">
-                                    <source src="assets/videos/vid-room-1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="col-12 my-3">
-                <div class=" row">
-                    <section class="timeline-line-x col-2">
-
-                    </section>
-                    <section class="col-10 p-0 position-relative m-child-1" id="tl_container">
-                        <div class="tl_line border position-absolute" ></div>
-                        <div class="timeline-line-c  border border-light rounded text-start p-3 ">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="bg-secondary px-2 py-1"> Tenant request for a &lt;category&gt; maintenance </p>
-                            <button class="btn btn-outline-info">Send Message To</button>
-
-                        </div>
-                        <div class="timeline-line-c  border border-light rounded text-start p-3" style="margin-left:10%;">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="px-2 py-1" style="background-color: #a59038;">
-                                Person In Charge to Tenant: What time should the
-                                maintenance team come from service? What time are you available ?
-                            </p>
-                            <button class="btn btn-outline-info"> Reply </button>
-
-                        </div>
-
-                        <div class="timeline-line-c  border border-light rounded text-start p-3" style="margin-left:10%;">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="px-2 py-1  bg-warning">
-                                Tenant to Person In Charge: Today after 2pm, I will be in the apartment
-                            </p>
-                            <button class="btn btn-outline-info"> Reply </button>
-                        </div>
-                        <div class="timeline-line-c  border border-light rounded text-start p-3 ">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="bg-secondary px-2 py-1"> Apppointment for maintenance fixed at 2.30pm </p>
-                            <button class="btn btn-outline-info">Send Message To</button>
-
-                        </div>
-                        <div class="timeline-line-c  border border-light rounded text-start p-3 ">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="bg-secondary px-2 py-1">
-                                Maintenance in progress
-                            </p>
-                            <button class="btn btn-outline-info">Send Message To</button>
-
-                        </div>
-                        <div class="timeline-line-c  border border-light rounded text-start p-3 ">
-                            <h6 class="tl-arrow"> DD-MM-YYYY | TIME </h6>
-                            <p class="bg-secondary px-2 py-1">
-                                Maintenance in complete
-                            </p>
-                            <button class="btn btn-outline-info">Send Message To</button>
-
-                        </div>
-
-                    </section>
-                </div>
-
-            </section>
-
-
         </article>
-        <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
+        <div includehtml="/src/footer.html" class="mt-auto"></div>
     </main>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="assets/js/main.js"></script> -->
-<script src="assets/js/includefile.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/includefile.js"></script>
 <script>
     includehtml();
 </script>
