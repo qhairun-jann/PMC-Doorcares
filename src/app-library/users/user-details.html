@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> User detail </title>
+    <title> User | PMC Doorcares </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,10 +16,44 @@
 
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
+
+
+    
     <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center">
                 <article class="col-sm-10">
+
+                    <section class="row">
+                        <section class="col-12">
+                        <section class="row justify-content-center align-items-center my-child-1">
+                            <div class="col-3 col-md-3 col-lg-2">
+                                <img src="/assets/img/avatar.svg" alt="/assets/img/avatar.svg" width="100%"
+                                height="100px" />
+                            </div>
+                            <div class="col-9 col-md-9 col-lg-3 text-center my-1">
+                                
+                                <h5 class="fw-bold text-start">LANDLORD LONG NAME</h5>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 offset-lg-1 my-1 text-start ">
+                                <label for="email" class="form-label fw-bold">Role</label>
+                                <input type="text" class="form-control" placeholder="-">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 m-0 mt-1 mt-md-0 text-start fw-bold">
+                                <label for="email" class="form-label">Verification status</label>
+                                <input type="text" class="form-control" placeholder="-">
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <section class="row ">
+                    <div class="col-12 text-start">
+                        <p class="pt-2 m-0"> Account created on dd-mm-yyyy by &lt;name&gt; </p>
+                        <p class=" m-0"> Last edited on dd-mm-yyyy &lt;name&gt;</p>
+                        
+                    </div>
+                    <hr class=" my-4">
+                    </section>
                     <section class="row">
                         <div class="col-12 col-md-6 col-xl-3 text-center " v-for="(btn,index) in buttons" :key="index">
                             <button class="btn btn-outline-info my-2 w-100"
