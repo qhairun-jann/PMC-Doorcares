@@ -4,34 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> User Manual | Doorcares </title>
+    <title> User Manual | PMC Doorcares </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column" id="vue-app">
+<body class="p-0 bg-dark h-100 text-white bg-dark">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column mt-5" id="vue-app">
 
         <div class="container ">
             <div class="row gy-4 mt-3">
-                <section class="col-12 text-xl-start">
-                    <form method="post" enctype="multipart/form-data" >
-                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File </label>
-                        <input type="file" id="upload" hidden name="file-upload-field" >
+                <section class="col-12">
+                    <form method="post" enctype="multipart/form-data">
+                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File
+                        </label>
+                        <input type="file" id="upload" hidden name="file-upload-field">
                     </form>
                 </section>
                 <hr>
-                <section class="col-12 col-lg-6 col-xl-3" v-for="(item,key) in pdfArray">
-                    <p class="size-2 m-1 pointer">
+                <section class="row col-12 col-md-6 col-lg-6 col-xl-3 mx-auto" v-for="(item,key) in pdfArray">
+                    <p class="col-12 size-2 mt-4 pointer text-center">
                         {{item}}
                     </p>
-                    <figure class="col-12 position-relative pointer">
+                    <figure class="col-12 mx-1 position-relative pointer">
                         <!-- <h1>{{item}}</h1> -->
                         <img src="/assets/img/pdf.svg"
                             style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
@@ -43,9 +44,7 @@
                 </section>
             </div>
         </div>
-        <footer class="mt-auto text-white-50">
-            <p class="mt-5">&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
+        <footer includehtml="/src/footer.html" class="mt-auto">
         </footer>
     </main>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Requirement| Recommended Properties | Doorcares</title>
+    <title>Requirement and Recommended Properties | Doorcares</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,184 +17,189 @@
 
 <body class="p-0 bg-dark text-white bg-dark">
     <div class="sticky-top" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="container mb-5">
-            <h1 class="mt-5 text-white text-center">Requirement and recommended properties</h1>
-            <hr />
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+        <article class="container">
+            <section class="row justify-content-center">
+                <section class="col-sm-10">
+                    <h1 class="text-white text-center">Requirement and recommended properties</h1>
+                    <hr />
+                    <div class="row my-5 justify-content-center">
+                        <div class="filter js-navbar">
+                            <ul class="nav nav-pills nav-fill nav-center">
+                                <li>
+                                <li class="nav-item nav-link">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Date received
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <input class="form-control" type="date" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
 
-            <div class="row my-5 justify-content-center">
-                <div class="filter js-navbar">
-                    <ul class="nav nav-pills nav-fill">
-                        <li>
-                        <li class="nav-item nav-link">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Date received
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                                <li>
+                                <li class="nav-item nav-link">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            User name
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <input class="form-control " type="text" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                            <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                                            <li><a class="dropdown-item" href="#">Otto1</a></li>
+                                            <li><a class="dropdown-item" href="#">Thornton</a></li>
+                                            <li><a class="dropdown-item" href="#">@fat</a></li>
+                                            <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                                            <li><a class="dropdown-item" href="#">twitter</a></li>
+                                            <li><a class="dropdown-item" href="#">fat</a></li>
+                                            <li><a class="dropdown-item" href="#">Otto3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
 
-                        <li>
-                        <li class="nav-item nav-link">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    User name
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                    <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
-                                    <li><a class="dropdown-item" href="#">Otto1</a></li>
-                                    <li><a class="dropdown-item" href="#">Thornton</a></li>
-                                    <li><a class="dropdown-item" href="#">@fat</a></li>
-                                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
-                                    <li><a class="dropdown-item" href="#">twitter</a></li>
-                                    <li><a class="dropdown-item" href="#">fat</a></li>
-                                    <li><a class="dropdown-item" href="#">Otto3</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                                <li>
+                                <li class="nav-item nav-link">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Preferred move in date
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <input class="form-control" type="date" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
 
-                        <li>
-                        <li class="nav-item nav-link">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Preferred move in date
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                                <li>
+                                <li class="nav-item nav-link">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Budget
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <input class="form-control " type="text" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                            <li><a class="dropdown-item mt-3" href="#">Rm 200k - below</a></li>
+                                            <li><a class="dropdown-item" href="#">Rm 500k - below </a></li>
+                                            <li><a class="dropdown-item" href="#">Rm 800k - below</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
 
-                        <li>
-                        <li class="nav-item nav-link">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Budget
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                    <li><a class="dropdown-item mt-3" href="#">Rm 200k - below</a></li>
-                                    <li><a class="dropdown-item" href="#">Rm 500k - below </a></li>
-                                    <li><a class="dropdown-item" href="#">Rm 800k - below</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                                <li>
+                                <li class="nav-item nav-link">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Duration of tenancy
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <input class="form-control " type="text" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                            <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
+                                            <li><a class="dropdown-item" href="#">Appliance</a></li>
+                                            <li><a class="dropdown-item" href="#">household</a></li>
+                                            <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                                            <li><a class="dropdown-item" href="#">Others</a></li>
+                                            <li><a class="dropdown-item" href="#">Pay cash to the agent</a></li>
+                                            <li><a class="dropdown-item" href="#">property viewing</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
 
-                        <li>
-                        <li class="nav-item nav-link">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Duration of tenancy
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                    <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
-                                    <li><a class="dropdown-item" href="#">Appliance</a></li>
-                                    <li><a class="dropdown-item" href="#">household</a></li>
-                                    <li><a class="dropdown-item" href="#">Outdoor</a></li>
-                                    <li><a class="dropdown-item" href="#">Electrical</a></li>
-                                    <li><a class="dropdown-item" href="#">Others</a></li>
-                                    <li><a class="dropdown-item" href="#">Pay cash to the agent</a></li>
-                                    <li><a class="dropdown-item" href="#">property viewing</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        </li>
+                            </ul>
 
-                    </ul>
-
-                    <div class="row mt-4">
-                        <div class="col">
-                            <div class="table-responsive text-start">
-                                <table class="table table-dark table-striped table-hover">
-                                    <thead>
-                                        <tr>
-                                            <td>
-                                                <h6>Date received</h6>
-                                            </td>
-                                            <td>
-                                                <h6>Username</h6>
-                                            </td>
-                                            <td>
-                                                <h6>Preferred move in date</h6>
-                                            </td>
-                                            <td>
-                                                <h6>Budget</h6>
-                                            </td>
-                                            <td>
-                                                <h6>Duration of tenancy</h6>
-                                            </td>
-                                            <td>
-                                                <h6>Forwards to rizurf coordinator</h6>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="align-middle pointer" onclick="location.href='/requirement-property-details.html'">
-                                            <td>-</td>
-                                            <td>Mr.A</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>6</td>
-                                        </tr>
-                                        <tr class="align-middle pointer" onclick="location.href='/requirement-property-details.html'">
-                                            <td>-</td>
-                                            <td>Mr.B</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>                                        </tr>
-                                        <tr class="align-middle pointer" onclick="location.href='/requirement-property-details.html'">
-                                            <td>-</td>
-                                            <td>Mr.C</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="row mt-4">
+                                <div class="col">
+                                    <div class="table-responsive text-start">
+                                        <table class="table table-dark table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h6>Date received</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>Username</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>Preferred move in date</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>Budget</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>Duration of tenancy</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>Forwards to rizurf coordinator</h6>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="align-middle pointer"
+                                                    onclick="location.href='./requirement-property-details.html'">
+                                                    <td>-</td>
+                                                    <td>Mr.A</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr class="align-middle pointer"
+                                                    onclick="location.href='./requirement-property-details.html'">
+                                                    <td>-</td>
+                                                    <td>Mr.B</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                </tr>
+                                                <tr class="align-middle pointer"
+                                                    onclick="location.href='./requirement-property-details.html'">
+                                                    <td>-</td>
+                                                    <td>Mr.C</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
 
-        </section>
-        <div includehtml="/src/footer.html" class="mt-auto">
-
-        </div>
+                </section>
+            </section>
+        </article>
+        <footer includehtml="/src/footer.html" class="mt-auto"> </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

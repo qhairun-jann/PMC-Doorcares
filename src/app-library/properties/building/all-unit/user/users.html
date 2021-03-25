@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Users </title>
+    <title> Users | PMC Doorcares </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,12 +17,12 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column my-child-2" id="vue-app">
-        <article class="row justify-content-center">
+        <div class="row justify-content-center">
             <fieldset class="col-5 ">
                 <label for="email" class="form-label text-white size-3">Choose Tenancy Date</label>
                 <input type="date" class="form-control" id="date" value="2018-07-22">
             </fieldset>
-        </article>
+        </div>
         <article class="row text-start table-responsive">
             <table class="table table-dark table-striped ">
                 <thead>
@@ -52,10 +52,8 @@
                 </tbody>
             </table>
         </article>
-        <footer class="mt-auto text-white-50">
-            <p>&copy; <span id="year"></span>
-                Copyright by Jann Properties</p>
-        </footer>
+        <div includehtml="/src/footer.html" class="mt-auto"></div>
+    </main>
     </main>
 </body>
 

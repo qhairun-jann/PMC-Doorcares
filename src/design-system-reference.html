@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Static design system | Doorcares</title>
+    <title>Static design system | PMC Doorcares</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,8 +41,8 @@
                 
                     &lt;body class="p-0 bg-dark h-100 text-center text-white bg-dark"&gt;
                     &lt;nav class="sticky-top fixedtop" includehtml="/src/navbar.html"&gt;&lt;/nav&gt;
-                        &lt;main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app" &gt;
-                            &lt;article class="container my-5"  &gt;
+                        &lt;main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app" &gt;
+                            &lt;article class="container"  &gt;
                                 &lt;section class="row justify-content-center"  &gt;
                                     &lt;section class="col-sm-10"  &gt;
                                     
@@ -326,7 +326,24 @@
                       &lt;/div&gt;
                     &lt;/figure&gt;
                 &lt;/section&gt;
-                &lt;/div&gt;</code></pre>
+                &lt;/div&gt;
+            
+
+                &lt;script src="https://cdn.jsdelivr.net/npm/vue@2"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                        var app = new Vue({
+                        el: '#vue-app',
+                        data: {
+                        noData: '',
+                            pdfArray: ['TV manual', 'AC manual', 'Refrigerator manual', 'Microwave oven manual']
+                        }
+                    })
+                &lt;/script&gt;
+            
+            
+            
+            
+            </code></pre>
 
             <br><br><br>
 
@@ -351,6 +368,72 @@
                     </figure>
                 </section>
             </div>
+
+            <br><br>
+            <hr><hr>
+            <br><br>
+            <pre><code>
+                &lt;div class="row gy-4 mt-3"&gt;
+                    &lt;section class="col-12"&gt;
+                        &lt;form method="post" enctype="multipart/form-data"&gt;
+                        &lt;label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"&gt; + Upload File
+                        &lt;/label&gt;
+                        &lt;input type="file" id="upload" hidden name="file-upload-field"&gt;
+                        &lt;/form&gt;
+                        &lt;/section&gt;
+                        &lt;hr&gt;
+                        &lt;section class="row col-12 col-md-6 col-lg-6 col-xl-3 mx-auto" v-for="(item,key) in pdfArray"&gt;
+                        &lt;p class="col-12 size-2 mt-4 pointer text-center"&gt;
+                        {/{item}/}
+                        &lt;/p&gt;
+                        &lt;figure class="col-12 mx-1 position-relative pointer"&gt;
+                        &lt;img src="/assets/img/pdf.svg"
+                        style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
+                        alt="/assets/img/pdf.svg"&gt;
+                        &lt;div class="d-flex justify-content-center align-items-center" style="height: 240px;"&gt;
+                        &lt;h3 style="letter-spacing:2px"&gt;PDF&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;/figure&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+
+                &lt;script src="https://cdn.jsdelivr.net/npm/vue@2"&gt;&lt;/script&gt;
+                &lt;script&gt;
+                        var app = new Vue({
+                        el: '#vue-app',
+                        data: {
+                        noData: '',
+                            pdfArray: ['TV manual', 'AC manual', 'Refrigerator manual', 'Microwave oven manual']
+                        }
+                    })
+                &lt;/script&gt;
+            </code></pre>
+
+            <br><br>
+            <div class="row gy-4 mt-3">
+                <section class="col-12">
+                    <form method="post" enctype="multipart/form-data">
+                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File
+                        </label>
+                        <input type="file" id="upload" hidden name="file-upload-field">
+                    </form>
+                </section>
+                <hr>
+                <section class="row col-12 col-md-6 col-lg-6 col-xl-3 mx-auto" v-for="(item,key) in pdfArray">
+                    <p class="col-12 size-2 mt-4 pointer text-center">
+                        {{item}}
+                    </p>
+                    <figure class="col-12 mx-1 position-relative pointer">
+                        <img src="/assets/img/pdf.svg"
+                            style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
+                            alt="/assets/img/pdf.svg">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 240px;">
+                            <h3 style="letter-spacing:2px">PDF</h3>
+                        </div>
+                    </figure>
+                </section>
+            </div>
+
         </article>
         <br><br>
         <h1> video </h1>
