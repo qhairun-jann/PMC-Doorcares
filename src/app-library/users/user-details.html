@@ -16,44 +16,49 @@
 
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
-
-
-    
     <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center">
                 <article class="col-sm-10">
-
+                    <h1 class="text-white text-center">Users</h1>
+                    <hr class="bg-white" />
+                    <form class="needs-validation text-start" novalidate>
                     <section class="row">
                         <section class="col-12">
-                        <section class="row justify-content-center align-items-center my-child-1">
-                            <div class="col-3 col-md-3 col-lg-2">
-                                <img src="/assets/img/avatar.svg" alt="/assets/img/avatar.svg" width="100%"
-                                height="100px" />
-                            </div>
-                            <div class="col-9 col-md-9 col-lg-3 text-center my-1">
-                                
-                                <h5 class="fw-bold text-start">LANDLORD LONG NAME</h5>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3 offset-lg-1 my-1 text-start ">
-                                <label for="email" class="form-label fw-bold">Role</label>
-                                <input type="text" class="form-control" placeholder="-">
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3 m-0 mt-1 mt-md-0 text-start fw-bold">
-                                <label for="email" class="form-label">Verification status</label>
-                                <input type="text" class="form-control" placeholder="-">
-                            </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="avatar-upload d-flex">
+                                            <div class="avatar-preview">
+                                                <div id="imagePreview"
+                                                    style="background-image: url(/assets/img/avatar.svg);">
+                                                </div>
+                                            </div>
+                                            <div class="align-self-center ms-3">
+                                                <h5>John Doe Alexander</h5>
+                                            </div>
+                                        </div>
+                                        <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                                        <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Role</label>
+                                        <input type="text" class="form-control" value="-">
+                                        <div class="invalid-feedback">
+                                            Please select one
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="form-label">Verification Status</label>
+                                        <input type="text" class="form-control" value="-">
+                                        <div class="invalid-feedback">
+                                            Please select one
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
                         </section>
                     </section>
-                </section>
-                <section class="row ">
-                    <div class="col-12 text-start">
-                        <p class="pt-2 m-0"> Account created on dd-mm-yyyy by &lt;name&gt; </p>
-                        <p class=" m-0"> Last edited on dd-mm-yyyy &lt;name&gt;</p>
-                        
-                    </div>
-                    <hr class=" my-4">
-                    </section>
+                    </form>
                     <section class="row">
                         <div class="col-12 col-md-6 col-xl-3 text-center " v-for="(btn,index) in buttons" :key="index">
                             <button class="btn btn-outline-info my-2 w-100"
@@ -68,57 +73,57 @@
                                 <h3>Personal Details</h3>
                             </div>
                             <fieldset class="col-6 col-xl-3">
-                                <label class="form-label text-white">Username</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" for="username">Username</label>
+                                <input type="text" class="form-control" id="Username" placeholder="username" >
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
-                                <label for="" class="form-label text-white">Family/Sur Name (Optional)</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="family" >Family/Sur Name (Optional)</label>
+                                <input type="text" class="form-control" id="family" placeholder="family" >
+                            </fieldset>
+
+                            <fieldset class="col-6 col-xl-3"  >
+                                <label for="" class="form-label text-white" for="pass-no" >Passport No.</label>
+                                <input type="text" class="form-control" id="pass-no" placeholder="1234567890">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3">
-                                <label for="" class="form-label text-white">Passport No.</label>
-                                <input type="text" class="form-control">
-                            </fieldset>
-
-                            <fieldset class="col-6 col-xl-3">
-                                <label for="" class="form-label text-white">Identification Number</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="ic" >Identification Number</label>
+                                <input type="text" class="form-control" id="ic" placeholder="1234567890">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Gender</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="gender" >Gender</label>
+                                <input type="text" class="form-control" id="gender" placeholder="gender" >
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Nationality</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="nationality">Nationality</label>
+                                <input type="text" class="form-control" id="nationality" placeholder="nationality" >
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Date of birth</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="dob">Date of birth</label>
+                                <input type="text" class="form-control" id="dob" placeholder="dob">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Age</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="age">Age</label>
+                                <input type="text" class="form-control"id="age" placeholder="age">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Occuption</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="occupation">Occuption</label>
+                                <input type="text" class="form-control" id="occupation" placeholder="occupation">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Company Name</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="company-name">Company Name</label>
+                                <input type="text" class="form-control" id="company-name" placeholder="company name" >
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white">Additional Role</label>
-                                <input type="text" class="form-control">
+                                <label for="" class="form-label text-white" for="additional-role">Additional Role</label>
+                                <input type="text" class="form-control" id="additional-role" placeholder="additional-role" >
                             </fieldset>
                         </section>
 
@@ -129,47 +134,47 @@
                             </div>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Block</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Block">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Level</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Level">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Unit</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Unit">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Building name</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="building name">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Lot/unit number</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Lot/unit number">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Street name</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Street name">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Residential area</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Residential area">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Post code</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Post code">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">City</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="City">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">State</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="State">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white">Country</label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <input type="text" class="form-control" placeholder="Country">
                             </fieldset>
                         </section>
 
@@ -195,52 +200,52 @@
                         <section class="row  text-start gy-4 mt-5">
 
                             <fieldset class="col-6">
-                                <label class="form-label text-white">Budget</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" for="budget" >Budget</label>
+                                <input type="text" class="form-control" id="budget" placeholder="Budget">
                             </fieldset>
                             <fieldset class="col-6">
-                                <label class="form-label text-white">Beds</label>
-                                <input type="text" class="form-control">
-                            </fieldset>
-
-                            <fieldset class="col-6">
-                                <label class="form-label text-white">Furnishing</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" for="beds" >Beds</label>
+                                <input type="text" class="form-control" id="beds" placeholder="Beds">
                             </fieldset>
 
                             <fieldset class="col-6">
-                                <label class="form-label text-white">Persomethig in date</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" for="furnishing" >Furnishing</label>
+                                <input type="text" class="form-control" id="furnishing"placeholder="Furnishing">
+                            </fieldset>
+
+                            <fieldset class="col-6">
+                                <label class="form-label text-white" id="per-date" >Persomethig in date</label>
+                                <input type="text" class="form-control" for="per-date" placeholder="Persomethig in date">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Total occupation</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" id="total-occupation" >Total occupation</label>
+                                <input type="text" class="form-control" for="total-occupation" placeholder="Total occupation" >
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Occupation</label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white" >Occupation</label>
+                                <input type="text" class="form-control"  placeholder="Occupation">
                             </fieldset>
 
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white">Nationality</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" placeholder="Nationality">
                             </fieldset>
 
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white">Gender</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" placeholder="Gender">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Duration of tenancy of </label>
-                                <input type="text" class="form-control">
+                                <label class="form-label text-white">Duration of tenancy </label>
+                                <input type="text" class="form-control" placeholder="Duration of tenancy" >
                             </fieldset>
 
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white">Pets</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" placeholder="pets">
                             </fieldset>
 
                             <fieldset class="col-12 ">
@@ -256,12 +261,12 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                         <section class="row  text-start gy-4 mt-5">
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white">Role</label>
-                                <input type="text" class="form-control"  placeholder="Prospect(tenant)" >
+                                <input type="text" class="form-control" placeholder="role">
                             </fieldset>
 
                             <fieldset class="col-6">
                                 <label class="form-label text-white">Date of role creation</label>
-                                <input type="date" class="form-control" >
+                                <input type="date" class="form-control">
                             </fieldset>
                             <fieldset class="col-6 ">
                                 <!-- <label class="form-label text-white"></label> -->
