@@ -15,102 +15,98 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-white bg-dark">
+<body class="p-0 bg-dark text-white bg-dark">
   <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-  <main class="cover-container d-flex w-100 h-100 p-3 mt-5 mx-auto flex-column">
-    <section class="mb-5">
-      <div class="container mt-5">
-        <div class="row justify-content-center">
-          <div class="col-sm-10">
-
-            <h1 class="h1 text-white text-center">Building List</h1>
-            <hr />
-
-            <ul class="nav nav-pills nav-fill">
-              <li class="nav-item nav-link fixed-width">
-                <div class="btn-group w-100">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Building Name
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">
-                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
-                    <li><a class="dropdown-item mt-3" href="#">KL Gateway Residences</a></li>
-                    <li><a class="dropdown-item" href="#">KL Gateway Premium</a></li>
-                    <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a></li>
-                    <li><a class="dropdown-item" href="#">Novum Bangsar South</a></li>
-                    <li><a class="dropdown-item" href="#">South View Service Apartments</a></li>
-                    <li><a class="dropdown-item" href="#">KL Eco City</a></li>
-                    <li><a class="dropdown-item" href="#">Camellia Serviced Suites</a></li>
-                    <li><a class="dropdown-item" href="#">Secoya Residences</a></li>
-                    <li><a class="dropdown-item" href="#">The Establishment</a></li>
-                    <li><a class="dropdown-item" href="#">Menara KL Gateway (Work Suites)</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item nav-link fixed-width">
-                <div class="btn-group w-100">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Location
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">
-                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
-                    <li><a class="dropdown-item mt-3" href="#">Bangsar South</a></li>
-                    <li><a class="dropdown-item" href="#">Bangsar</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-                <div class="table-responsive text-start mt-5">
-                  <table class="table table-dark table-striped table-hover">
-                    <thead>
-                      <tr class="align-middle">
-                        <td class="py-3">
-                          <h6 class="m-0">Building Name</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Location</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Total blocks</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Total Units</h6>
-                        </td>
-                        <td>
-                          <h6 class="m-0">Available Units</h6>
-                        </td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="align-middle" onclick="location.href='building-details.html'" style="cursor: pointer;">
-                        <td>KL Gateway</td>
-                        <td>Bangsar South </td>
-                        <td>5</td>
-                        <td>1200</td>
-                        <td>233</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
-                        <td><button class="btn btn-primary btn-sm w-100">View All Units</button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle" onclick="location.href='building-details.html'" style="cursor: pointer;">
-                        <td>KL Gateway</td>
-                        <td>Bangsar South </td>
-                        <td>8</td>
-                        <td>2133</td>
-                        <td>584</td>
-                        <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
-                        <td><button class="btn btn-primary btn-sm w-100">View All Units</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+  <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-10">
+          <h1 class="mt-5 text-white text-center">Building List</h1>
+          <hr />
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item nav-link fixed-width">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Building Name
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">
+                      <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                  <li><a class="dropdown-item mt-3" href="#">KL Gateway Residences</a></li>
+                  <li><a class="dropdown-item" href="#">KL Gateway Premium</a></li>
+                  <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a></li>
+                  <li><a class="dropdown-item" href="#">Novum Bangsar South</a></li>
+                  <li><a class="dropdown-item" href="#">South View Service Apartments</a></li>
+                  <li><a class="dropdown-item" href="#">KL Eco City</a></li>
+                  <li><a class="dropdown-item" href="#">Camellia Serviced Suites</a></li>
+                  <li><a class="dropdown-item" href="#">Secoya Residences</a></li>
+                  <li><a class="dropdown-item" href="#">The Establishment</a></li>
+                  <li><a class="dropdown-item" href="#">Menara KL Gateway (Work Suites)</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-link fixed-width">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Location
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">
+                      <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                  <li><a class="dropdown-item mt-3" href="#">Bangsar South</a></li>
+                  <li><a class="dropdown-item" href="#">Bangsar</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="table-responsive text-start mt-5">
+            <table class="table table-dark table-striped table-hover">
+              <thead>
+                <tr class="align-middle">
+                  <td class="py-3">
+                    <h6 class="m-0">Building Name</h6>
+                  </td>
+                  <td>
+                    <h6 class="m-0">Location</h6>
+                  </td>
+                  <td>
+                    <h6 class="m-0">Total blocks</h6>
+                  </td>
+                  <td>
+                    <h6 class="m-0">Total Units</h6>
+                  </td>
+                  <td>
+                    <h6 class="m-0">Available Units</h6>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="align-middle" onclick="location.href='building-details.html'" style="cursor: pointer;">
+                  <td>KL Gateway</td>
+                  <td>Bangsar South </td>
+                  <td>5</td>
+                  <td>1200</td>
+                  <td>233</td>
+                  <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
+                  <td><button class="btn btn-primary btn-sm w-100">View All Units</button>
+                  </td>
+                </tr>
+                <tr class="align-middle" onclick="location.href='building-details.html'" style="cursor: pointer;">
+                  <td>KL Gateway</td>
+                  <td>Bangsar South </td>
+                  <td>8</td>
+                  <td>2133</td>
+                  <td>584</td>
+                  <td><button class="btn btn-outline-info btn-sm w-100">Edit</button>
+                  <td><button class="btn btn-primary btn-sm w-100">View All Units</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -125,4 +121,5 @@
     includehtml();
   </script>
 </body>
+
 </html>
