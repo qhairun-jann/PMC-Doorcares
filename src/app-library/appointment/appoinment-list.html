@@ -16,8 +16,8 @@
 
 <body class="p-0 bg-dark text-white bg-dark">
     <div class="sticky-top" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app" >
-        <article class="container"  >
+    <main class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="vue-app" >
+        <article class="container mt-5" >
             <section class="row justify-content-center">
                 <section class="col-sm-10">
                     <h1 class="text-white text-center">Appointment</h1>
@@ -26,208 +26,197 @@
                         <a href="#" class="btn btn-primary btn-sm">+ Create Appointment</a>
                     </div>
                     <hr />
-                    <div class="row my-5 justify-content-center">
-                        <div class="filter js-navbar">
-                            <ul class="nav nav-pills nav-fill">
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Date of update
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control" type="date" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Building name
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control " type="text" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                            <li><a class="dropdown-item mt-3" href="#">Novum Bangsar</a></li>
-                                            <li><a class="dropdown-item" href="#">Secoya Residence</a></li>
-                                            <li><a class="dropdown-item" href="#">KL Gateway Residence</a></li>
-                                            <li><a class="dropdown-item" href="#">Paradise Residence</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Unit number
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control " type="text" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                            <li><a class="dropdown-item mt-3" href="#">A1-1-1</a></li>
-                                            <li><a class="dropdown-item" href="#">A1-1-2</a></li>
-                                            <li><a class="dropdown-item" href="#">B2-1-2</a></li>
-                                            <li><a class="dropdown-item" href="#">B2-4-3</a></li>
-                                            <li><a class="dropdown-item" href="#">B3-4-4</a></li>
-                                            <li><a class="dropdown-item" href="#">F4-2-3</a></li>
-                                            <li><a class="dropdown-item" href="#">G1-1-3</a></li>
-                                            <li><a class="dropdown-item" href="#">H5-6-4</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            User name
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control " type="text" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                            <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
-                                            <li><a class="dropdown-item" href="#">Otto1</a></li>
-                                            <li><a class="dropdown-item" href="#">Thornton</a></li>
-                                            <li><a class="dropdown-item" href="#">@fat</a></li>
-                                            <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
-                                            <li><a class="dropdown-item" href="#">twitter</a></li>
-                                            <li><a class="dropdown-item" href="#">fat</a></li>
-                                            <li><a class="dropdown-item" href="#">Otto3</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Category of appointment
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control " type="text" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                            <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
-                                            <li><a class="dropdown-item" href="#">Appliance</a></li>
-                                            <li><a class="dropdown-item" href="#">household</a></li>
-                                            <li><a class="dropdown-item" href="#">Outdoor</a></li>
-                                            <li><a class="dropdown-item" href="#">Electrical</a></li>
-                                            <li><a class="dropdown-item" href="#">Others</a></li>
-                                            <li><a class="dropdown-item" href="#">Pay cash to the agent</a></li>
-                                            <li><a class="dropdown-item" href="#">property viewing</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                                <li>
-                                <li class="nav-item nav-link">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Status of appointment
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="#">
-                                                    <input class="form-control " type="text" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                            <li><a class="dropdown-item mt-3" href="#">Scheduled</a></li>
-                                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                                            <li><a class="dropdown-item" href="#">Cancelled</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                </li>
-
-                            </ul>
-
-                            <div class="row mt-4">
-                                <div class="col">
-                                    <div class="table-responsive text-start">
-                                        <table class="table table-dark table-striped table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <td>
-                                                        <h6>Date of appoinment</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Time of appointment</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Building name</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Unit number</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Username</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Category of appoinment</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>Status of appointment</h6>
-                                                    </td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="align-middle pointer" onclick="location.href=link">
-                                                    <td>12-03-2021</td>
-                                                    <td>00.00</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                </tr>
-                                                <tr class="align-middle pointer" onclick="location.href=link">
-                                                    <td>12-03-2021</td>
-                                                    <td>00.00</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                </tr>
-                                                <tr class="align-middle pointer" onclick="location.href=link">
-                                                    <td>12-03-2021</td>
-                                                    <td>00.00</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                    <td>-</td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                    <ul class="nav nav-pills nav-fill">
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Date of update
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
+                        </li>
+                        </li>
+
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Building name
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Novum Bangsar</a></li>
+                                    <li><a class="dropdown-item" href="#">Secoya Residence</a></li>
+                                    <li><a class="dropdown-item" href="#">KL Gateway Residence</a></li>
+                                    <li><a class="dropdown-item" href="#">Paradise Residence</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Unit number
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">A1-1-1</a></li>
+                                    <li><a class="dropdown-item" href="#">A1-1-2</a></li>
+                                    <li><a class="dropdown-item" href="#">B2-1-2</a></li>
+                                    <li><a class="dropdown-item" href="#">B2-4-3</a></li>
+                                    <li><a class="dropdown-item" href="#">B3-4-4</a></li>
+                                    <li><a class="dropdown-item" href="#">F4-2-3</a></li>
+                                    <li><a class="dropdown-item" href="#">G1-1-3</a></li>
+                                    <li><a class="dropdown-item" href="#">H5-6-4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    User name
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                                    <li><a class="dropdown-item" href="#">Otto1</a></li>
+                                    <li><a class="dropdown-item" href="#">Thornton</a></li>
+                                    <li><a class="dropdown-item" href="#">@fat</a></li>
+                                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                                    <li><a class="dropdown-item" href="#">twitter</a></li>
+                                    <li><a class="dropdown-item" href="#">fat</a></li>
+                                    <li><a class="dropdown-item" href="#">Otto3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Category of appointment
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
+                                    <li><a class="dropdown-item" href="#">Appliance</a></li>
+                                    <li><a class="dropdown-item" href="#">household</a></li>
+                                    <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical</a></li>
+                                    <li><a class="dropdown-item" href="#">Others</a></li>
+                                    <li><a class="dropdown-item" href="#">Pay cash to the agent</a></li>
+                                    <li><a class="dropdown-item" href="#">property viewing</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        </li>
+
+                        <li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Status of appointment
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Scheduled</a></li>
+                                    <li><a class="dropdown-item" href="#">Completed</a></li>
+                                    <li><a class="dropdown-item" href="#">Cancelled</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        </li>
+                    </ul>
+                    <div class="table-responsive text-start mt-5">
+                        <table class="table table-dark table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <h6>Date of appoinment</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Time of appointment</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Building name</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Unit number</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Username</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Category of appoinment</h6>
+                                    </td>
+                                    <td>
+                                        <h6>Status of appointment</h6>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle pointer" onclick="location.href=link">
+                                    <td>12-03-2021</td>
+                                    <td>00.00</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr class="align-middle pointer" onclick="location.href=link">
+                                    <td>12-03-2021</td>
+                                    <td>00.00</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr class="align-middle pointer" onclick="location.href=link">
+                                    <td>12-03-2021</td>
+                                    <td>00.00</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
             </section>
