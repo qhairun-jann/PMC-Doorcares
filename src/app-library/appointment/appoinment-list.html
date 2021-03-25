@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Appointments | Doorcares</title>
+    <title>Appointments List | Doorcares</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,21 +15,18 @@
 </head>
 
 <body class="p-0 bg-dark text-white bg-dark">
-    <div class="sticky-top" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app">
-        <article class="container">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
+        <article class="container my-5">
             <section class="row justify-content-center">
                 <section class="col-sm-10">
-                    <div class="row">
-                        <h1 class="col-12 text-white text-center">Appointment</h1>
-                        <hr />
-                        <div class="col-12 text-end mb-3">
-                            <a href="#" class="btn btn-primary btn-sm">+ Create Appointment</a>
-                        </div>
+                    <h1 class="mt-5 text-white text-center">Appointment List</h1>
+                    <hr />
+                    <div class="text-end my-4">
+                        <a href="#" class="btn btn-primary btn-sm">+ Create Appointment</a>
                     </div>
                     <hr />
                     <ul class="nav nav-pills nav-fill">
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
                                 <button type="button" class="btn btn-primary dropdown-toggle autowidth"
@@ -44,13 +41,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
-
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Building name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -65,13 +59,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
-
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Unit number
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -90,13 +81,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
-
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     User name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -115,13 +103,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
-
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Category of appointment
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -140,13 +125,10 @@
                                 </ul>
                             </div>
                         </li>
-                        </li>
-
-                        <li>
                         <li class="nav-item nav-link">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Status of appointment
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
@@ -159,7 +141,6 @@
                                     <li><a class="dropdown-item" href="#">Cancelled</a></li>
                                 </ul>
                             </div>
-                        </li>
                         </li>
                     </ul>
                     <div class="table-responsive text-start mt-5">
