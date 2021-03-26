@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Maintenance Detail </title>
+    <title>Maintenance Details | PMC Doorcares </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
@@ -15,153 +15,155 @@
 
 <body class="p-0 bg-dark h-100 bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
-            <section class="row justify-content-center">
-                <div class="col-md-10">
-                    <h1 class="mt-5 text-white text-center">Maintenance Details</h1>
-                    <hr class="bg-white"/>
-                    <div class="d-flex my-4">
-                        <div class="align-self-center">
-                            <img src="/assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" />
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
+            <section class="container mt-5">
+                <section class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h1 class="mt-5 text-white text-center">Maintenance Details</h1>
+                        <hr class="bg-white"/>
+                        <div class="d-flex my-4">
+                            <div class="align-self-center">
+                                <img src="/assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" />
+                            </div>
+                            <div class="align-self-center">
+                                <h3 class="text-white ms-5 my-0">Tenant name</h3>
+                            </div>
                         </div>
-                        <div class="align-self-center">
-                            <h3 class="text-white ms-5 my-0">Tenant name</h3>
+                        <hr class="bg-white" />
+                        <div class="table-responsive mt-5">
+                            <table class="table table-dark table-striped ">
+                                <tbody>
+                                    <tr class="align-middle">
+                                        <th class="ps-2"> Status </th>
+                                        <td>
+                                            <fieldset>
+                                                <select class="form-control form-select" id="status">
+                                                    <option selected> Select Status </option>
+                                                    <option>Resolved</option>
+                                                    <option>New</option>
+                                                    <option>In progress</option>
+                                                </select>
+                                            </fieldset>
+                                        </td>
+    
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <th class="ps-2"> Applied date </th>
+                                        <td> DD-MM-YYYY </td>
+    
+                                    </tr>
+                                    <tr class="align-middle">
+                                        <th class="ps-2"> Message </th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <p class="fw-bold" v-if="misc === 'picture'">Picture : </p>
+                                            <p class="fw-bold" v-if="misc === 'video'"> Video : </p>
+    
+                                            <img src="/assets/pictures/pic-room-1.jpg" class="w-100" height="370px" alt=".."
+                                                v-if="misc === 'picture'">
+                                            <video class="w-100" height="370px" controls v-if="misc === 'video'">
+                                                <source src="/assets/videos/vid-room-1.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="timeline mt-5">
+                            <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                                data-name="cat2, unit2, bldng2, date2">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3"
+                                data-name="cat3, unit3, bldng3, date3">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
+                            <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                                data-name="cat1, unit1, bldng1, date1">
+                                <div class="content">
+                                    <small>5/5/2021 | 6:30pm</small>
+                                    <h2>Title</h2>
+                                    <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <hr class="bg-white" />
-                    <div class="table-responsive mt-5">
-                        <table class="table table-dark table-striped ">
-                            <tbody>
-                                <tr class="align-middle">
-                                    <th class="ps-2"> Status </th>
-                                    <td>
-                                        <fieldset>
-                                            <select class="form-control form-select" id="status">
-                                                <option selected> Select Status </option>
-                                                <option>Resolved</option>
-                                                <option>New</option>
-                                                <option>In progress</option>
-                                            </select>
-                                        </fieldset>
-                                    </td>
-
-                                </tr>
-                                <tr class="align-middle">
-                                    <th class="ps-2"> Applied date </th>
-                                    <td> DD-MM-YYYY </td>
-
-                                </tr>
-                                <tr class="align-middle">
-                                    <th class="ps-2"> Message </th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <p class="fw-bold" v-if="misc === 'picture'">Picture : </p>
-                                        <p class="fw-bold" v-if="misc === 'video'"> Video : </p>
-
-                                        <img src="/assets/pictures/pic-room-1.jpg" class="w-100" height="370px" alt=".."
-                                            v-if="misc === 'picture'">
-                                        <video class="w-100" height="370px" controls v-if="misc === 'video'">
-                                            <source src="/assets/videos/vid-room-1.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="timeline mt-5">
-                        <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
-                            data-name="cat2, unit2, bldng2, date2">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3"
-                            data-name="cat3, unit3, bldng3, date3">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </section>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>

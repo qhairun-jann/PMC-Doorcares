@@ -17,42 +17,44 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column my-child-2" id="vue-app">
-        <div class="row justify-content-center">
-            <fieldset class="col-5 ">
-                <label for="email" class="form-label text-white size-3">Choose Tenancy Date</label>
-                <input type="date" class="form-control" id="date" value="2018-07-22">
-            </fieldset>
-        </div>
-        <article class="row text-start table-responsive">
-            <table class="table table-dark table-striped ">
-                <thead>
-                    <tr class="align-middle">
-                        <th class="py-3">
-                            <h6 class="m-0">Landlord</h6>
-                        </th>
-                        <th>
-                            <h6 class="m-0">Landlord (Co Owner)</h6>
-                        </th>
-                        <th>
-                            <h6 class="m-0">Tenant</h6>
-                        </th>
-                        <th>
-                            <h6 class="m-0">PIC</h6>
-                        </th>
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <fieldset class="col-5 ">
+                    <label for="email" class="form-label text-white size-3">Choose Tenancy Date</label>
+                    <input type="date" class="form-control" id="date" value="2018-07-22">
+                </fieldset>
+            </div>
+            <article class="row text-start table-responsive">
+                <table class="table table-dark table-striped ">
+                    <thead>
+                        <tr class="align-middle">
+                            <th class="py-3">
+                                <h6 class="m-0">Landlord</h6>
+                            </th>
+                            <th>
+                                <h6 class="m-0">Landlord (Co Owner)</h6>
+                            </th>
+                            <th>
+                                <h6 class="m-0">Tenant</h6>
+                            </th>
+                            <th>
+                                <h6 class="m-0">PIC</h6>
+                            </th>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="align-middle pointer" onclick="window.location.href='user-detail.html'" >
-                        <td> Mr.Lan </td>
-                        <td> - </td>
-                        <td> Mr.Lan </td>
-                        <td> Mr.Pi </td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-        <div includehtml="/src/footer.html" class="mt-auto"></div>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="align-middle pointer" onclick="window.location.href='user-detail.html'">
+                            <td> Mr.Lan </td>
+                            <td> - </td>
+                            <td> Mr.Lan </td>
+                            <td> Mr.Pi </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
     </main>
 </body>
@@ -67,7 +69,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script>
-    
+
 
     var app = new Vue({
         el: '#vue-app',

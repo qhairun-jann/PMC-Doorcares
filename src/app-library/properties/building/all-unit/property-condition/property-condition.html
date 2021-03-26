@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Property Condition | Doorcares </title>
+    <title> Property Condition | PMC Doorcares </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,26 +17,28 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column">
-        <article class="p-2" id="vue-app">
-            <div class="row">
-                <fieldset class="col-6 size-3">
-                    <label for="email" class="form-label text-white">Tenancy start date</label>
-                    <input type="date" class="form-control" id="date" value="2018-07-22">
-                </fieldset>
-                <fieldset class="col-6 size-3">
-                    <label for="email" class="form-label text-white">Tenancy end date</label>
-                    <input type="text" class="form-control" id="date" value="2018-07-22">
-                </fieldset>
-                <div class="col-12 my-3"></div>
-
-                <fieldset v-for="data in payload" class="py-3 text-start">
-                    <h3>{{data.header}} </h3>
-                    <hr>
-                    <a :href="`${item.link}`" v-for="item in data.body" >
-                        <p > {{item.name}} </p>
-                    </a>
-                </fieldset>
-            </div>
+        <article class="container my-5">
+            <article class="p-2" id="vue-app">
+                <div class="row">
+                    <fieldset class="col-6 size-3">
+                        <label for="email" class="form-label text-white">Tenancy start date</label>
+                        <input type="date" class="form-control" id="date" value="2018-07-22">
+                    </fieldset>
+                    <fieldset class="col-6 size-3">
+                        <label for="email" class="form-label text-white">Tenancy end date</label>
+                        <input type="text" class="form-control" id="date" value="2018-07-22">
+                    </fieldset>
+                    <div class="col-12 my-3"></div>
+    
+                    <fieldset v-for="data in payload" class="py-3 text-start">
+                        <h3>{{data.header}} </h3>
+                        <hr>
+                        <a :href="`${item.link}`" v-for="item in data.body" >
+                            <p > {{item.name}} </p>
+                        </a>
+                    </fieldset>
+                </div>
+            </article>
         </article>
         <footer includehtml="/src/footer.html" class="mt-auto">
         
