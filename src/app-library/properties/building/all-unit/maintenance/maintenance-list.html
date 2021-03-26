@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Maintenance | PMC Doorcares </title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+
+<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+    <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+        <article class="container">
+            <section class="row justify-content-center">
+                <section class="col-sm-10">
+
+                    <h1 class="mt-5 text-white text-center">Unit Maintenance list</h1>
+                    <hr class="bg-white" />
+                    <nav class="mt-5 text-white text-center">
+                        <section class="row justify-content-center mx-auto">
+                            <div class="col-12 col-md-4 py-3" v-for="(item, index) in headers" :key="index">
+                                <p> {{item.title}} </p>
+                                <h2> {{item.number}} </h2>
+                            </div>
+                        </section>
+                    </nav>
+                    <hr class="bg-white" />
+                    <div class="js-navbar">
+                        <ul class="nav nav-pills nav-fill nav-center">
+                            <li class="nav-item nav-link fixed-width" v-for="(btn,index) in buttons" :key="index">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        {{btn}}
+                                    </button>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timeline maintenance text-dark text-start mt-5">
+                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
+                            data-name="cat1, unit1, bldng1, date1" v-for="item in cards">
+                            <a class="remove-a-css" :href="'maintenance_details.html?misc=' + item.picOrVid">
+                                <section class="content">
+                                    <small>{{item.time}}</small>
+                                    <h2 class="m-0">Category: {{ item.cat }} </h2>
+                                    <h4>Status: {{item.status}} </h4>
+                                    <p v-if="item.picOrVid === 'picture'" class="size-2"> <i class="bi bi-images"></i>
+                                        Picture
+                                    </p>
+                                    <p v-if="item.picOrVid === 'video'" class="size-2">
+                                        <i class="bi bi-camera-video-fill"></i>
+                                        Video
+                                    </p>
+                                </section>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
+    </main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/includefile.js"></script>
+<script>
+    includehtml();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script>
+    var app = new Vue({
+        el: '#vue-app',
+        data: {
+            btnActive: 0,
+            headers: [
+                { title: "New", number: 1 },
+                { title: "Resolved", number: 1 },
+                { title: "In progress", number: 1 },
+            ],
+            cards: [
+                {
+                    time: "DD-MM-YYYY | Time",
+                    cat: "-",
+                    status: "In Progress",
+                    picOrVid: "picture",
+                    // pic: 'pic-room-1.jpg',
+                    // vid: 'vid-room-1.mp4'
+                },
+                {
+                    time: "DD-MM-YYYY | Time",
+                    cat: "-",
+                    status: "New",
+                    picOrVid: "picture",
+
+                },
+                {
+                    time: "DD-MM-YYYY | Time",
+                    cat: "-",
+                    status: "Resolved",
+                    picOrVid: "video",
+                }
+            ],
+            buttons: ['All', 'New', 'In Progress', 'Resolved'],
+
+        },
+        methods: {
+            handleClick(event) {
+                document.getElementById(this.btnActive).classList.remove('active')
+                this.btnActive = event.target.id
+                event.target.classList.add('active')
+
+            }
+        }
+    })
+</script>
+
+</html>

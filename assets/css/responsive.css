@@ -1,5 +1,5 @@
-
 /* Global */
+
 /* ========================================== */
 
 @media (min-width: 768px) {
@@ -17,7 +17,17 @@
   }
 }
 
+@media (min-width: 200px) and (max-width: 767px) {
+  .paymobile {
+    display: block;
+  }
+  .paydesktop {
+    display: none;
+  }
+}
+
 /* Sidebar */
+
 /* ========================================== */
 
 @media screen and (max-height: 450px) {
@@ -30,10 +40,10 @@
 }
 
 /* timeline */
+
 /* ========================================== */
 
 @media screen and (max-width: 600px) {
-  
   .timelinecontainer {
     width: 100%;
     padding-left: 70px;
@@ -52,6 +62,7 @@
     left: 0%;
   }
 }
+
 @media (min-width: 200px) and (max-width: 767px) {
   .timeline::after {
     left: 28px !important;
@@ -59,7 +70,6 @@
     bottom: 147px !important;
   }
 }
-
 
 /* Dropdows
 ======================================================= */
@@ -71,9 +81,8 @@
   }
   .nav-center {
     justify-content: start !important;
+  }
 }
-}
-
 
 @media (min-width: 200px) and (max-width: 768px) {
   .dropdown-content {
@@ -95,7 +104,7 @@
   }
   .nav-center {
     justify-content: start !important;
-}
+  }
 }
 
 @media (min-width: 200px) and (max-width: 560px) {
@@ -104,5 +113,5 @@
   }
   .nav-fill .nav-item, .nav-fill>.nav-link {
     flex: 1 1 auto;
-}
+  }
 }
