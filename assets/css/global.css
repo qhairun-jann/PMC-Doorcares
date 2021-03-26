@@ -183,6 +183,47 @@ a.remove-a-css {
   min-height: 300px;
 }
 
+.hrdotted {
+  border-top: 3px dotted#c7c7c7;
+}
+
+
+.paymobile {
+  display: none;
+}
+
+.paydesktop {
+  display: block;
+}
+
+a.cardtext {
+  color: #000;
+  text-decoration: none;
+}
+a.cardtext:hover {
+  color: #000;
+  text-decoration: none;
+}
+.table>thead {
+  text-transform: capitalize;
+}
+
+
+/* text */
+/* ================================= */
+
+.text-red {
+  color: red !important;
+}
+
+.text-green {
+  color: #06D85F !important;
+}
+
+.text-blue {
+  color: #17a2b8 !important;
+}
+
 
 /* modal */
 /* ================================= */

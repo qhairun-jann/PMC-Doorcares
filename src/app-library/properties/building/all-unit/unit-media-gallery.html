@@ -16,13 +16,13 @@
 
 <body class="p-0 bg-dark h-100 bg-dark">
     <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
-    <main class="cover-container d-flex w-100 h-100 p-3 mt-5 mx-auto flex-column mt-5" id="vue-app">
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
         <article class="container mt-5 px-5">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <section class="row mb-5">
                         <div class="col-12">
-                            <h1 class="mt-5 text-white text-center">Activity</h1>
+                            <h1 class="mt-5 text-white text-center">Unit Media Gallery</h1>
                             <hr class="bg-white" />
                         </div>
                     </section>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6 col-md-6 col-xl-4 my-3" v-for=" imgx in item.figure.imgTitle">
-                                <a href="javascript:void" onclick="openModal();currentSlide(1)">
+                                <a class="cardtext" href="javascript:void" onclick="openModal();currentSlide(1)">
                                     <div class="card">
                                         <img src="https://www.dsigners.net/wp-content/uploads/2018/12/luxury-living-room-images-1.jpg"
                                             class="card-img-top" alt="..." />
