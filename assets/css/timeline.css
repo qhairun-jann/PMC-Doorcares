@@ -81,10 +81,15 @@
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
+.rightReply::before {
+  left: 65px;
+}
 
 .right::after {
   left: -8px;
 }
+
+
 
 .content {
   padding: 20px 30px;
