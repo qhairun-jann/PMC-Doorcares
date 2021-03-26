@@ -14,32 +14,67 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-white bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
+    <main class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center ">
                 <section class="col-sm-10">
                     <h1 class="text-white text-center mt-5">Utilities</h1>
                     <hr />
-                    <div class="row text-start mx-auto" style="width: 400px;">
-                        <div class="col-6"> Company name </div>
-                        <div class="col-6"> Contact number </div>
-                        <div class="col-6 py-3"> - </div>
-                        <div class="col-6 py-3"> - </div>
-
-                        <div class="col-6"> Reference number </div>
-                        <div class="col-6"> Bank number </div>
-                        <div class="col-6 py-3"> - </div>
-                        <div class="col-6 py-3"> - </div>
-
-                        <div class="col-6"> Bank account number </div>
-                        <div class="col-6"> Amount </div>
-                        <div class="col-6 py-3"> - </div>
-                        <div class="col-6 py-3"> - </div>
+                    <div>
+                        <div class="row g-3 mt-0">
+                            <div class="col-md-4">
+                                <label for="budget" class="form-label">Company name</label>
+                                <input type="number" class="form-control" placeholder="eg: Jann Properties" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="budget" class="form-label">Contact number</label>
+                                <input type="number" class="form-control" placeholder="eg: 013-54237651" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row g-3 my-0">
+                            <div class="col-md-4">
+                                <label for="duration" class="form-label">Reference number</label>
+                                <input type="text" class="form-control" placeholder=" eg: John Smitch" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="remarks" class="form-label">Bank name</label>
+                                <input type="number" class="form-control" placeholder=" eg: Maybank Bhd" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row g-3 mt-0">
+                            <div class="col-md-4">
+                                <label for="duration" class="form-label">Bank account number</label>
+                                <input type="text" class="form-control" placeholder="eg:164797891-1" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="remarks" class="form-label">Amount</label>
+                                <input type="number" class="form-control" placeholder="eg: RM5,000" />
+                            </div>
+                        </div>
                     </div>
+                    <hr />
+                    <div class="row justify-content-between mt-5">
+                        <div class="col-md-4 col-6">
+                            <a href="/src/app-library/properties/building/all-unit/bills.html"
+                                class="w-100 btn btn-outline-info">
+                                <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                Back To Bills
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <a href="/javascript:void" class="w-100 btn btn-primary" data-bs-target="#appointmentModal"
+                                data-bs-toggle="modal">
+                                Edit/Save &nbsp;
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>    
                 </section>
-            </section>
         </article>
         <footer includehtml="/src/footer.html" class="mt-auto">
         </footer>
