@@ -20,14 +20,17 @@
 
         <div class="container ">
             <div class="row gy-4 mt-3">
-                <section class="col-12">
+                <h1 class="mt-5 text-white text-center">User Manual</h1>
+                <hr />
+                <section class="col-12 mb-3">
                     <form method="post" enctype="multipart/form-data">
-                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> + Upload File
+                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload">
+                             + Upload File
                         </label>
                         <input type="file" id="upload" hidden name="file-upload-field">
                     </form>
                 </section>
-                <hr>
+                <!-- <hr> -->
                 <section class="row col-12 col-md-6 col-lg-6 col-xl-3 mx-auto" v-for="(item,key) in pdfArray">
                     <p class="col-12 size-2 mt-4 pointer text-center">
                         {{item}}
