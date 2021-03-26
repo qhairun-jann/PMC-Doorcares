@@ -44,13 +44,16 @@
                     <thead>
                         <tr class="align-middle">
                             <td class="py-3">
-                                <h6 class="m-0"> Date of condition </h6>
+                                <h6 class="m-0"> Item name </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Condition image </h6>
+                                <h6 class="m-0"> Model number </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Description of condition</h6>
+                                <h6 class="m-0"> Quantity </h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0"> Item image </h6>
                             </td>
                             <td style="width: 250px;">
                                 <h6 class="m-0"> Action </h6>
@@ -62,13 +65,14 @@
                             <td class="">
                                 <p>-</p>
                             </td>
+                            <td> - </td>
+                            <td> - </td>
                             <td class="align-middle">
                                 <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
                                     data-bs-target="#triggerModal"
                                     src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
                                     alt="..Foto">
                             </td>
-                            <td> - </td>
                             <td class="row my-child-2 mx-0" style="width: 250px;">
                                 <button class="btn btn-outline-primary px-4 col-12">
                                     Edit/Save
@@ -85,19 +89,23 @@
 
             <!-- Additions -->
             <section class="col-12 text-start table-responsive" v-if="btnActive == 1">
-                <btn class="mx-3 btn btn-primary btn-lg float-end" id="btn-add"> + Add New Item
-                </btn>
                 <table class="table table-dark table-striped">
                     <thead>
                         <tr class="align-middle">
                             <td class="py-3">
-                                <h6 class="m-0"> Date of condition </h6>
+                                <h6 class="m-0"> Item name </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Condition image </h6>
+                                <h6 class="m-0"> Model number </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Description of Addition</h6>
+                                <h6 class="m-0"> Quantity </h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0"> Item image </h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0"> Date of addition </h6>
                             </td>
                             <td style="width: 250px;">
                                 <h6 class="m-0"> Action </h6>
@@ -106,18 +114,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="">
                                 <p>-</p>
                             </td>
+                            <td> - </td>
+                            <td> - </td>
                             <td class="align-middle">
                                 <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
                                     data-bs-target="#triggerModal"
                                     src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
                                     alt="..Foto">
                             </td>
-                            <td> - </td>
+                            <td>-</td>
                             <td class="row my-child-2 mx-0" style="width: 250px;">
-
                                 <button class="btn btn-outline-primary px-4 col-12">
                                     Edit/Save
                                 </button>
@@ -125,83 +134,108 @@
                                     Move to Omissions
                                 </button>
 
-
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
-            <section class="col-12 text-start table-responsive" v-if="btnActive == 2">
 
+
+            <!-- Omissions -->
+            <section class="col-12 text-start table-responsive" v-if="btnActive == 2">
                 <table class="table table-dark table-striped">
                     <thead>
                         <tr class="align-middle">
                             <td class="py-3">
-                                <h6 class="m-0"> Date of condition </h6>
+                                <h6 class="m-0"> Item name </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Condition image </h6>
+                                <h6 class="m-0"> Model number </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Description of condition </h6>
+                                <h6 class="m-0"> Quantity </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Date of Omissions </h6>
+                                <h6 class="m-0"> Item image </h6>
+                            </td>
+                            <td>
+                                <h6 class="m-0"> Date of omission </h6>
+                            </td>
+                            <td style="width: 250px;">
+                                <h6 class="m-0"> Action </h6>
                             </td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="">
                                 <p>-</p>
                             </td>
+                            <td> - </td>
+                            <td> - </td>
                             <td class="align-middle">
                                 <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
                                     data-bs-target="#triggerModal"
                                     src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
                                     alt="..Foto">
                             </td>
-                            <td> - </td>
-                            <td>
-                                <p>-</p>
+                            <td>-</td>
+                            <td class="my-child-2 mx-0">
+                                <button class="btn btn-outline-primary px-4 w-100">
+                                    Edit/Save
+                                </button>
+                            
+
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
+            <!-- Omissions -->
             <section class="col-12 text-start table-responsive" v-if="btnActive == 3">
                 <table class="table table-dark table-striped">
                     <thead>
                         <tr class="align-middle">
                             <td class="py-3">
-                                <h6 class="m-0"> Date of condition </h6>
+                                <h6 class="m-0"> Item name </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Condition image </h6>
+                                <h6 class="m-0"> Model number </h6>
                             </td>
                             <td>
-                                <h6 class="m-0"> Description of condition</h6>
+                                <h6 class="m-0"> Quantity </h6>
                             </td>
+                            <td>
+                                <h6 class="m-0"> Item image </h6>
+                            </td>
+                            <!-- <td>
+                                <h6 class="m-0"> Date of omission </h6>
+                            </td> -->
+                        
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="">
                                 <p>-</p>
                             </td>
+                            <td> - </td>
+                            <td> - </td>
                             <td class="align-middle">
                                 <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
                                     data-bs-target="#triggerModal"
                                     src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
                                     alt="..Foto">
                             </td>
-                            <td> - </td>
+                            <!-- <td>-</td> -->
+                
                         </tr>
                     </tbody>
                 </table>
             </section>
+
 
         </section>
 

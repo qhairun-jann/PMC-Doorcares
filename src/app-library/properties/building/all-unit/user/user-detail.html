@@ -17,9 +17,11 @@
 <body class="p-0 bg-dark h-100 text-center text-white bg-dark">
     <div class="sticky-top" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex h-100 mt-5 mx-auto flex-column" id="vue-app">
-        <article class="text-start container my-5">
+        <article class="text-start container">
             <section class="row justify-content-center">
                 <section class="col-sm-10">
+                    <h1 class="text-center">User In the Unit</h1>
+                    <hr>
                     <section class="row my-child-1" class="nav nav-tabs " id="nav-tab" role="tablist">
                         <div class="col-12 col-md-4 text-center" v-for="(btn,index) in buttons" :key="index">
                             <button class="btn btn-outline-info btn-lg my-2"
@@ -35,6 +37,7 @@
 
                         <article v-if="btnActive === 0">
                             <section class="row">
+                         
                                 <section class="col-12">
                                     <section class="row justify-content-center align-items-center my-child-1">
                                         <div class="col-3 col-md-3 col-lg-2  ">
@@ -163,17 +166,18 @@
                                                 height="100px" />
                                         </div>
                                         <div class="col-9 col-md-9 col-lg-3 text-center my-1">
-                                            <h5 class="fw-bold text-start">LANDLORD LONG NAME</h5>
+                                            <h5 class="fw-bold text-start">TENANT LONG NAME</h5>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-4 my-1 text-lg-start ">
+                                            <!-- THIS IS THE MIDDLE GAP -->
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
+
                                             <select class="form-control form-select py-1" id="status">
                                                 <option value="" selected>Verification status</option>
                                                 <option>Verified</option>
                                                 <option>Not verified</option>
                                             </select>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
-                                            <button class="btn btn-outline-info w-100">+Add Co-Owner</button>
                                         </div>
                                     </section>
                                 </section>
