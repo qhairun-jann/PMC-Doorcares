@@ -14,58 +14,62 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
-    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column">
-        <article class="p-2" id="vue-app">
-            <div class="row mt-3">
-                <h1>Property Condition</h1>
-                <hr class="text-white">
+<body class="p-0 bg-dark">
+    <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <article class="container my-5" id="vue-app">
+            <section class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center"> Property Condition</h1>
+                    <hr class="text-white">
+                    <div class="row">
+                        <div class="filter js-navbar">
+                            <ul class="nav nav-pills nav-fill nav-center">
+                                <li class="nav-item nav-link fixed-width">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Tenancy start date
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="javascript:void">
+                                                    <input class="form-control" type="date" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-link fixed-width">
+                                    <div class="btn-group w-100">
+                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Tenancy end date
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="javascript:void">
+                                                    <input class="form-control" type="date" placeholder="Search"
+                                                        aria-label="Search" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                <div class="filter js-navbar">
-                    <ul class="nav nav-pills nav-fill nav-center">
-                        <li class="nav-item nav-link fixed-width">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tenancy start date
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="javascript:void">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                </ul>
+                        <div class="col-12 my-3"></div>
+                        <div class="col-12 col-md-6" v-for="data in payload">
+                            <div class="py-3 text-start text-white">
+                                <h3>{{data.header}} </h3>
+                                <hr class="text-white">
+                                <a :href="`${item.link}`" v-for="item in data.body" class="btn btn-primary m-2">
+                                    {{item.name}}
+                                </a>
                             </div>
-                        </li>
-                        <li class="nav-item nav-link fixed-width">
-                            <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tenancy end date
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="javascript:void">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-12 my-3"></div>
-                <div class="col-12 col-md-6" v-for="data in payload">
-                    <fieldset class="py-3 text-start">
-                        <h3>{{data.header}} </h3>
-                        <hr>
-                        <a :href="`${item.link}`" v-for="item in data.body" class="btn btn-primary m-2">
-                            {{item.name}}
-                        </a>
-                    </fieldset>
-                </div>
-            </div>
+            </section>
+        </article>
         </article>
         <footer includehtml="/src/footer.html" class="mt-auto">
 
