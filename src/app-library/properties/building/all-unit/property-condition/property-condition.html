@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Property Condition | Doorcares </title>
+    <title> Property Condition | PMC Doorcares </title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,18 +31,21 @@
                 </fieldset>
                 <div class="col-12 my-3"></div>
 
-                <fieldset v-for="data in payload" class="py-3 text-start">
-                    <h3>{{data.header}} </h3>
-                    <hr>
-                    <a :href="`${item.link}`" v-for="item in data.body" >
-                        <p > {{item.name}} </p>
-                    </a>
-                </fieldset>
-            </div>
-        </article>
-        <footer includehtml="/src/footer.html" class="mt-auto">
-        
-        </footer>
+                            <fieldset v-for="data in payload" class="py-3 text-start">
+                                <h3>{{data.header}} </h3>
+                                <hr>
+                                <a :href="`${item.link}`" v-for="item in data.body">
+                                    <p> {{item.name}} </p>
+                                </a>
+                            </fieldset>
+                        </div>
+                    </article>
+                </article>
+            </section>
+        </section>        
+                <footer includehtml="/src/footer.html" class="mt-auto">
+
+                </footer>
     </main>
 </body>
 
