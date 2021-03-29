@@ -15,12 +15,12 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white">
+<body class="p-0 bg-dark text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="mb-5">
-            <div class="container mt-2">
-                <form class="row">
+        <article class="container my-5">
+            <section class="row justify-content-center">
+                <div class="col-sm-10">
                     <h1 class="mt-5 text-white text-center">Unit Amenities</h1>
                     <hr />
                     <div class="col-12 text-start row g-2 mt-0 justify-content-center ">
@@ -111,23 +111,29 @@
                             </div>
                         </section>
                     </div>
-                    <main class="col-12 text-start row g-2 mt-4 justify-content-center ">
-                        <!-- style="position: relative;right: 1rem;" -->
-                        <section class="offset-3 col-3 ">
-                        </section>
-                        <section class="col-3  ps-4">
-                            <button class="btn btn-outline-primary text-center w-fit px-4"> Save </button>
-                        </section>
-
-                    </main>
+                    <hr class="mt-5 bg-white" />
+                    <article class="row justify-content-end mt-5">
+                        <div class="col-md-3 col-6">
+                            <a href="javascript:void" class="w-100 btn btn-outline-info">
+                                Edit &nbsp;
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="javascript:void" class="w-100 btn btn-primary">
+                                Save &nbsp;
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
+                    </article>
                     <!-- <main class="col-12 text-start row g-2 mt-5 justify-content-center ">
                         <section class="offset-3 col-3 ">
                         
                         </section>
                     </main> -->
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
+        </article>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

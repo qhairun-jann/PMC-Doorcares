@@ -23,8 +23,8 @@
                     <h1 class="text-white text-center">User Details</h1>
                     <hr class="bg-white" />
                     <form class="needs-validation text-start" novalidate>
-                    <section class="row">
-                        <section class="col-12">
+                        <section class="row">
+                            <section class="col-12">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="avatar-upload d-flex">
@@ -56,8 +56,8 @@
                                     </div>
                                 </div>
                                 <hr />
+                            </section>
                         </section>
-                    </section>
                     </form>
                     <section class="row">
                         <div class="col-12 col-md-6 col-xl-3 text-center " v-for="(btn,index) in buttons" :key="index">
@@ -74,14 +74,15 @@
                             </div>
                             <fieldset class="col-6 col-xl-3">
                                 <label class="form-label text-white" for="username">Username</label>
-                                <input type="text" class="form-control" id="Username" placeholder="username" >
+                                <input type="text" class="form-control" id="Username" placeholder="username">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
-                                <label for="" class="form-label text-white" for="family">Family/Sur Name (Optional)</label>
-                                <input type="text" class="form-control" id="family" placeholder="family" >
+                                <label for="" class="form-label text-white" for="family">Family/Sur Name
+                                    (Optional)</label>
+                                <input type="text" class="form-control" id="family" placeholder="family">
                             </fieldset>
 
-                            <fieldset class="col-6 col-xl-3"  >
+                            <fieldset class="col-6 col-xl-3">
                                 <label for="" class="form-label text-white" for="pass-no">Passport No.</label>
                                 <input type="text" class="form-control" id="pass-no" placeholder="1234567890">
                             </fieldset>
@@ -93,12 +94,12 @@
 
                             <fieldset class="col-6 col-xl-3 ">
                                 <label for="" class="form-label text-white" for="gender">Gender</label>
-                                <input type="text" class="form-control" id="gender" placeholder="gender" >
+                                <input type="text" class="form-control" id="gender" placeholder="gender">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
                                 <label for="" class="form-label text-white" for="nationality">Nationality</label>
-                                <input type="text" class="form-control" id="nationality" placeholder="nationality" >
+                                <input type="text" class="form-control" id="nationality" placeholder="nationality">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
@@ -108,7 +109,7 @@
 
                             <fieldset class="col-6 col-xl-3 ">
                                 <label for="" class="form-label text-white" for="age">Age</label>
-                                <input type="text" class="form-control"id="age" placeholder="age">
+                                <input type="text" class="form-control" id="age" placeholder="age">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
@@ -118,15 +119,17 @@
 
                             <fieldset class="col-6 col-xl-3 ">
                                 <label for="" class="form-label text-white" for="company-name">Company Name</label>
-                                <input type="text" class="form-control" id="company-name" placeholder="company name" >
+                                <input type="text" class="form-control" id="company-name" placeholder="company name">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3 ">
-                                <label for="" class="form-label text-white" for="additional-role">Additional Role</label>
-                                <input type="text" class="form-control" id="additional-role" placeholder="additional-role" >
+                                <label for="" class="form-label text-white" for="additional-role">Additional
+                                    Role</label>
+                                <input type="text" class="form-control" id="additional-role"
+                                    placeholder="additional-role">
                             </fieldset>
                         </section>
-
+                        <hr class="my-5" />
 
                         <section class="row text-start gy-4 mt-5">
                             <div class="col-12 4 ">
@@ -179,7 +182,8 @@
                         </section>
 
                         <section class="row text-start gy-4 mt-5">
-                            <div class="col-12 4 ">
+                            <hr class="bg-white">
+                            <div class="col-12">
                                 <h2>Bank Details</h2>
                             </div>
                             <fieldset class="col-6 col-xl-3">
@@ -210,22 +214,24 @@
 
                             <fieldset class="col-6">
                                 <label class="form-label text-white" for="furnishing">Furnishing</label>
-                                <input type="text" class="form-control" id="furnishing"placeholder="Furnishing">
+                                <input type="text" class="form-control" id="furnishing" placeholder="Furnishing">
                             </fieldset>
 
                             <fieldset class="col-6">
                                 <label class="form-label text-white" id="per-date">Persomethig in date</label>
-                                <input type="text" class="form-control" for="per-date" placeholder="Persomethig in date">
+                                <input type="text" class="form-control" for="per-date"
+                                    placeholder="Persomethig in date">
                             </fieldset>
 
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white" id="total-occupation">Total occupation</label>
-                                <input type="text" class="form-control" for="total-occupation" placeholder="Total occupation" >
+                                <input type="text" class="form-control" for="total-occupation"
+                                    placeholder="Total occupation">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white" >Occupation</label>
-                                <input type="text" class="form-control"  placeholder="Occupation">
+                                <label class="form-label text-white">Occupation</label>
+                                <input type="text" class="form-control" placeholder="Occupation">
                             </fieldset>
 
                             <fieldset class="col-6 ">
@@ -240,7 +246,7 @@
 
                             <fieldset class="col-6 ">
                                 <label class="form-label text-white">Duration of tenancy </label>
-                                <input type="text" class="form-control" placeholder="Duration of tenancy" >
+                                <input type="text" class="form-control" placeholder="Duration of tenancy">
                             </fieldset>
 
                             <fieldset class="col-6 ">
@@ -278,6 +284,23 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             </fieldset>
                         </section>
                     </section>
+
+
+                    <hr class="my-5 bg-white" />
+                    <article class="row justify-content-end mt-5">
+                        <div class="col-md-3 col-6">
+                            <a href="javascript:void" class="w-100 btn btn-outline-info">
+                                Edit &nbsp;
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <a href="javascript:void" class="w-100 btn btn-primary">
+                                Save &nbsp;
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
+                    </article>
                 </article>
             </section>
         </article>

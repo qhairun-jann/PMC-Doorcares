@@ -16,16 +16,17 @@
 
 <body class="p-0 bg-dark h-100 text-center text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app">
+    <main class="cover-container d-flex p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
-            <h1 class="text-white text-center">Property Documents</h1>
-            <hr />
+
             <section class="row justify-content-center">
                 <section class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">Property Documents</h1>
+                    <hr />
                     <div class="row gy-4">
                         <section class="col-12 text-start">
                             <form method="post" enctype="multipart/form-data">
-                                <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload"> +
+                                <label name="file-upload-field" class="btn btn-primary " for="upload"> +
                                     Upload File
                                 </label>
                                 <input type="file" id="upload" hidden name="file-upload-field">
@@ -39,32 +40,28 @@
                             <figure class="col-12 mx-1 position-relative pointer">
                                 <img src="/assets/img/pdf.svg"
                                     style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
-                                    alt="/assets/img/pdf.svg">
+                                    alt="/assets/img/pdf.svg"
+                                    >
                                 <div class="d-flex justify-content-center align-items-center position-relative"
                                     style="height: 240px;">
-                                    <button class="btn btn-outline-info btn-sm position-absolute px-3"
-                                        style="top:15%;right:14%;transform: translate(-50%, -50%);">
-                                        Edit
-                                    </button>
                                     <h3 style="letter-spacing:2px">PDF</h3>
                                 </div>
                             </figure>
+                            <div class="col">
+                                <button class="btn btn-primary btn-sm w-50">
+                                    Edit
+                                </button>
+
+                            </div>
                         </section>
                     </div>
 
                     <hr class="my-5" />
-                    <div class="row justify-content-between mt-5">
-                        <div class="col-md-4 col-6">
-                            <a href="/src/app-library/properties/building/all-unit/bills.html"
-                                class="w-100 btn btn-outline-info">
-                                <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
-                                Back To Users
-                            </a>
-                        </div>
+                    <div class="row justify-content-end mt-5">
                         <div class="col-md-4 col-6">
                             <a href="/javascript:void" class="w-100 btn btn-primary" data-bs-target="#appointmentModal"
                                 data-bs-toggle="modal">
-                                Save/Continue &nbsp;
+                                Save &nbsp;
                                 <i class="far fa-arrow-alt-circle-right"></i>
                             </a>
                         </div>
