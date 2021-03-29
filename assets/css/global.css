@@ -187,6 +187,16 @@ a.remove-a-css {
   border-top: 3px dotted#c7c7c7;
 }
 
+.small-profilePic {
+  width: 50px !important;
+  height: 50px !important;
+}
+.noborderbtm {
+  border-bottom: 0px solid !important;
+}
+.nobordertop {
+  border-top: 0px solid !important;
+}
 
 .paymobile {
   display: none;
@@ -204,8 +214,25 @@ a.cardtext:hover {
   color: #000;
   text-decoration: none;
 }
+
+.bg-liteBlueTenant {
+  background-color: #a9ccea !important;
+}
+
+.bg-liteBlueLandlord {
+  background-color: #5ab3ff !important;
+}
+
 .table>thead {
   text-transform: capitalize;
+}
+
+.listComment {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.listComment li {
+  margin: 5px 10px;
 }
 
 
