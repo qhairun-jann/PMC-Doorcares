@@ -14,41 +14,43 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
 
-        <div class="container ">
-            <div class="row gy-4 mt-3">
-                <h1 class="mt-5 text-white text-center">User Manual</h1>
-                <hr />
-                <section class="col-12 mb-3">
-                    <form method="post" enctype="multipart/form-data">
-                        <label name="file-upload-field" class="btn btn-lg btn-outline-info " for="upload">
-                             + Upload File
+        <article class="container my-5">
+            <section class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">User Manual</h1>
+                    <hr />
+                    <form method="post" enctype="multipart/form-data" class="justify-content-end">
+                        <label name="file-upload-field" class="btn btn-primary " for="upload">
+                            + Upload File
                         </label>
                         <input type="file" id="upload" hidden name="file-upload-field">
                     </form>
-                </section>
-                <!-- <hr> -->
-                <section class="row col-12 col-md-6 col-lg-6 col-xl-3 mx-auto" v-for="(item,key) in pdfArray">
-                    <p class="col-12 size-2 mt-4 pointer text-center">
-                        {{item}}
-                    </p>
-                    <figure class="col-12 mx-1 position-relative pointer">
-                        <!-- <h1>{{item}}</h1> -->
-                        <img src="/assets/img/pdf.svg"
-                            style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
-                            alt="/assets/img/pdf.svg">
-                        <div class="d-flex justify-content-center align-items-center" style="height: 240px;">
-                            <h3 style="letter-spacing:2px">PDF</h3>
+                    <hr>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-3 mx-auto" v-for="(item,key) in pdfArray">
+                            <p class="size-2 mt-4 pointer text-center">
+                                {{item}}
+                            </p>
+                            <figure class="mx-1 position-relative pointer">
+                                <!-- <h1>{{item}}</h1> -->
+
+                                <img src="/assets/img/pdf.svg"
+                                    style="position: absolute;height:100%;left:50%;top:50%;transform: translate(-50%, -50%);"
+                                    alt="/assets/img/pdf.svg">
+                                <div class="d-flex justify-content-center align-items-center" style="height: 240px;">
+                                    <h3 style="letter-spacing:2px">PDF</h3>
+                                </div>
+                            </figure>
                         </div>
-                    </figure>
-                </section>
-            </div>
-        </div>
-        <footer includehtml="/src/footer.html" class="mt-auto">
-        </footer>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer includehtml="/src/footer.html" class="mt-auto"> </footer>
     </main>
 </body>
 

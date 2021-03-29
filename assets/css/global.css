@@ -183,6 +183,74 @@ a.remove-a-css {
   min-height: 300px;
 }
 
+.hrdotted {
+  border-top: 3px dotted#c7c7c7;
+}
+
+.small-profilePic {
+  width: 50px !important;
+  height: 50px !important;
+}
+.noborderbtm {
+  border-bottom: 0px solid !important;
+}
+.nobordertop {
+  border-top: 0px solid !important;
+}
+
+.paymobile {
+  display: none;
+}
+
+.paydesktop {
+  display: block;
+}
+
+a.cardtext {
+  color: #000;
+  text-decoration: none;
+}
+a.cardtext:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.bg-liteBlueTenant {
+  background-color: #a9ccea !important;
+}
+
+.bg-liteBlueLandlord {
+  background-color: #5ab3ff !important;
+}
+
+.table>thead {
+  text-transform: capitalize;
+}
+
+.listComment {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.listComment li {
+  margin: 5px 10px;
+}
+
+
+/* text */
+/* ================================= */
+
+.text-red {
+  color: red !important;
+}
+
+.text-green {
+  color: #06D85F !important;
+}
+
+.text-blue {
+  color: #17a2b8 !important;
+}
+
 
 /* modal */
 /* ================================= */

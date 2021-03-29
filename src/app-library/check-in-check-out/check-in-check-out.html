@@ -15,13 +15,13 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 bg-dark">
+<body class="p-0 bg-dark text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center">
                 <section class="col-md-10">
-                    <h1 class="mt-5 text-white text-center">Check in and check out</h1>
+                    <h1 class="mt-5 text-white text-center">Check In and Check Out</h1>
                     <hr class="bg-white" />
                     <ul class="nav nav-pills nav-fill nav-center">
                         <li class="nav-item nav-link fixed-width">
@@ -31,16 +31,19 @@
                                     Building name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void">
-                                            <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"> - </a>
-                                    </li>
-                                </ul>
+                                    <li><a class="dropdown-item" href="#">
+                                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                                    <li><a class="dropdown-item mt-3" href="#">KL Gateway Residences</a></li>
+                                    <li><a class="dropdown-item" href="#">KL Gateway Premium</a></li>
+                                    <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a></li>
+                                    <li><a class="dropdown-item" href="#">Novum Bangsar South</a></li>
+                                    <li><a class="dropdown-item" href="#">South View Service Apartments</a></li>
+                                    <li><a class="dropdown-item" href="#">KL Eco City</a></li>
+                                    <li><a class="dropdown-item" href="#">Camellia Serviced Suites</a></li>
+                                    <li><a class="dropdown-item" href="#">Secoya Residences</a></li>
+                                    <li><a class="dropdown-item" href="#">The Establishment</a></li>
+                                    <li><a class="dropdown-item" href="#">Menara KL Gateway (Work Suites)</a></li>
+                                  </ul>
                             </div>
                         </li>
 
@@ -51,16 +54,18 @@
                                     Unit number
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li>
-                                        <a class="dropdown-item" href="javascript:void">
+                                    <li><a class="dropdown-item" href="#">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" />
-                                        </a>
+                                                aria-label="Search" /></a>
                                     </li>
-                                    <li>
-                                        <a class="dropdown-item mt-3" href="#">-</a>
-                                    </li>
-
+                                    <li><a class="dropdown-item mt-3" href="#">A1-1-1</a></li>
+                                    <li><a class="dropdown-item" href="#">A1-1-2</a></li>
+                                    <li><a class="dropdown-item" href="#">B2-1-2</a></li>
+                                    <li><a class="dropdown-item" href="#">B2-4-3</a></li>
+                                    <li><a class="dropdown-item" href="#">B3-4-4</a></li>
+                                    <li><a class="dropdown-item" href="#">F4-2-3</a></li>
+                                    <li><a class="dropdown-item" href="#">G1-1-3</a></li>
+                                    <li><a class="dropdown-item" href="#">H5-6-4</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -78,9 +83,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-
-                        
+                        </li>                      
                         
                         <li class="nav-item nav-link fixed-width ms-1">
                             <div class="btn-group w-100">
@@ -127,8 +130,8 @@
                             </thead>
                             <tbody>
                                 <tr class="align-middle">
-                                    <td>-</td>
-                                    <td>-</td>
+                                    <td>KL Gateway Residence</td>
+                                    <td>A1-1-1</td>
                                     <td>12-03-2021</td>
                                     <td>00:00</td>
                                     <td>12-03-2021</td>
@@ -145,7 +148,6 @@
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -153,7 +155,9 @@
 <script>
     includehtml();
 </script>
+
 <script>
+    
     var app = new Vue({
         el: '#vue-app',
         data: {

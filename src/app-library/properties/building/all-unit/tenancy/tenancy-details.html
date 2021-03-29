@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Tenancy details | PMC Doorcares</title>
+    <title> Tenancy Details | PMC Doorcares</title>
     <meta name="description" content="A description.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,137 +15,140 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100">
+<body class="p-0 bg-dark text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <section class="container mb-5">
-            <h1 class="mt-5 text-white text-center">Tenancy Agreement Details</h1>
-            <div class="row">
-                <div class="col-12">
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <article class="container my-5">
+            <section class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">Tenancy Agreement Details</h1>
                     <hr />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-start mt-2">Building name</p>
-                    <p class="text-start mt-0">-</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-start mt-2">Unit Number</p>
-                    <p class="text-start mt-0">-</p>
-                </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <p class="text-start">Tenant name</p>
-                    <div class="avatar-upload d-flex">
-                        <div class="avatar-preview">
-                            <div id="imagePreview" class="img-fluid"
-                                style="background-image: url(/assets/img/avatar.svg);">
-                            </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-4">
+                            <p class="text-start mt-2">Building name</p>
+                            <p class="text-start mt-0">-</p>
                         </div>
-                        <div class="align-self-center ms-3">
-                            <h5>John Doe Alexander</h5>
+                        <div class="col-sm-4">
+                            <p class="text-start mt-2">Unit Number</p>
+                            <p class="text-start mt-0">-</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <p class="text-start">Landlord name</p>
-                    <div class="avatar-upload d-flex">
-                        <div class="avatar-preview">
-                            <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                    <hr />
+                    <div class="row">
+                        <div class="col-lg-4 mt-4">
+                            <p class="text-start">Tenant name</p>
+                            <div class="avatar-upload d-flex">
+                                <div class="avatar-preview">
+                                    <div id="imagePreview" class="img-fluid"
+                                        style="background-image: url(/assets/img/avatar.svg);">
+                                    </div>
+                                </div>
+                                <div class="align-self-center ms-3">
+                                    <h5>John Doe Alexander</h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="align-self-center ms-3">
-                            <h5>John Doe Alexander</h5>
+                        <div class="col-lg-4 mt-4">
+                            <p class="text-start">Landlord name</p>
+                            <div class="avatar-upload d-flex">
+                                <div class="avatar-preview">
+                                    <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                                    </div>
+                                </div>
+                                <div class="align-self-center ms-3">
+                                    <h5>John Doe Alexander</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-sm-4 mt-4">
-                    <p class="text-start mt-0">Tenancy start date</p>
-                    <p class="text-muted text-start mt-0">dd/mm/yyyy</p>
-                </div>
-                <div class="col-sm-4 mt-4">
-                    <p class="text-start mt-0">Tenancy end date</p>
-                    <p class="text-muted text-start mt-0">dd/mm/yyyy</p>
-                </div>
-                <div class="col-sm-4 mt-4">
-                    <p class="text-start mt-0">Status</p>
-                    <p class="text-muted text-start mt-0">Open</p>
-                </div>
-            </div>
-            <hr />
-            <div class="row">
-                <div class="col-sm-8">
-                    <p>Tenancy agreement</p>
-                    <img src="/assets/img/tenancy-agree-sample.jpg" class="rounded mt-3 img-fluid" alt="tenancy" />
-                    <input type='file' style="display:none;" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="table-responsive text-start mt-5">
-                    <table class="table table-dark table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <td>
-                                    <h6>Building name </h6>
-                                </td>
-                                <td>
-                                    <h6>Unit number</h6>
-                                </td>
-                                <td>
-                                    <h6>Tenant name</h6>
-                                </td>
-                                <td>
-                                    <h6>Landlord Name</h6>
-                                </td>
-                                <td>
-                                    <h6>Tenant start dat</h6>
-                                </td>
-                                <td>
-                                    <h6>Tenancy end date </h6>
-                                </td>
-                                <td>
-                                    <h6>Status</h6>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
-                                <td>12-03-2021</td>
-                                <td>Tylermiller</td>
-                                <td>Paradise Residence</td>
-                                <td>-</td>
-                                <td>Offer pending</td>
-                                <td>Yes</td>
-                                <td>Rudy</td>
-                            </tr>
-                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
-                                <td>12-03-2021</td>
-                                <td>Tylermiller</td>
-                                <td>Paradise Residence</td>
-                                <td>-</td>
-                                <td>Offer accepted</td>
-                                <td>Yes</td>
-                                <td>Rudy</td>
-                            </tr>
-                            <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
-                                <td>12-03-2021</td>
-                                <td>Tylermiller</td>
-                                <td>Paradise Residence</td>
-                                <td>-</td>
-                                <td>Offer rejected</td>
-                                <td>No</td>
-                                <td>Rudy</td>
-                            </tr>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-4 mt-4">
+                            <p class="text-start mt-0">Tenancy start date</p>
+                            <p class="text-muted text-start mt-0">dd/mm/yyyy</p>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <p class="text-start mt-0">Tenancy end date</p>
+                            <p class="text-muted text-start mt-0">dd/mm/yyyy</p>
+                        </div>
+                        <div class="col-sm-4 mt-4">
+                            <p class="text-start mt-0">Status</p>
+                            <p class="text-muted text-start mt-0">Open</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p>Tenancy agreement</p>
+                            <img src="/assets/img/tenancy-agree-sample.jpg" class="rounded mt-3 img-fluid"
+                                alt="tenancy" />
+                            <input type='file' style="display:none;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="table-responsive text-start mt-5">
+                            <table class="table table-dark table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <h6>Building name </h6>
+                                        </td>
+                                        <td>
+                                            <h6>Unit number</h6>
+                                        </td>
+                                        <td>
+                                            <h6>Tenant name</h6>
+                                        </td>
+                                        <td>
+                                            <h6>Landlord Name</h6>
+                                        </td>
+                                        <td>
+                                            <h6>Tenant start dat</h6>
+                                        </td>
+                                        <td>
+                                            <h6>Tenancy end date </h6>
+                                        </td>
+                                        <td>
+                                            <h6>Status</h6>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
+                                        <td>12-03-2021</td>
+                                        <td>Tylermiller</td>
+                                        <td>Paradise Residence</td>
+                                        <td>-</td>
+                                        <td>Offer pending</td>
+                                        <td>Yes</td>
+                                        <td>Rudy</td>
+                                    </tr>
+                                    <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
+                                        <td>12-03-2021</td>
+                                        <td>Tylermiller</td>
+                                        <td>Paradise Residence</td>
+                                        <td>-</td>
+                                        <td>Offer accepted</td>
+                                        <td>Yes</td>
+                                        <td>Rudy</td>
+                                    </tr>
+                                    <tr class="align-middle pointer" onclick="location.href='offer-details.html'">
+                                        <td>12-03-2021</td>
+                                        <td>Tylermiller</td>
+                                        <td>Paradise Residence</td>
+                                        <td>-</td>
+                                        <td>Offer rejected</td>
+                                        <td>No</td>
+                                        <td>Rudy</td>
+                                    </tr>
 
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </article>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

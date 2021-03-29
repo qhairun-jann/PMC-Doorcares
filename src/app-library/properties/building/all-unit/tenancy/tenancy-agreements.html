@@ -15,17 +15,103 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-center text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 h-100 p-3 mt-5 flex-column">
-        <section class="mb-5">
-            <div class="container mt-2">
+    <main class="cover-container d-flex w-100 h-100 p-3 flex-column">
+        <section class="container my-5">
                 <div class="row justify-content-center">
                     <div class="col-10">
-
-                        <h1>  TA/Contract </h1>
-                        <hr>
-                        <div class="table-responsive text-start">
+                        <h1 class="mt-5 text-white text-center">Tenancy Agreement List</h1>
+                        <hr class="text-white" />
+                        <ul class="nav nav-pills nav-fill nav-center mt-5">
+                            <li class="nav-item nav-link">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tenant Name
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">
+                                                <input class="form-control " type="text" placeholder="Search"
+                                                    aria-label="Search"></a></li>
+                                        <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                                        <li><a class="dropdown-item" href="#">Otto1</a></li>
+                                        <li><a class="dropdown-item" href="#">Thornton</a></li>
+                                        <li><a class="dropdown-item" href="#">@fat</a></li>
+                                        <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                                        <li><a class="dropdown-item" href="#">twitter</a></li>
+                                        <li><a class="dropdown-item" href="#">fat</a></li>
+                                        <li><a class="dropdown-item" href="#">Otto3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Landlord Name
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">
+                                                <input class="form-control " type="text" placeholder="Search"
+                                                    aria-label="Search"></a></li>
+                                        <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                                        <li><a class="dropdown-item" href="#">Otto1</a></li>
+                                        <li><a class="dropdown-item" href="#">Thornton</a></li>
+                                        <li><a class="dropdown-item" href="#">@fat</a></li>
+                                        <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                                        <li><a class="dropdown-item" href="#">twitter</a></li>
+                                        <li><a class="dropdown-item" href="#">fat</a></li>
+                                        <li><a class="dropdown-item" href="#">Otto3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tenancy Start Date
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="javascript:void">
+                                                <input class="form-control" type="date" placeholder="Search"
+                                                    aria-label="Search"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tenancy End Date
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="javascript:void">
+                                                <input class="form-control" type="date" placeholder="Search"
+                                                    aria-label="Search"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link">
+                                <div class="btn-group w-100">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Status Of Contract
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">
+                                                <input class="form-control " type="text" placeholder="Search"
+                                                    aria-label="Search"></a></li>
+                                        <li><a class="dropdown-item mt-3" href="#">Open</a></li>
+                                        <li><a class="dropdown-item" href="#">Closed</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr />
+                        <div class="table-responsive text-start mt-5">
                             <table class="table table-dark table-striped table-hover">
                                 <thead>
                                     <tr class="align-middle">
@@ -48,12 +134,12 @@
                                 </thead>
                                 <tbody>
                                     <tr class="align-middle" onclick="location.href='tenancy-details.html'"
-                                        style="cursor: pointer;" >
+                                        style="cursor: pointer;">
                                         <td>Mr. Am</td>
                                         <td> Mr. A </td>
                                         <td> 01-01-2021 </td>
                                         <td> 01-01-2022 </td>
-                                    <td> close </td>
+                                        <td> Closed </td>
                                     </tr>
                                     <tr class="align-middle" onclick="location.href='tenancy-details.html'"
                                         style="cursor: pointer;">
@@ -61,17 +147,16 @@
                                         <td> Mr. D</td>
                                         <td> 01-01-2021 </td>
                                         <td> 01-01-2022 </td>
-                                        <td> close </td>
+                                        <td> Closed </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <footer includehtml="/src/footer.html" class="mt-auto">
-        
+
         </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

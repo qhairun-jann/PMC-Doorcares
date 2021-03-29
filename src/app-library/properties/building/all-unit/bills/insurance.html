@@ -14,38 +14,64 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white bg-dark">
+<body class="p-0 bg-dark h-100 text-center text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="vue-app">
+    <main class="cover-container d-flex p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center ">
                 <section class="col-sm-10">
-                    <h1 class="text-white text-center mt-5"> Insurance </h1>
+                    <h1 class="text-white text-center mt-5">Insurance</h1>
                     <hr />
-                    <div class="row text-start mx-auto">
-                        <div class="col-12"> Anual charges </div>
-                        <div class="col-12 py-3"> - </div>
+                    <div>
+                        <div class="row g-3 mt-0">
+                            <div class="col-md-4">
+                                <label for="budget" class="form-label">Annual charge</label>
+                                <input type="number" class="form-control" placeholder="eg: RM5,000" />
+                            </div>
+                        </div>
                         <hr />
-
-                        <div class="col-12 mb-5 "> <h5>  Payable to  </h5> </div>
-                        <div class="col-6">
-                            Name payables 
+                        <div class="row g-3 mt-0">
+                            <div class="text-sm-start mb-0 "><h5>Payable to</h5></div>
                         </div>
-                        <div class="col-6">
-                            Contact number
+                        <div class="row g-3 my-0">
+                            <div class="col-md-4">
+                                <label for="duration" class="form-label">Name payables</label>
+                                <input type="text" class="form-control" placeholder=" eg: John Smitch" />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="remarks" class="form-label">Contact number</label>
+                                <input type="number" class="form-control" placeholder=" eg: 012-3456172"/>
+                            </div>
                         </div>
-                        <div class="col-6 py-3"> - </div>
-                        <div class="col-6 py-3"> - </div>
                         <hr />
-                        <div class="col-6">
-                             Bank name 
+                        <div class="row g-3 mt-0">
+                            <div class="col-md-4">
+                                <label for="duration" class="form-label">Bank Name</label>
+                                <input type="text" class="form-control" placeholder="eg: Maybank BHD"/>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="remarks" class="form-label">Bank account no</label>
+                                <input type="number" class="form-control" placeholder="eg: 16489-1882"/>
+                            </div>
                         </div>
-                        <div class="col-6">
-                             Bank account number 
-                        </div>
-                        <div class="col-6 py-3"> - </div>
-                        <div class="col-6 py-3"> - </div>
+                    </div>
+                    <hr />
 
+                    <div class="row justify-content-between mt-5">
+                        <div class="col-md-4 col-6">
+                            <a href="/src/app-library/properties/building/all-unit/bills.html"
+                                class="w-100 btn btn-outline-info">
+                                <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                Back To Bills
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <a href="/javascript:void" class="w-100 btn btn-primary" data-bs-target="#appointmentModal"
+                                data-bs-toggle="modal">
+                                Edit/Save &nbsp;
+                                <i class="far fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </section>

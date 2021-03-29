@@ -13,13 +13,14 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 bg-dark">
+<body class="p-0 bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column" id="vue-app">
+        <article class="container my-5">
             <section class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-sm-10">
                     <h1 class="mt-5 text-white text-center">Maintenance Details</h1>
-                    <hr class="bg-white"/>
+                    <hr class="bg-white" />
                     <div class="d-flex my-4">
                         <div class="align-self-center">
                             <img src="/assets/img/avatar.svg" alt="assets/img/avatar.svg" width="100px" />
@@ -71,100 +72,181 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="timeline mt-5">
+                    <section class="d-flex p-0">
+                        <button class="btn btn-primary btn-sm mt-5">Insert New Post</button>
+
+                        <div class="btn-group btn-sm mt-5 ms-auto">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sort
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item mt-3" href="#">Latest</a></li>
+                                <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                <li><a class="dropdown-item" href="#">In Review</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <hr class="hrdotted" />
+                    <div class="timeline">
                         <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
                             data-name="cat2, unit2, bldng2, date2">
                             <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                <small class="text-muted">5/5/2021 | 6:30pm</small>
+                                <h5><strong>Tenant Requested for Maintenance Category: Pipe Burst</strong></h5>
+                                <button class="btn btn-primary mt-3" data-bs-target="#msgButtonTo"
+                                    data-bs-toggle="modal">Send Message to</button>
                             </div>
                         </div>
-                        <div class="timelinecontainer filterDiv right cat3 unit3 bldng3 date3"
-                            data-name="cat3, unit3, bldng3, date3">
+
+                        <div class="timelinecontainer filterDiv right rightReply tenant cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
+                            <div class="content ms-5 bg-liteBlueTenant">
+                                <small class="text-muted">5/5/2021 | 6:30pm</small> -
+                                <strong><small>Tenant</small></strong>
+                                <p class="mb-0">Person In Charge to Tenant: What time should the maintenance team come
+                                    for service? What time are you available?</p>
+                                <button class="btn btn-outline-dark btn-sm mt-2" data-bs-target="#rplyBox"
+                                    data-bs-toggle="modal">Reply</button>
+                            </div>
+                        </div>
+                        <div class="timelinecontainer filterDiv right rightReply landlord cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
+                            <div class="content ms-5 bg-liteBlueLandlord">
+                                <small class="text-white">5/5/2021 | 6:30pm</small> -
+                                <strong><small>Lanlord</small></strong>
+                                <p class="mb-0">Tenant to Person In Charge: Today after 2 pm I will be in the apartment
+                                </p>
+                                <button class="btn btn-outline-dark btn-sm mt-2" data-bs-target="#rplyBox"
+                                    data-bs-toggle="modal">Reply</button>
+                            </div>
+                        </div>
+
+                        <!-- Other Post -->
+
+                        <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
                             <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                <small class="text-muted">5/5/2021 | 6:30pm</small>
+                                <h5><strong>Appointment for maintenance fixed at 2.30 pm</strong></h5>
+                                <button class="btn btn-primary mt-3" data-bs-target="#msgButtonTo"
+                                    data-bs-toggle="modal">Send Message to</button>
                             </div>
                         </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
+                        <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
                             <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                <small class="text-muted">5/5/2021 | 6:30pm</small>
+                                <h5><strong>Maintenance in progress</strong></h5>
+                                <button class="btn btn-primary mt-3" data-bs-target="#msgButtonTo"
+                                    data-bs-toggle="modal">Send Message to</button>
                             </div>
                         </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
+                        <div class="timelinecontainer filterDiv right cat2 unit2 bldng2 date2"
+                            data-name="cat2, unit2, bldng2, date2">
                             <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
+                                <small class="text-muted">5/5/2021 | 6:30pm</small>
+                                <h5><strong>Maintenance completed</strong></h5>
+                                <button class="btn btn-primary mt-3" data-bs-target="#msgButtonTo"
+                                    data-bs-toggle="modal">Send Message to</button>
                             </div>
                         </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
-                        <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
-                            data-name="cat1, unit1, bldng1, date1">
-                            <div class="content">
-                                <small>5/5/2021 | 6:30pm</small>
-                                <h2>Title</h2>
-                                <p>Philly Jackson wants to tour a unit in Lake Side Residence</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
+        </article>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
+
+
+    <!-- Modal for Select Role -->
+    <div class="modal fade" id="msgButtonTo" tabindex="-1" aria-labelledby="msgButtonToLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header noborderbtm">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="avatar-upload d-flex pointer" data-bs-dismiss="modal" data-bs-toggle="modal"
+                        data-bs-target="#rplyBox">
+                        <div class="avatar-preview small-profilePic">
+                            <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                            </div>
+                        </div>
+                        <div class="align-self-center ms-3">
+                            <h5>David Hasseloff</h5>
+                            <p class="text-muted">Tenant</p>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div class="avatar-upload d-flex pointer" data-bs-dismiss="modal" data-bs-toggle="modal"
+                    data-bs-target="#rplyBox">
+                        <div class="avatar-preview small-profilePic">
+                            <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                            </div>
+                        </div>
+                        <div class="align-self-center ms-3">
+                            <h5>Jenny McCarthy</h5>
+                            <p class="text-muted">Landlord</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer nobordertop justify-content-end">
+                    <button type="button" class="btn btn-primary w-150px " data-bs-dismiss="modal"
+                        data-bs-toggle="modal" data-bs-target="#successMsg">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for Select for reply box -->
+    <div class="modal fade" id="rplyBox" tabindex="-1" aria-labelledby="rplyBoxLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header noborderbtm">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label>Type your message</label>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </form>
+                    <div class="mt-3">
+                        <ul class="d-flex listComment">
+                            <li>
+                                <a href="javascript:void" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Bold">
+                                    <i class="fas fa-bold"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Italic">
+                                    <i class="fas fa-italic"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Underline">
+                                    <i class="fas fa-underline"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary w-150px " data-bs-dismiss="modal"
+                        data-bs-toggle="modal" data-bs-target="#successMsg">Cancel</button>
+                    <button type="button" class="btn btn-primary w-150px " data-bs-dismiss="modal"
+                        data-bs-toggle="modal" data-bs-target="#successMsg">Reply</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -187,6 +269,12 @@
             const urlParams = new URLSearchParams(window.location.search);
             this.misc = urlParams.get("misc");
         }
+    })
+</script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 </script>
 

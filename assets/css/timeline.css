@@ -81,10 +81,25 @@
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
+.rightReply::before {
+  left: 65px;
+}
+.rightReply.tenant::before {
+  border: medium solid #a9ccea;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #a9ccea transparent transparent;
+}
+.rightReply.landlord::before {
+  border: medium solid #5ab3ff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #5ab3ff transparent transparent;
+}
 
 .right::after {
   left: -8px;
 }
+
+
 
 .content {
   padding: 20px 30px;
