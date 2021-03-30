@@ -64,7 +64,7 @@
                             <div class="py-3 text-start">
                                 <h3>{{data.header}} </h3>
                                 <hr class="text-white">
-                                <a :href="`${item.link}`" v-for="item in data.body" class="btn btn-primary m-2">
+                                <a :href="`${item.link}`" v-for="item in data.body" class="btn btn-outline-info m-2">
                                     {{item.name}}
                                 </a>
                             </div>
@@ -126,6 +126,12 @@
                         { name: 'Electricity', link: "meter-readings.html" },
                         { name: 'Water', link: "meter-readings.html" },
                         { name: 'Gas', link: "meter-readings.html" },
+                    ]
+                },
+                {
+                    header: "Additions",
+                    body: [
+                        { name: '+ Add Item', link: "meter-readings.html" },
                     ]
                 },
 
