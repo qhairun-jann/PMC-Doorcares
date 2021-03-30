@@ -14,45 +14,50 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white">
+<body class="p-0 bg-dark h-100  text-white">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center ">
                 <section class="col-sm-10">
-                    <h1 class="text-white text-center mt-5">Utilities</h1>
+                    <h1 class="text-white text-center mt-5">{{title}}</h1>
                     <hr />
                     <div>
                         <div class="row g-3 mt-0">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="budget" class="form-label">Company name</label>
-                                <input type="number" class="form-control" placeholder="eg: Jann Properties" />
+                                <input type="text" class="form-control" disabled value="Jann Properties" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="budget" class="form-label">Contact number</label>
-                                <input type="number" class="form-control" placeholder="eg: 013-54237651" />
+                                <input type="text" class="form-control" disabled value="013-54237651" />
                             </div>
                         </div>
                         <hr />
                         <div class="row g-3 my-0">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="duration" class="form-label">Reference number</label>
-                                <input type="text" class="form-control" placeholder=" eg: John Smitch" />
+                                <input type="text" class="form-control" disabled value="John Smitch" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="remarks" class="form-label">Bank name</label>
-                                <input type="number" class="form-control" placeholder=" eg: Maybank Bhd" />
+                                <input type="text" class="form-control" disabled value="Maybank Bhd" />
                             </div>
                         </div>
                         <hr />
                         <div class="row g-3 mt-0">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="duration" class="form-label">Bank account number</label>
-                                <input type="text" class="form-control" placeholder="eg:164797891-1" />
+                                <input type="text" class="form-control" disabled value="164797891-1" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <label for="remarks" class="form-label">Amount</label>
-                                <input type="number" class="form-control" placeholder="eg: RM5,000" />
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text  bg-muted" id="addon-rm">RM</span>
+                                    </div>
+                                    <input type="text" class="form-control" disabled value="5,000" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -73,8 +78,8 @@
                             </a>
                         </div>
                     </div>
-                </section>    
                 </section>
+            </section>
         </article>
         <footer includehtml="/src/footer.html" class="mt-auto">
         </footer>
