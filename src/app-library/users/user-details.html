@@ -43,16 +43,17 @@
                                     <div class="col-md-3">
                                         <label class="form-label">Role</label>
                                         <input type="text" class="form-control" value="-">
-                                        <div class="invalid-feedback">
-                                            Please select one
-                                        </div>
+
                                     </div>
                                     <div class="col-md-3">
                                         <label class="form-label">Verification Status</label>
-                                        <input type="text" class="form-control" value="-">
-                                        <div class="invalid-feedback">
-                                            Please select one
-                                        </div>
+                                        <select class="form-control form-select" id="status">
+                                            <option value="" selected> select </option>
+                                            <option>Verified</option>
+                                            <option>Not verified</option>
+                                            <option>Pending</option>
+                                        </select>
+
                                     </div>
                                 </div>
                                 <hr />
@@ -203,6 +204,9 @@
                     <section v-if="btnActive === 1">
                         <section class="row  text-start gy-4 mt-5">
 
+                            <p class="m-0 text-muted"> Received date:<strong> 12-12-2020 </strong>, Time: <strong>2:12
+                                    PM</strong></p>
+
                             <fieldset class="col-6">
                                 <label class="form-label text-white" for="budget">Budget</label>
                                 <input type="text" class="form-control" id="budget" placeholder="Budget">
@@ -216,11 +220,11 @@
                                 <label class="form-label text-white" for="furnishing">Furnishing</label>
                                 <input type="text" class="form-control" id="furnishing" placeholder="Furnishing">
                             </fieldset>
-
                             <fieldset class="col-6">
-                                <label class="form-label text-white" id="per-date">Persomethig in date</label>
-                                <input type="text" class="form-control" for="per-date"
-                                    placeholder="Persomethig in date">
+                                <label class="form-label text-white" for="Proposed-move-in-date">Proposed move in
+                                    date</label>
+                                <input type="text" class="form-control" placeholder="Proposed move in date"
+                                    id="Proposed-move-in-date">
                             </fieldset>
 
                             <fieldset class="col-6 ">
@@ -260,7 +264,38 @@
 Lorem ipsum commodo ut esse aute velit cillum cillum magna nostrud velit consectetur. Culpa mollit enim pariatur pariatur eu aute deserunt qui cillum.
 Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore aliquip.
                                 </textarea>
+
+                                <article class="row justify-content-end mt-3">
+                                    <div class="col-md-4 col-6 text-end">
+                                        <a href="/src/app-library/requirement/recommended/requirement-matchingtool.html" class="btn btn-primary">
+                                            Requirements matching tool
+                                        </a>
+                                    </div>
+                                </article>
                             </fieldset>
+
+
+                            <hr class="bg-white my-4">
+
+                            <div class="col-12 text-start table-responsive">
+                                <h4 class="fw-bold">Forwards To Rizuf Cordinator</h4>
+                                <table class="table table-dark table-striped ">
+                                    <thead>
+                                        <tr>
+                                            <td>Date of recommendation</td>
+                                            <td>Total Units</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="align-middle">
+                                            <td>12-12-2020</td>
+                                            <td>15</td>
+                                            <td><a class="btn btn-outline-info w-100" href="/src/app-library/requirement/recommended/requirement-matchingtool.html" >view</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
                     </section>
                     <section v-if="btnActive === 2">
@@ -282,9 +317,10 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                                 <!-- <label class="form-label text-white"></label> -->
                                 <input type="date" class="form-control" placeholder="Tenant">
                             </fieldset>
+
+
                         </section>
                     </section>
-
 
                     <hr class="my-5 bg-white" />
                     <article class="row justify-content-end mt-5">
@@ -322,13 +358,13 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
     var app = new Vue({
         el: '#vue-app',
         data: {
-            btnActive: 0,
+            btnActive: 1,
             buttons: [
                 'Personal details'
                 , 'Requirements'
                 , 'Roles'
                 , 'Appointments',
-                'offers',
+                'Offers',
                 'TA and Check-In',
                 'Payments',
                 'Recommended properties',
