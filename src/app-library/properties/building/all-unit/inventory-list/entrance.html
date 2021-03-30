@@ -20,16 +20,40 @@
     <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column" id="vue-app">
         <section class="row">
             <h1> Entrance Area </h1>
+            <h5 class="text-muted text-center">  <strong> B-08-03</strong>, KL Gateway Residences </h5>
             <hr>
-            <fieldset class="col-6 size-3 text-start">
-                <label for="date-1" class="form-label text-white">Tenancy start date</label>
-                <input type="date" class="form-control" id="date-1" value="2018-07-22">
-            </fieldset>
-            <fieldset class="col-6 size-3  text-start">
-                <label for="date-2" class="form-label text-white">Tenancy end date</label>
-                <input type="date" class="form-control" id="date-2" value="2018-07-22">
-            </fieldset>
-
+            <div class="filter js-navbar">
+                <ul class="nav nav-pills nav-fill nav-center">
+                    <li class="nav-item nav-link fixed-width">
+                        <div class="btn-group w-100">
+                            <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tenancy start date
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="javascript:void">
+                                        <input class="form-control" type="date" placeholder="Search"
+                                            aria-label="Search" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-link fixed-width">
+                        <div class="btn-group w-100">
+                            <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tenancy end date
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="javascript:void">
+                                        <input class="form-control" type="date" placeholder="Search"
+                                            aria-label="Search" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <section class="col-12 d-flex flex-wrap m-child-1 justify-content-center my-5">
                 <div v-for="(button,index) in buttons">
                     <button class="btn btn-outline-primary btn-lg px-5" @click="handleActive" :id="`${button.key}`">
