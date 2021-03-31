@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Users | Doorcares Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark text-center text-white">
+    <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">Tenancy Details</h1>
+                    <hr />
+                    <form class="needs-validation text-start" novalidate>
+                        <div class="row">
+                            <div class="col-12 mt-5 mb-3">
+                                <h3>Tenant Details</h3>
+                            </div>
+                            <div class="col-md-12 mb-5">
+                                <div class="avatar-upload d-flex">
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                                        </div>
+                                    </div>
+                                    <div class="align-self-center ms-5">
+                                        <h5>John Doe Alexander</h5>
+                                        <p class="text-muted m-0">March 15 2021 at 3:12 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-4 col-6">
+                                <label class="form-label">Username</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control bdr-radius-right" placeholder="Username"
+                                        value="John Doe Alexander" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="form-label">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control bdr-radius-right" placeholder="Username"
+                                        value="Johndoe.gmail.com" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-6">
+                                <label class="form-label">Contact</label>
+                                <input type="email" class="form-control bdr-radius-right" value="+6012-345 6789" />
+
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="form-label">Date Of TA Signing</label>
+                                <input type="date" class="form-control" id="date" value="15/mm/yyyy">
+
+                            </div>
+
+                            <div class="col-md-4 col-6">
+                                <label class="form-label">Date Of Check-In</label>
+                                <input type="date" class="form-control" id="date" value="15/mm/yyyy">
+
+                            </div>
+
+                        </div>
+                        <hr class="my-4">
+                        <div class="row g-3">
+                            <div class="col-12 mt-5">
+                                <h3>Landlord Details</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Landlord name</label>
+                                <input type="text" class="form-control" value="Carmen Electra" disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Date Of TA Signing</label>
+                                <input type="date" class="form-control" id="date" value="15/mm/yyyy">
+
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="row mb-5 g-3">
+                            <div class="col-12 mt-5">
+                                <h3>Building Details</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Building Name</label>
+                                <input type="text" class="form-control" value="KL Gateway Residences" disabled />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Unit/ID</label>
+                                <input type="text" class="form-control" value="B-13a-13" disabled />
+
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="row mb-5 g-3">
+                            <div class="col-12 mt-5">
+                                <h3>Digital Tenancy Agreement</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <figure class="pointer">
+                                        <img src="/assets/img/pdf.svg" alt="/assets/img/pdf.svg" width="150px" />
+                                    </figure>
+                                    <label for="passportCopy" class="custom-file-upload btn btn-primary w-300px mt-3">
+                                        <i class="fas fa-cloud-upload-alt"></i> Update
+                                    </label>
+                                    <input type='file' style="display:none;" />
+                                </div>
+                            </div>
+                            <!-- <hr class="my-4" />
+                            <div class="row mt-5 mb-5">
+                                <div class="col-md-4 col-6">
+                                    <a href="/tenancyagreement-list.html" class="w-100 btn btn-outline-info">
+                                        <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                        Back To Tenancy Agreement List
+                                    </a>
+                                </div>
+                            </div> -->
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/includefile.js"></script>
+    <script>
+        includehtml();
+    </script>
+</body>
+
+</html>

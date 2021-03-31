@@ -4,60 +4,55 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Create New Appointments | Doorcares Doorcares</title>
+    <title>Create Appointment | Doorcares Back Office</title>
     <meta name="description" content="A description.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1024">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
     <link href="/assets/css/style.css" rel="stylesheet" />
+
 </head>
 
-<body class="p-0 bg-dark text-white">
-    <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
+<body class="p-0 bg-dark text-center">
+    <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
         <section class="container my-5">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center text-white">
                 <div class="col-sm-10">
-                    <h1 class="mt-5 text-white text-center">Create New Appointments</h1>
-                    <hr class="text-white" />
-
-                    <div class="col text-end">
-                        <button class="btn btn-outline-info">Edit</button>
-                        <button class="btn btn-primary">Save</button>
-                    </div>
+                    <h1 class="mt-5 text-center">Create Appointment</h1>
                     <hr />
                     <form class="needs-validation text-start">
                         <div class="row g-3 mt-3">
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Category of Appointment</label>
                                 <select class="form-control form-select">
-                                    <option selected>Select category</option>
-                                    <option>Plumbing</option>
-                                    <option>Appliances</option>
-                                    <option>Household</option>
-                                    <option>Outdoors</option>
-                                    <option>Electricals</option>
-                                    <option>Others</option>
-                                    <option>Pay To Agent</option>
-                                    <option>Property Viewing</option>
+                                    <option>Property viewing</option>
+                                    <option>Pay to the agent</option>
                                 </select>
                             </div>
+                            <!-- <div class="col-md-4 col-6">
+                                    <label class="form-label">Sub Category of Appointment</label>
+                                    <select class="form-control form-select"">
+                                        <option>Select sub category</option>
+                                        <option>Property viewing (Pay cash to agent)</option>
+                                        <option>Property viewing (Pay cash by CDM)</option>
+                                    </select>
+                                </div> -->
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" placeholder=" eg: 2018-07-22" />
+                                <input type="date" class="form-control" />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" placeholder=" eg: 14:30" />
-
+                                <input type="time" class="form-control" />
                             </div>
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Building Name</label>
                                 <select class="form-control form-select">
-                                    <option selected>Select building name</option>
+                                    <option>Select building name</option>
                                     <option>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
                                 </select>
@@ -65,18 +60,19 @@
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Unit no.</label>
                                 <select class="form-control form-select">
-                                    <option selected>Select unit number</option>
+                                    <option>Select unit number</option>
                                     <option>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" placeholder=" eg: Jalan Mawar Bukit Tinggi Kuala Lumpur">
+                                <input type="text" class="form-control" />
+
                             </div>
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" placeholder=" eg: Rudy Hayes" />
+                                <input type="text" class="form-control" />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -86,34 +82,30 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Username</label>
-                                <input class="form-control form-select" list="usernameListOptions" id="usernameList"
-                                    placeholder="Type to search username.">
-                                <datalist id="usernameListOptions">
-                                    <option value="Wana Maharani">
-                                    <option value="Bob Dylan">
-                                    <option value="Eddie Vader">
-                                    <option value="Bruce Dickinson">
-                                    <option value="Chester Benniton">
+                                <label for="userName" class="form-label">Username</label>
+                                <input type="text" class="form-control form-select" list="userNameDatalist" id="userName"
+                                    placeholder="Type to search username">
+                                <datalist id="userNameDatalist">
+                                    <option>Esther Vimala</option>
+                                    <option>Felicia See</option>
+                                    <option>Nurul Najmina</option>
+                                    <option>Bell Ting</option>
+                                    <option>Nur Fatin</option>
                                 </datalist>
                             </div>
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" placeholder="eg: B777666" />
+                                <input type="text" class="form-control" />
                             </div>
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">IC Number</label>
-                                <input type="text" class="form-control" placeholder="eg: 2352245613311" />
+                                <input type="text" class="form-control" />
                             </div>
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Nationality</label>
-                                <input type="text" list="nation" class="form-control form-select"
+                                <input type="text" list="nation" class="form-control  form-select"
                                     placeholder="eg: Malaysian" />
                                 <datalist id="nation">
-                                    <option selected value="Select Nationality">Select Nationality</option>
                                     <option value="Afghanistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
@@ -156,8 +148,7 @@
                                     <option value="Canary Islands">Canary Islands</option>
                                     <option value="Cape Verde">Cape Verde</option>
                                     <option value="Cayman Islands">Cayman Islands</option>
-                                    <option value="Central African Republic">Central African Republic
-                                    </option>
+                                    <option value="Central African Republic">Central African Republic</option>
                                     <option value="Chad">Chad</option>
                                     <option value="Channel Islands">Channel Islands</option>
                                     <option value="Chile">Chile</option>
@@ -194,8 +185,7 @@
                                     <option value="France">France</option>
                                     <option value="French Guiana">French Guiana</option>
                                     <option value="French Polynesia">French Polynesia</option>
-                                    <option value="French Southern Territory">French Southern Territory
-                                    </option>
+                                    <option value="French Southern Territory">French Southern Territory</option>
                                     <option value="Gabon">Gabon</option>
                                     <option value="Gambia">Gambia</option>
                                     <option value="Georgia">Georgia</option>
@@ -349,8 +339,7 @@
                                     <option value="United Kingdom">United Kingdom</option>
                                     <option value="Ukraine">Ukraine</option>
                                     <option value="United Arab Emirates">United Arab Emirates</option>
-                                    <option value="United States of America">United States of America
-                                    </option>
+                                    <option value="United States of America">United States of America</option>
                                     <option value="Uruguay">Uruguay</option>
                                     <option value="Uzbekistan">Uzbekistan</option>
                                     <option value="Vanuatu">Vanuatu</option>
@@ -366,30 +355,26 @@
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
                                 </datalist>
-
                             </div>
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Gender</label>
                                 <select class="form-select">
-                                    <option selected>Select your gender</option>
+                                    <option>Select your gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
                             </div>
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Age</label>
-                                <input type="number" class="form-control" placeholder="eg: 33" />
+                                <input type="number" class="form-control" />
                             </div>
                         </div>
                         <hr class="my-4" />
                         <div class="row gy-3 mt-0">
-
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Status Of Appointment</label>
-                                <select class="form-select">
-                                    <option selected>Select status</option>
+                                <select class="form-select" id="status">
+                                    <option>Select status</option>
                                     <option>Scheduled</option>
                                     <option>Completed</option>
                                     <option>Cancelled</option>
@@ -399,15 +384,15 @@
                         <hr class="my-5" />
                         <div class="row justify-content-between mt-5">
                             <div class="col-md-4 col-6">
-                                <a href="/src/app-library/appointment/appoinment-list.html"
-                                    class="w-100 btn btn-outline-info">
+                                <!-- <a href="/user-appointments.html" class="w-100 btn btn-outline-info">
                                     <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                     Back To Appointments List
-                                </a>
+                                </a> -->
                             </div>
                             <div class="col-md-4 col-6">
-                                <a href="#" class="w-100 btn btn-primary">
-                                    Save Changes &nbsp;
+                                <a href="/javascript:void" class="w-100 btn btn-primary"
+                                    data-bs-target="#appointmentModal" data-bs-toggle="modal">
+                                    Create Appointment &nbsp;
                                     <i class="far fa-arrow-alt-circle-right"></i>
                                 </a>
                             </div>
@@ -418,6 +403,25 @@
         </section>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header noborderbtm">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="fas fa-check-circle fa-5x text-primary"></i>
+                    <h5 class="thinfont mt-3">You've successful created an appointment!</h5>
+                </div>
+                <div class="modal-footer nobordertop justify-content-center">
+                    <button type="button" class="btn btn-primary w-150px" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
@@ -425,7 +429,6 @@
     <script>
         includehtml();
     </script>
-
 </body>
 
 </html>
