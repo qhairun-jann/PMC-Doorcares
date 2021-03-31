@@ -15,257 +15,261 @@
 
 </head>
 
-<body class="p-0 bg-dark h-100 text-center text-white">
+<body class="p-0 bg-dark">
     <div class="sticky-top fixedtop" includehtml="/src/navbar.html"></div>
-    <main class="cover-container d-flex w-75 h-100 p-3 mt-5 mx-auto flex-column" id="vue-app">
-        <section class="row">
-            <h1> Entrance Area </h1>
-            <h5 class="text-muted text-center">  <strong> B-08-03</strong>, KL Gateway Residences </h5>
-            <hr>
-            <div class="filter js-navbar">
-                <ul class="nav nav-pills nav-fill nav-center">
-                    <li class="nav-item nav-link fixed-width">
-                        <div class="btn-group w-100">
-                            <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tenancy start date
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column" id="vue-app">
+        <article class="container ">
+            <section class="row justify-content-center my-5">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-center text-white"> Entrance Area </h1>
+                    <h5 class="text-muted text-center"> <strong> B-08-03</strong>, KL Gateway Residences </h5>
+                    <hr class="bg-white">
+                    <ul class="nav nav-pills nav-fill nav-center">
+                        <li class="nav-item nav-link fixed-width">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tenancy start date
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="javascript:void">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-link fixed-width">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tenancy end date
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="javascript:void">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-wrap m-child-1 justify-content-center my-5">
+                        <div v-for="(button,index) in buttons">
+                            <button class="btn btn-outline-info" @click="handleActive"
+                                :id="`${button.key}`">
+                                {{button.name}}
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="javascript:void">
-                                        <input class="form-control" type="date" placeholder="Search"
-                                            aria-label="Search" /></a>
-                                </li>
-                            </ul>
                         </div>
-                    </li>
-                    <li class="nav-item nav-link fixed-width">
-                        <div class="btn-group w-100">
-                            <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tenancy end date
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="javascript:void">
-                                        <input class="form-control" type="date" placeholder="Search"
-                                            aria-label="Search" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+
+                    <!-- Check in -->
+                    <div class="text-start table-responsive" v-if="btnActive == 0">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr class="align-middle">
+                                    <td class="py-3">
+                                        <h6 class="m-0"> Item name </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Model number </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Quantity </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Item image </h6>
+                                    </td>
+                                    <td style="width: 250px;">
+                                        <h6 class="m-0"> Action </h6>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>-</p>
+                                    </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td class="align-middle">
+                                        <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
+                                            data-bs-target="#triggerModal"
+                                            src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
+                                            alt="..Foto">
+                                    </td>
+                                    <td class="row my-child-2 mx-0 align-middle" style="width: 250px;">
+                                        <button class="btn btn-outline-info">
+                                            Edit
+                                        </button>
+                                        <button class="btn btn-info ">
+                                            Save
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            Move to Omissions
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Additions -->
+                    <div class="text-start table-responsive" v-if="btnActive == 1">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <td colspan="6" class="text-end">
+                                        <button class="btn btn-primary btn-sm mb-3">+ Add Item</button></td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td class="py-3">
+                                        <h6 class="m-0"> Item name </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Model number </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Quantity </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Item image </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Date of addition </h6>
+                                    </td>
+                                    <td style="width: 250px;">
+                                        <h6 class="m-0"> Action </h6>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">
+                                        <p>-</p>
+                                    </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td class="align-middle">
+                                        <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
+                                            data-bs-target="#triggerModal"
+                                            src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
+                                            alt="..Foto">
+                                    </td>
+                                    <td>-</td>
+                                    
+                                    <td class="row my-child-2 mx-0 align-middle" style="width: 250px;">
+                                        <button class="btn btn-outline-info">
+                                            Edit
+                                        </button>
+                                        <button class="btn btn-info ">
+                                            Save
+                                        </button>
+                                        <button class="btn btn-primary">
+                                            Move to Omissions
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Omissions -->
+                    <div class="text-start table-responsive" v-if="btnActive == 2">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr class="align-middle">
+                                    <td class="py-3">
+                                        <h6 class="m-0"> Item name </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Model number </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Quantity </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Item image </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Date of omission </h6>
+                                    </td>
+                                    <td style="width: 250px;">
+                                        <h6 class="m-0"> Action </h6>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">
+                                        <p>-</p>
+                                    </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td class="align-middle">
+                                        <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
+                                            data-bs-target="#triggerModal"
+                                            src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
+                                            alt="..Foto">
+                                    </td>
+                                    <td>-</td>
+                                    <td class="row my-child-2 mx-0 align-middle" style="width: 250px;">
+                                        <button class="btn btn-outline-info">
+                                            Edit
+                                        </button>
+                                        <button class="btn btn-info ">
+                                            Save
+                                        </button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Omissions -->
+                    <div class="text-start table-responsive" v-if="btnActive == 3">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr class="align-middle">
+                                    <td class="py-3">
+                                        <h6 class="m-0"> Item name </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Model number </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Quantity </h6>
+                                    </td>
+                                    <td>
+                                        <h6 class="m-0"> Item image </h6>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">
+                                        <p>-</p>
+                                    </td>
+                                    <td> - </td>
+                                    <td> - </td>
+                                    <td class="align-middle">
+                                        <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
+                                            data-bs-target="#triggerModal"
+                                            src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
+                                            alt="..Foto">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </section>
             </div>
-            <section class="col-12 d-flex flex-wrap m-child-1 justify-content-center my-5">
-                <div v-for="(button,index) in buttons">
-                    <button class="btn btn-outline-primary btn-lg px-5" @click="handleActive" :id="`${button.key}`">
-                        {{button.name}}
-                    </button>
-                </div>
-            </section>
+        </article>
 
-            <!-- Check in -->
-            <section class="col-12 text-start table-responsive" v-if="btnActive == 0">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr class="align-middle">
-                            <td class="py-3">
-                                <h6 class="m-0"> Item name </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Model number </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Quantity </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Item image </h6>
-                            </td>
-                            <td style="width: 250px;">
-                                <h6 class="m-0"> Action </h6>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="">
-                                <p>-</p>
-                            </td>
-                            <td> - </td>
-                            <td> - </td>
-                            <td class="align-middle">
-                                <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
-                                    data-bs-target="#triggerModal"
-                                    src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
-                                    alt="..Foto">
-                            </td>
-                            <td class="row my-child-2 mx-0" style="width: 250px;">
-                                <button class="btn btn-outline-primary px-4 col-12">
-                                    Edit/Save
-                                </button>
-                                <button class="btn btn-outline-primary px-4 col-12">
-                                    Move to Omissions
-                                </button>
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!-- Additions -->
-            <section class="col-12 text-start table-responsive" v-if="btnActive == 1">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr class="align-middle">
-                            <td class="py-3">
-                                <h6 class="m-0"> Item name </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Model number </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Quantity </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Item image </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Date of addition </h6>
-                            </td>
-                            <td style="width: 250px;">
-                                <h6 class="m-0"> Action </h6>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="">
-                                <p>-</p>
-                            </td>
-                            <td> - </td>
-                            <td> - </td>
-                            <td class="align-middle">
-                                <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
-                                    data-bs-target="#triggerModal"
-                                    src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
-                                    alt="..Foto">
-                            </td>
-                            <td>-</td>
-                            <td class="row my-child-2 mx-0" style="width: 250px;">
-                                <button class="btn btn-outline-primary px-4 col-12">
-                                    Edit/Save
-                                </button>
-                                <button class="btn btn-outline-primary px-4 col-12">
-                                    Move to Omissions
-                                </button>
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-
-
-            <!-- Omissions -->
-            <section class="col-12 text-start table-responsive" v-if="btnActive == 2">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr class="align-middle">
-                            <td class="py-3">
-                                <h6 class="m-0"> Item name </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Model number </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Quantity </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Item image </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Date of omission </h6>
-                            </td>
-                            <td style="width: 250px;">
-                                <h6 class="m-0"> Action </h6>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="">
-                                <p>-</p>
-                            </td>
-                            <td> - </td>
-                            <td> - </td>
-                            <td class="align-middle">
-                                <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
-                                    data-bs-target="#triggerModal"
-                                    src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
-                                    alt="..Foto">
-                            </td>
-                            <td>-</td>
-                            <td class="my-child-2 mx-0">
-                                <button class="btn btn-outline-primary px-4 w-100">
-                                    Edit/Save
-                                </button>
-                            
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <!-- Omissions -->
-            <section class="col-12 text-start table-responsive" v-if="btnActive == 3">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr class="align-middle">
-                            <td class="py-3">
-                                <h6 class="m-0"> Item name </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Model number </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Quantity </h6>
-                            </td>
-                            <td>
-                                <h6 class="m-0"> Item image </h6>
-                            </td>
-                            <!-- <td>
-                                <h6 class="m-0"> Date of omission </h6>
-                            </td> -->
-                        
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="">
-                                <p>-</p>
-                            </td>
-                            <td> - </td>
-                            <td> - </td>
-                            <td class="align-middle">
-                                <img width="250px" height="140px" style="cursor:pointer;" data-bs-toggle="modal"
-                                    data-bs-target="#triggerModal"
-                                    src="https://hgtvhome.sndimg.com/content/dam/images/hgrm/fullset/2011/7/13/20/SP0373_loft-wood-floor_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1405498854526.jpeg"
-                                    alt="..Foto">
-                            </td>
-                            <!-- <td>-</td> -->
-                
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-
-        </section>
-
-        <div includehtml="/src/footer.html" class="mt-auto">
-
-        </div>
+        <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
 
 
