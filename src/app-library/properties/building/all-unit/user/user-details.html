@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>View Details | Rizurf Back Office</title>
+    <meta name="description" content="A description.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body class="p-0 bg-dark text-center text-white">
+    <div class="sticky-top fixedtop" includehtml="navbar.html"></div>
+    <main class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-10">
+                    <h1 class="mt-5 text-white text-center">Personal Details</h1>
+                    <hr />
+                    <form class="needs-validation text-start" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="avatar-upload d-flex">
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(/assets/img/avatar.svg);">
+                                        </div>
+                                    </div>
+                                    <div class="align-self-center ms-5">
+                                        <h5>John Doe Alexander</h5>
+                                    </div>
+                                </div>
+                                <p class="m-0 text-muted">Account created on 12-12-2020 by (name)</p>
+                                <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Role</label>
+                                <input type="text" class="form-control" value="Prospect(Tenant)" disabled>
+                                <div class="invalid-feedback">
+                                    Please select one
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Verification Status</label>
+                                <input type="text" class="form-control" value="Verified" disabled>
+                                <div class="invalid-feedback">
+                                    Please select one
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row justify-content-lg-start justify-content-sm-center">
+
+                            <button class="btn btn-primary m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-details.html';">Personal Details</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-requirements.html';">Requirements
+                            </button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-recommended.html';">Recommended Properties</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px"
+                                onclick="location.href='/user-tourrequest.html';" type="button">Tour
+                                Requests</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-appointments.html';">Appointments</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-offers.html';">Offers</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-payments.html';">Payments</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-checkin.html';">TA &amp; Check-In</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-documents.html';">Documents</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-referandearn.html';">Refer and Earn</button>
+
+                            <button class="btn btn-outline-info m-2 fixed-width h-70px" type="button"
+                                onclick="location.href='/user-roles.html';">Roles</button>
+
+                        </div>
+                        <hr />
+                        <div class="row g-3 mb-4">
+                            <div class="col-6 mt-5">
+                                <h3>Personal Details</h3>
+                            </div>
+                            <div class="col-6 mt-5 text-end">
+                                <button class="btn btn-outline-info">Edit</button>
+                                <button class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <label class="form-label">Username</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control bdr-radius-right" placeholder="Username"
+                                        value="John Doe" disabled />
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <label for="familyName" class="form-label">Family / Sur Name (Optional) </label>
+                                <input type="text" class="form-control" placeholder="Family Name" value="Alexander"
+                                    disabled />
+
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" value="johndoe123@mail.com" disabled />
+
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label">Passport No.</label>
+                                <input type="text" class="form-control" value="B199923" disabled />
+
+                            </div>
+                            <div class="col-4">
+                                <label for="id-no" class="form-label">Identification Number</label>
+                                <input type="number" class="form-control" value="93882664937" disabled />
+
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label">Contact Number</label>
+                                <input type="number" class="form-control" placeholder="eg: 6012-223 5678"
+                                    value="60123123123" disabled />
+                            </div>
+
+
+                            <div class="col-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <input type="number" class="form-control" value="60123123123" disabled />
+
+                            </div>
+
+                            <div class="col-3">
+                                <label class="form-label">Nationality</label>
+                                <input type="number" class="form-control" value="Malaysia" disabled />
+                            </div>
+
+                            <div class="col-3">
+                                <label class="form-label">Date of birth</label>
+                                <input type="text" class="form-control" value="13-2-2021" disabled />
+
+                            </div>
+                            <div class="col-3">
+                                <label class="form-label">Age</label>
+                                <input type="number" class="form-control" value="24" disabled />
+                            </div>
+
+                            <div class="col-3">
+                                <label class="form-label">Occupation</label>
+                                <input type="text" class="form-control" value="abc" disabled />
+
+                            </div>
+                            <div class="col-3">
+                                <label for="companyname" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" value="abc&co" disabled />
+
+                            </div>
+                            <div class="col-3">
+                                <label class="form-label">Additional Role</label>
+                                <input type="text" class="form-control" value="business" disabled />
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="row g-3">
+                            <div class="col-12 mt-5">
+                                <h3>Corresponding Address</h3>
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Block</label>
+                                <input type="text" class="form-control" value="D" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Level</label>
+                                <input type="number" class="form-control" value="18" disabled />
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Unit</label>
+                                <input type="text" class="form-control" value="11" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Building Name</label>
+                                <input type="text" class="form-control" value="Paradise Residence" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Lot / Unit Number</label>
+                                <input type="number" class="form-control" value="12" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Street Name</label>
+                                <input type="text" class="form-control" value="Mawar Street" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">Residential Area</label>
+                                <input type="text" class="form-control" value="bukit tinggi" disabled />
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="postcode" class="form-label">Post Code</label>
+                                <input type="number" class="form-control" value="99000" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">City</label>
+                                <input type="text" class="form-control" value="Kuala Lumpur" disabled />
+
+                            </div>
+                            <div class="col-sm-3">
+                                <label class="form-label">State</label>
+                                <input type="text" class="form-control" value="Kuala Lumpur" disabled />
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="world" class="form-label">Country</label>
+                                <input type="text" class="form-control" value="Malaysia" disabled />
+                            </div>
+                        </div>
+
+                        <hr class="my-4" />
+
+                        <div class="row gy-3">
+                            <div class="col-12 mt-5">
+                                <h3>Bank Details</h3>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Bank Name</label>
+                                <input type="text" class="form-control" value="Maybank" disabled />
+
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Bank Account NR.</label>
+                                <input type="text" class="form-control" placeholder="eg: 123456789012" value="123987456"
+                                    disabled />
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row justify-content-between mt-5">
+                            <div class="col-md-4 col-6">
+                                <a href="/user.html" class="w-100 btn btn-outline-info">
+                                    <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
+                                    Back To User List
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <a href="/user-requirements.html" class="w-100 btn btn-primary">
+                                    Continue To Requirements &nbsp;
+                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer includehtml="footer.html" class="mt-auto"></footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/includefile.js"></script>
+    <script>
+        includehtml();
+    </script>
+</body>
+
+</html>
