@@ -33,19 +33,85 @@
                         </section>
                     </nav>
                     <hr class="bg-white" />
-                    <div class="js-navbar">
-                        <ul class="nav nav-pills nav-fill nav-center">
-                            <li class="nav-item nav-link fixed-width" v-for="(btn,index) in buttons" :key="index">
-                                <div class="btn-group w-100">
-                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        {{btn}}
-                                    </button>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="nav nav-pills nav-fill nav-center">
+                        <li class="nav-item nav-link " >
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Date Of Request
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="javascript:void">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Category of Maintenance
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
+                                    <li><a class="dropdown-item" href="#">Appliance</a></li>
+                                    <li><a class="dropdown-item" href="#">household</a></li>
+                                    <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                    <li><a class="dropdown-item" href="#">Electrical</a></li>
+                                    <li><a class="dropdown-item" href="#">Others</a></li>
+                                    <li><a class="dropdown-item" href="#">Pay cash to the agent</a></li>
+                                    <li><a class="dropdown-item" href="#">property viewing</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    User Name
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
+                                    <li><a class="dropdown-item" href="#">Otto1</a></li>
+                                    <li><a class="dropdown-item" href="#">Thornton</a></li>
+                                    <li><a class="dropdown-item" href="#">@fat</a></li>
+                                    <li><a class="dropdown-item" href="#">Larry the Bird</a></li>
+                                    <li><a class="dropdown-item" href="#">twitter</a></li>
+                                    <li><a class="dropdown-item" href="#">fat</a></li>
+                                    <li><a class="dropdown-item" href="#">Otto3</a></li>
+                                </ul>
+                            </div>
+                        </li>                      
+                        
+                        <li class="nav-item nav-link">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Status Of Maintenance
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                    <li><a class="dropdown-item mt-3" href="#">All</a></li>
+                                    <li><a class="dropdown-item" href="#">New</a></li>
+                                    <li><a class="dropdown-item" href="#">In Progress</a></li>
+                                    <li><a class="dropdown-item" href="#">Resolved</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                     <div class="timeline maintenance text-dark text-start mt-5">
                         <div class="timelinecontainer filterDiv right cat1 unit1 bldng1 date1"
                             data-name="cat1, unit1, bldng1, date1" v-for="item in cards">
