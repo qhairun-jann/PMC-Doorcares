@@ -23,7 +23,8 @@
                     <h1 class="mt-5 text-white text-center">Appointment Lists</h1>
                     <hr />
                     <div class="text-end my-4">
-                        <a href="/src/app-library/appointment/create-appointment.html" class="btn btn-primary btn-sm">+ Create Appointment</a>
+                        <a href="/src/app-library/appointment/create-appointment.html" class="btn btn-primary btn-sm">+
+                            Create Appointment</a>
                     </div>
                     <hr />
                     <ul class="nav nav-pills nav-fill">
@@ -34,10 +35,8 @@
                                     Date Of Appointment
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                    <li><span class="dropdown-item searchBox">
+                        <input class="form-control " type="date" placeholder="Search" aria-label="Search" /></span></li>
                                 </ul>
                             </div>
                         </li>
@@ -48,10 +47,9 @@
                                     Building name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">Novum Bangsar</a></li>
                                     <li><a class="dropdown-item" href="#">Secoya Residence</a></li>
                                     <li><a class="dropdown-item" href="#">KL Gateway Residence</a></li>
@@ -66,10 +64,9 @@
                                     Unit number
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">A1-1-1</a></li>
                                     <li><a class="dropdown-item" href="#">A1-1-2</a></li>
                                     <li><a class="dropdown-item" href="#">B2-1-2</a></li>
@@ -88,10 +85,9 @@
                                     User name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">Mark</a></li>
                                     <li><a class="dropdown-item" href="#">Otto1</a></li>
                                     <li><a class="dropdown-item" href="#">Thornton</a></li>
@@ -110,10 +106,9 @@
                                     Category of appointment
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">Plumbing</a></li>
                                     <li><a class="dropdown-item" href="#">Appliance</a></li>
                                     <li><a class="dropdown-item" href="#">household</a></li>
@@ -132,10 +127,9 @@
                                     Status of appointment
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">Scheduled</a></li>
                                     <li><a class="dropdown-item" href="#">Completed</a></li>
                                     <li><a class="dropdown-item" href="#">Cancelled</a></li>
@@ -171,7 +165,8 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="align-middle pointer" onclick="location.href='/src/app-library/appointment/appointment-details.html'">
+                                <tr class="align-middle pointer"
+                                    onclick="location.href='/src/app-library/appointment/appointment-details.html'">
                                     <td>12-03-2021</td>
                                     <td>00.00</td>
                                     <td>-</td>
@@ -180,7 +175,8 @@
                                     <td>-</td>
                                     <td>-</td>
                                 </tr>
-                                <tr class="align-middle pointer" onclick="location.href='/src/app-library/appointment/appointment-details.html'">
+                                <tr class="align-middle pointer"
+                                    onclick="location.href='/src/app-library/appointment/appointment-details.html'">
                                     <td>12-03-2021</td>
                                     <td>00.00</td>
                                     <td>-</td>
@@ -189,7 +185,8 @@
                                     <td>-</td>
                                     <td>-</td>
                                 </tr>
-                                <tr class="align-middle pointer" onclick="location.href='/src/app-library/appointment/appointment-details.html'">
+                                <tr class="align-middle pointer"
+                                    onclick="location.href='/src/app-library/appointment/appointment-details.html'">
                                     <td>12-03-2021</td>
                                     <td>00.00</td>
                                     <td>-</td>
@@ -208,13 +205,12 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/includefile.js"></script>
     <script>
         includehtml();
     </script>
     <script>
-        var link="./appointment-details.html"
+        var link = "./appointment-details.html"
     </script>
 </body>
 

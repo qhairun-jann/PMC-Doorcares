@@ -1,6 +1,16 @@
 
+// Drop Down Click function
+// ===================================================================
+var searchBox = document.querySelectorAll(".searchBox")
+var arraySearchBox = Array.from(searchBox)
+arraySearchBox.map((box)=>{
+  box.addEventListener("click", (event) => { event.stopPropagation() })
+})
 
-  function includehtml() {
+ 
+// Footer
+// ===================================================================
+ function includehtml() {
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
@@ -24,9 +34,6 @@
       }
     }
   };
-
-
-
 //   Sidebar Opens
 // ===================================================================
   function openNav() {

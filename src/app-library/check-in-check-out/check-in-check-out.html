@@ -26,16 +26,18 @@
                     <ul class="nav nav-pills nav-fill nav-center">
                         <li class="nav-item nav-link fixed-width">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Building name
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
-                                        <input class="form-control " type="text" placeholder="Search" aria-label="Search" /></a></li>
+                                    <li><span class="dropdown-item searchBox">
+                                            <input class="form-control " type="text" placeholder="Search"
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">KL Gateway Residences</a></li>
                                     <li><a class="dropdown-item" href="#">KL Gateway Premium</a></li>
-                                    <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a></li>
+                                    <li><a class="dropdown-item" href="#">Inwood Residences @ Pantai Sentral Park</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Novum Bangsar South</a></li>
                                     <li><a class="dropdown-item" href="#">South View Service Apartments</a></li>
                                     <li><a class="dropdown-item" href="#">KL Eco City</a></li>
@@ -43,21 +45,20 @@
                                     <li><a class="dropdown-item" href="#">Secoya Residences</a></li>
                                     <li><a class="dropdown-item" href="#">The Establishment</a></li>
                                     <li><a class="dropdown-item" href="#">Menara KL Gateway (Work Suites)</a></li>
-                                  </ul>
+                                </ul>
                             </div>
                         </li>
 
                         <li class="nav-item nav-link fixed-width">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Unit number
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><span class="dropdown-item searchBox">
                                             <input class="form-control " type="text" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                                aria-label="Search" /></span></li>
                                     <li><a class="dropdown-item mt-3" href="#">A1-1-1</a></li>
                                     <li><a class="dropdown-item" href="#">A1-1-2</a></li>
                                     <li><a class="dropdown-item" href="#">B2-1-2</a></li>
@@ -69,33 +70,31 @@
                                 </ul>
                             </div>
                         </li>
-            
-                        <li class="nav-item nav-link fixed-width me-5" >
+
+                        <li class="nav-item nav-link fixed-width me-5">
                             <div class="btn-group w-100">
                                 <button type="button" class="btn btn-primary dropdown-toggle autowidth"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Choose start tenancy year
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="javascript:void">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                    <li><span class="dropdown-item searchBox">
+                                            <input class="form-control " type="date" placeholder="Search"
+                                                aria-label="Search" /></span></li>
                                 </ul>
                             </div>
-                        </li>                      
-                        
+                        </li>
+
                         <li class="nav-item nav-link fixed-width ms-1">
                             <div class="btn-group w-100">
                                 <button type="button" class="btn btn-primary dropdown-toggle autowidth"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Choose end tenancy year 
+                                    Choose end tenancy year
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="javascript:void">
-                                            <input class="form-control" type="date" placeholder="Search"
-                                                aria-label="Search" /></a>
-                                    </li>
+                                    <li><span class="dropdown-item searchBox">
+                                            <input class="form-control " type="date" placeholder="Search"
+                                                aria-label="Search" /></span></li>
                                 </ul>
                             </div>
                         </li>
@@ -109,7 +108,7 @@
                                 <th>
                                     Unit number
                                 </th>
-                                <th >
+                                <th>
                                     Tenancy start date
                                 </th>
                                 <th>
@@ -121,10 +120,10 @@
                                 <th>
                                     Tenancy end date
                                 </th>
-                                <th >
+                                <th>
                                     Date of check out
                                 </th>
-                                <th >
+                                <th>
                                     Time of check out
                                 </th>
                             </thead>
@@ -157,7 +156,7 @@
 </script>
 
 <script>
-    
+
     var app = new Vue({
         el: '#vue-app',
         data: {
