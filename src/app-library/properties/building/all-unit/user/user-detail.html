@@ -30,7 +30,7 @@
                     <ul class="nav nav-pills nav-fill nav-center">
                         <li class="nav-item nav-link fixed-width" v-for="(btn,index) in buttons" :key="index">
                             <div class="btn-group w-100">
-                                <button type="button" class="btn btn-primary"
+                                <button type="button" class="btn btn-outline-info"
                                     v-bind:class="{ active: index === btnActive }" @click="handleClick" :id="index"
                                     aria-expanded="false">
                                     {{btn}}
@@ -42,7 +42,6 @@
                     <!-- </section> -->
                     <form>
                         <!-- LANDLORD -->
-
                         <article v-if="btnActive === 0">
                             <section class="row">
 

@@ -23,42 +23,37 @@
                     <h1 class="mt-5 text-white text-center"> Inventory List</h1>
                     <h5 class="text-muted text-center"> <strong> B-08-03</strong>, KL Gateway Residences </h5>
                     <hr class="text-white">
+                    <ul class="nav nav-pills nav-fill nav-center">
+                        <li class="nav-item nav-link fixed-width">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tenancy start date
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="javascript:void">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-link fixed-width">
+                            <div class="btn-group w-100">
+                                <button type="button" class="btn btn-primary dropdown-toggle autowidth"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tenancy end date
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="javascript:void">
+                                            <input class="form-control" type="date" placeholder="Search"
+                                                aria-label="Search" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                     <div class="row">
-                        
-                        <div class="filter js-navbar">
-                            <ul class="nav nav-pills nav-fill nav-center">
-                                <li class="nav-item nav-link fixed-width">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Tenancy start date
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="javascript:void">
-                                                    <input class="form-control" type="date" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item nav-link fixed-width">
-                                    <div class="btn-group w-100">
-                                        <button type="button" class="btn btn-primary dropdown-toggle autowidth"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Tenancy end date
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-dark">
-                                            <li><a class="dropdown-item" href="javascript:void">
-                                                    <input class="form-control" type="date" placeholder="Search"
-                                                        aria-label="Search" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-
                         <div class="col-12 my-3"></div>
                         <div class="col-12 col-md-6 text-white" v-for="data in payload">
                             <div class="py-3 text-start">
