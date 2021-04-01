@@ -14,7 +14,7 @@
     <link href="/assets/css/style.css" rel="stylesheet" />
 
 </head>
-<body class="p-0 bg-dark h-100 text-white">
+<body class="p-0 bg-dark h-100 ">
     <div class="sticky-top" includehtml="/src/navbar.html"></div>
     <main class="cover-container d-flex w-100 p-3 mx-auto flex-column mt-5" id="vue-app">
         <article class="container">
@@ -286,6 +286,44 @@
         </article>
         <footer includehtml="/src/footer.html" class="mt-auto"></footer>
     </main>
+    <div class="modal fade p-0" id="confirmMsg" tabindex="-1"
+        aria-labelledby="confirmMsgLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header noborderbtm">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="thinfont">Are you sure you want to send these <strong>3</strong> selected units to the
+                        prospect</h5>
+                </div>
+                <div class="modal-footer nobordertop justify-content-center">
+                    <button type="button" class="btn btn-secondary w-150px" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary w-150px " data-bs-dismiss="modal"
+                        data-bs-toggle="modal" data-bs-target="#successMsg">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Dialog 2 -->
+    <div class="modal fade" id="successMsg" tabindex="-1"
+        aria-labelledby="successMsgLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content">
+                <div class="modal-header noborderbtm">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="fas fa-check-circle fa-5x text-primary"></i>
+                    <h5 class="thinfont mt-3">You've successful forwarded these <strong>3</strong> properties to
+                        prospect</h5>
+                </div>
+                <div class="modal-footer nobordertop justify-content-center">
+                    <button type="button" class="btn btn-primary w-150px" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

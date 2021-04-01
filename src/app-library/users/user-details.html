@@ -16,7 +16,7 @@
 
 <body class="p-0 bg-dark h-100 text-white">
     <nav class="sticky-top fixedtop" includehtml="/src/navbar.html"></nav>
-    <main class="cover-container d-flex h-100 p-3 mx-auto mt-5 flex-column" id="vue-app">
+    <main class="cover-container d-flex p-3 mx-auto flex-column" id="vue-app">
         <article class="container my-5">
             <section class="row justify-content-center">
                 <article class="col-sm-10">
@@ -70,7 +70,7 @@
                     </section>
 
 
-
+                    <!-- Personal Details -->
                     <section v-if="btnActive === 0">
                         <section class="row  text-start gy-4 mt-5">
                             <div class="col-12">
@@ -220,7 +220,7 @@
                     </section>
 
 
-
+                    <!-- Requirements -->
                     <section v-if="btnActive === 1">
                         <section class="row  text-start gy-4 mt-5">
 
@@ -299,17 +299,20 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             <hr class="bg-white my-4">
 
                             <div class="col-12 text-start table-responsive">
-                                <h4 class="fw-bold">Forwards To Rizuf Cordinator</h4>
+                                <h4 class="fw-bold">PIC Recommendations To Rizurf Coordinator</h4>
                                 <table class="table table-dark table-striped ">
                                     <thead>
                                         <tr>
+                                            <td>PIC Name</td>
+                                            <td>Building Name</td>
                                             <td>Date of recommendation</td>
-                                            <td>Total Units</td>
-                                            <td></td>
+                                            <td colspan="2">Total Units</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="align-middle">
+                                            <td>Nurul Najmina</td>
+                                            <td>KL Gateway Residences</td>
                                             <td>12-12-2020</td>
                                             <td>15</td>
                                             <td><button class="btn btn-outline-info w-100"
@@ -321,12 +324,14 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             </div>
                         </section>
                     </section>
-                    <section v-if="btnActive === 2">
 
-                        <h4 class="mt-5 text-white">Properties Recommended By PIC Coordinator</h4>
+                    <!-- Recommended Properties -->
+                    <section v-if="btnActive === 2">
+                        <h4 class="mt-5 text-white">Properties Recommended By PIC’s to Rizurf Coordinator</h4>
                         <hr />
                         <div class="row mt-5 ">
-                            <h5 class="mx-2 mb-0">Novum Bangsar South</h5>
+                            <h3 class="mx-2 mb-3">Nurul Najmina</h3>
+                            <p class="mx-2 mb-0">Novum Bangsar South</p>
                             <p class="mx-2 text-muted">3 Recommendations | 21-12-2020</p>
                             <div class="col-4">
                                 <div class="card " style="cursor:pointer;">
@@ -415,15 +420,104 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                                 </div>
                             </div>
                         </div>
+                        <hr />
+                        
+                        <div class="row mt-5 ">
+                            <h3 class="mx-2 mb-3">Esther Vimala</h3>
+                            <p class="mx-2 mb-0">Novum Bangsar South</p>
+                            <p class="mx-2 text-muted">3 Recommendations | 21-12-2020</p>
+                            <div class="col-4">
+                                <div class="card " style="cursor:pointer;">
+                                    <div class="card-img-top ">
+                                        <div onclick="location.href='/propertypage.html';">
+                                            <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                alt="First slide">
+                                        </div>
+                                    </div>
 
+                                    <div class="card-body" onclick="location.href='/propertypage.html';">
+                                        <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                        <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                        <h5 class="card-title text-start">RM 2,000</h5>
+                                        <div class="d-flex iconsmall">
+                                            <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                    width="20px"> 3</p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                    width="20px"> 2
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                    width="20px"> 3
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                    width="20px"> 3000 sqft.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-4">
+                                <div class="card " style="cursor:pointer;">
+                                    <div class="card-img-top ">
+                                        <div onclick="location.href='/propertypage.html';">
+                                            <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                alt="First slide">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body" onclick="location.href='/propertypage.html';">
+                                        <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                        <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                        <h5 class="card-title text-start">RM 2,000</h5>
+                                        <div class="d-flex iconsmall">
+                                            <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                    width="20px"> 3</p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                    width="20px"> 2
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                    width="20px"> 3
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                    width="20px"> 3000 sqft.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="card " style="cursor:pointer;">
+                                    <div class="card-img-top ">
+                                        <div onclick="location.href='/propertypage.html';">
+                                            <img class="d-block img-fluid" src="/assets/img/novum-bangsarsouth.jpg"
+                                                alt="First slide">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body" onclick="location.href='/propertypage.html';">
+                                        <h3 class="card-title text-start">Novum Bangsar South</h3>
+                                        <p>Residensi Era Novum Jalan Kerinchi Kiri 2</p>
+                                        <h5 class="card-title text-start">RM 2,000</h5>
+                                        <div class="d-flex iconsmall">
+                                            <p class="me-2 ms-1"><img src="/assets/img/double-bed.svg" alt="..."
+                                                    width="20px"> 3</p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/bath-tub.svg" alt="..."
+                                                    width="20px"> 2
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/parking.svg" alt="..."
+                                                    width="20px"> 3
+                                            </p>
+                                            <p class="me-2 ms-1"><img src="/assets/img/area-graph.svg" alt="..."
+                                                    width="20px"> 3000 sqft.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
+                    <!-- Appointments -->
                     <section v-if="btnActive === 3">
                         <form class="needs-validation text-start" novalidate>
-
-
-
                             <div class="row text-end g-3 mt-4">
                                 <div class="col">
                                     <button class="btn btn-primary" type="button"
@@ -508,6 +602,7 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                         </form>
                     </section>
 
+                    <!-- Offers -->
                     <section v-if="btnActive === 4">
                         <div class="row mt-4">
                             <div class="col">
@@ -563,7 +658,6 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                                                 <td>No</td>
                                                 <td>Rudy</td>
                                             </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -872,9 +966,9 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
             btnActive: 0,
             title: '',
             buttons: [
-                { name: 'Personal details', link: '#' },
+                { name: 'Personal Details', link: '#' },
                 { name: 'Requirements', link: '#' },
-                { name: 'Recommended properties', link: '#' },
+                { name: 'Recommended Properties', link: '#' },
                 { name: 'Appointments', link: '#' },
                 { name: 'Offers', link: '#' },
                 { name: 'Payments', link: '#' },
