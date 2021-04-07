@@ -39,15 +39,15 @@
                                 <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
                             </div>
                             <div class="col-md-3">
-                                <label class="form-label">Role</label>
-                                <input type="text" class="form-control" value="Prospect (Tenant)" >
+                                <label for="txt_role" class="form-label">Role</label>
+                                <input type="text" id="txt_role" class="form-control" value="Prospect (Tenant)" >
                                 <div class="invalid-feedback">
                                     Please select one
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <label class="form-label">Verification Status</label>
-                                <input type="text" class="form-control" value="Verified" >
+                                <label for="txt_verificationStatus" class="form-label">Verification Status</label>
+                                <input type="text" id="txt_verificationStatus" class="form-control" value="Verified" >
                                 <div class="invalid-feedback">
                                     Please select one
                                 </div>
@@ -61,36 +61,36 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Budget</label>
+                                <label for="txt_budget" class="form-label">Budget</label>
                                 <div class="input-group">
                                     <span class="input-group-text">RM</span>
-                                    <input type="number" class="form-control" value="4000" disabled />
+                                    <input type="number" id="txt_budget" class="form-control" value="4000" disabled />
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="beds" class="form-label">Beds</label>
-                                <input type="number" class="form-control" value="2" disabled />
+                                <label for="txt_beds" class="form-label">Beds</label>
+                                <input type="number" id="txt_beds" class="form-control" value="2" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="beds" class="form-label">Furnishing</label>
-                                <input type="number" class="form-control" value="2" disabled />
+                                <label for="txt_furnishing" class="form-label">Furnishing</label>
+                                <input type="number" id="txt_furnishing" class="form-control" value="2" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="moveindate" class="form-label">Preferred Move In Date</label>
-                                <input type="date" class="form-control" value="2021-03-12" disabled />
+                                <label for="date_moveIne" class="form-label">Preferred Move In Date</label>
+                                <input type="date" id="date_moveIn" class="form-control" value="2021-03-12" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Total Occupants</label>
-                                <input type="number" class="form-control" value="2" disabled />
+                                <label for="txt_totalOccupation" class="form-label">Total Occupants</label>
+                                <input type="number" for="txt_totalOccupation" class="form-control" value="2" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <select type="text" list="nation" class="form-control  form-select"
+                                <label for="ddl_nationality" class="form-label">Nationality</label>
+                                <select id="ddl_nationality" list="nation" class="form-control  form-select"
                                     placeholder="eg: Malaysian" disabled>
                                     <datalist id="nation">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -350,13 +350,13 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Occupation</label>
-                                <input type="text" class="form-control" value="" disabled />
+                                <label for="txt_occupation" class="form-label">Occupation</label>
+                                <input type="text" id="txt_occupation" class="form-control" value="" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Gender" class="form-label">Gender</label>
-                                <select class="form-select" disabled>
+                                <select id="ddl_Gender" class="form-select" disabled>
                                     <option>Select your gender</option>
                                     <option selected>Male</option>
                                     <option>Female</option>
@@ -364,16 +364,16 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Duration of Tenancy</label>
-                                <input type="text" class="form-control" value="2 years" disabled />
+                                <label for="txt_durationTenancy" class="form-label">Duration of Tenancy</label>
+                                <input type="text" id="txt_durationTenancy" class="form-control" value="2 years" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Pet</label>
-                                <input type="text" class="form-control" value="" disabled />
+                                <label for="txt_pet" class="form-label">Pet</label>
+                                <input type="text" id="txt_pet" class="form-control" value="" disabled />
                             </div>
                             <div class="col-sm-12">
-                                <label class="form-label">Other remarks</label>
+                                <label for="txt_otherRemarks" class="form-label">Other remarks</label>
                                 <textarea class="form-control" style="height: 100px"
                                     disabled>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</textarea>
                             </div>

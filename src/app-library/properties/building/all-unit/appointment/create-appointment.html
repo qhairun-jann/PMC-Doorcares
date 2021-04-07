@@ -33,7 +33,7 @@
                         <div class="row g-3 mt-3">
                             <div class="col-md-4 col-6">
                                 <label for="ddl_CategoryAppointment" class="form-label">Category of Appointment</label>
-                                <select class="form-control form-select">
+                                <select id="ddl_CategoryAppointment" class="form-control form-select">
                                     <option selected>Select category</option>
                                     <option>Plumbing</option>
                                     <option>Appliances</option>
@@ -47,17 +47,17 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="date_Appointment" class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" placeholder=" eg: 2018-07-22" />
+                                <input type="date" id="date_Appointment" class="form-control" placeholder=" eg: 2018-07-22" />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="time_Appointment" class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" placeholder=" eg: 14:30" />
+                                <input type="time" id="time_Appointment" class="form-control" placeholder=" eg: 14:30" />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_BuildingName" class="form-label">Building Name</label>
-                                <select class="form-control form-select">
+                                <select id="ddl_BuildingName" class="form-control form-select">
                                     <option selected>Select building name</option>
                                     <option>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
@@ -65,19 +65,19 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_UnitNo" class="form-label">Unit no.</label>
-                                <select class="form-control form-select">
+                                <select id="ddl_UnitNo" class="form-control form-select">
                                     <option selected>Select unit number</option>
                                     <option>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_LocationBuilding" class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" placeholder=" eg: Jalan Mawar Bukit Tinggi Kuala Lumpur">
+                                <label for="txt_LocationBuilding" class="form-label">Location of Building</label>
+                                <input type="text" id="txt_LocationBuilding" class="form-control" placeholder=" eg: Jalan Mawar Bukit Tinggi Kuala Lumpur">
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_PersonInCharge" class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" placeholder=" eg: Rudy Hayes" />
+                                <label for="txt_PersonInCharge" class="form-label">Person In Charge</label>
+                                <input type="text" id="txt_PersonInCharge" class="form-control" placeholder=" eg: Rudy Hayes" />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -87,8 +87,8 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_UserName" class="form-label">Username</label>
-                                <input class="form-control form-select" list="usernameListOptions" id="usernameList"
+                                <label for="txt_UserName" class="form-label">Username</label>
+                                <input id="txt_UserName" class="form-control form-select" list="usernameListOptions"
                                     placeholder="Type to search username.">
                                 <datalist id="usernameListOptions">
                                     <option value="Wana Maharani">
@@ -97,21 +97,21 @@
                                     <option value="Bruce Dickinson">
                                     <option value="Chester Benniton">
                                 </datalist>
+                            </div>|
+
+                            <div class="col-md-4 col-6">
+                                <label for="txt_PassportNo" class="form-label">Passport Number</label>
+                                <input type="text" id="txt_PassportNo" class="form-control" placeholder="eg: B777666" />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="text_PassportNo" class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" placeholder="eg: B777666" />
-                            </div>
-
-                            <div class="col-md-4 col-6">
-                                <label for="text_ICNo" class="form-label">IC Number</label>
-                                <input type="text" id="text_ICNo" class="form-control" placeholder="eg: 2352245613311" />
+                                <label for="txt_ICNo" class="form-label">IC Number</label>
+                                <input type="text" id="txt_ICNo" class="form-control" placeholder="eg: 2352245613311" />
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <input type="text" list="nation" class="form-control form-select"
+                                <input type="text" id="ddl_Nationality" list="nation" class="form-control form-select"
                                     placeholder="eg: Malaysian" />
                                 <datalist id="nation">
                                     <option selected value="Select Nationality">Select Nationality</option>
@@ -380,16 +380,16 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Age</label>
-                                <input type="number" class="form-control" placeholder="eg: 33" />
+                                <label for="txt_Age" class="form-label">Age</label>
+                                <input type="number" id="txt_Age" class="form-control" placeholder="eg: 33" />
                             </div>
                         </div>
                         <hr class="my-4" />
                         <div class="row gy-3 mt-0">
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Status Of Appointment</label>
-                                <select class="form-select">
+                                <label for="ddl_StatusAppointment" class="form-label">Status Of Appointment</label>
+                                <select id="ddl_StatusAppointment" class="form-select">
                                     <option selected>Select status</option>
                                     <option>Scheduled</option>
                                     <option>Completed</option>

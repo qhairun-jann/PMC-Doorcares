@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,9 +21,9 @@
             <div class="row justify-content-center">
                 <div class="col-sm-10">
                     <h1 class="mt-5 text-white text-center">Unit Appointment Details</h1>
-                    <h5 class="text-muted text-center">  <strong> B-08-03</strong>, KL Gateway Residences </h5>
+                    <h5 class="text-muted text-center"> <strong> B-08-03</strong>, KL Gateway Residences </h5>
                     <hr class="text-white" />
-                    
+
                     <div class="col text-end">
                         <button class="btn btn-outline-info">Edit</button>
                         <button class="btn btn-primary">Save</button>
@@ -48,17 +47,18 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="date_Appointment" class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" value="2018-07-22"  disabled/>
+                                <input type="date" id="date_Appointment" class="form-control" value="2018-07-22"
+                                    disabled />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="time_Appointment" class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" value="14:30"  disabled/>
+                                <input type="time" id="time_Appointment" class="form-control" value="14:30" disabled />
 
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_BuildingName" class="form-label">Building Name</label>
-                                <select class="form-control form-select" disabled>
+                                <select id="ddl_BuildingName" class="form-control form-select" disabled>
                                     <option>Select building name</option>
                                     <option selected>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
@@ -66,19 +66,21 @@
                             </div>
                             <div class="col-md-4 col-6">
                                 <label for="ddl_UnitNo" class="form-label">Unit no.</label>
-                                <select class="form-control form-select" disabled>
+                                <select id="ddl_UnitNo" class="form-control form-select" disabled>
                                     <option>Select unit number</option>
                                     <option selected>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_LocationBuilding" class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur" disabled>
+                                <label for="txt_LocationBuilding" class="form-label">Location of Building</label>
+                                <input type="text" id="txt_LocationBuilding" class="form-control"
+                                    value="Jalan Mawar Bukit Tinggi Kuala Lumpur" disabled>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_PersonInCharge" class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" value="Rudy Hayes" disabled />
+                                <label for="txt_PersonInCharge" class="form-label">Person In Charge</label>
+                                <input type="text" id="txt_PersonInCharge" class="form-control" value="Rudy Hayes"
+                                    disabled />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -88,23 +90,23 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                             <div class="col-md-4 col-6">
-                                <label for="text_UserName" class="form-label">Username</label>
-                                <input type="text" class="form-control" value="johndoe" disabled>
+                                <label for="txt_UserName" class="form-label">Username</label>
+                                <input type="text" id="txt_UserName" class="form-control" value="johndoe" disabled>
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="text_PassportNo" class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" value="B777666" disabled />
+                                <label for="txt_UserName" class="form-label">Passport Number</label>
+                                <input type="text" id="txt_UserName" class="form-control" value="B777666" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label for="text_ICNo" class="form-label">IC Number</label>
-                                <input type="text" class="form-control" value="2352245613311" disabled />
+                                <label for="txt_ICNo" class="form-label">IC Number</label>
+                                <input type="text" id="txt_ICNo" class="form-control" value="2352245613311" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Nationality" class="form-label">Nationality</label>
-                                <select type="text" list="nation" class="form-control  form-select"
+                                <select id="ddl_Nationality" list="nation" class="form-control  form-select"
                                     placeholder="eg: Malaysian" disabled>
                                     <datalist id="nation">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -365,7 +367,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label for="ddl_Gender" class="form-label">Gender</label>
-                                <select class="form-select" disabled>
+                                <select id="ddl_Gender" class="form-select" disabled>
                                     <option>Select your gender</option>
                                     <option selected>Male</option>
                                     <option>Female</option>
@@ -373,27 +375,28 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Age</label>
-                                <input type="number" id="text_Age" class="form-control" value="33" disabled />
+                                <label for="txt_Age" class="form-label">Age</label>
+                                <input type="number" id="txt_Age" class="form-control" value="33" disabled />
                             </div>
                         </div>
                         <hr class="my-4" />
                         <div class="row gy-3 mt-0">
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Status Of Appointment</label>
-                                <select class="form-select" id="ddl_StatusAppointment" disabled>
+                                <label for="ddl_StatusAppointment" class="form-label">Status Of Appointment</label>
+                                <select id="ddl_StatusAppointment" class="form-select" disabled>
                                     <option>Select status</option>
                                     <option selected>Scheduled</option>
                                     <option>Completed</option>
-<option>Cancelled</option>
+                                    <option>Cancelled</option>
                                 </select>
                             </div>
                         </div>
                         <hr class="my-5" />
                         <div class="row justify-content-between mt-5">
                             <div class="col-md-4 col-6">
-                                <a href="/src/app-library/appointment/appoinment-list.html" class="w-100 btn btn-outline-info">
+                                <a href="/src/app-library/appointment/appoinment-list.html"
+                                    class="w-100 btn btn-outline-info">
                                     <i class="far fa-arrow-alt-circle-left"></i>&nbsp;
                                     Back To Appointments List
                                 </a>
@@ -418,43 +421,44 @@
         includehtml();
     </script>
 
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
 	// ]]>
-</script></body>
+    </script>
+</body>
 
 </html>
