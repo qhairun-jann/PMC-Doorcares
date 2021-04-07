@@ -32,8 +32,8 @@
                     <form class="needs-validation text-start">
                         <div class="row g-3 mt-3">
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Category of Appointment</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_CategoryAppointment" class="form-label">Category of Appointment</label>
+                                <select id="ddl_CategoryAppointment" class="form-control form-select" disabled>
                                     <option>Select category</option>
                                     <option selected>Plumbing</option>
                                     <option>Appliances</option>
@@ -46,39 +46,41 @@
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" value="2018-07-22" disabled />
+                                <label for="date_Appointment" class="form-label">Date of Appointment</label>
+                                <input type="date" id="date_Appointment" class="form-control" value="2018-07-22"
+                                    disabled />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" value="14:30" disabled />
+                                <label for="time_Appointment" class="form-label">Time of Appointment</label>
+                                <input type="time" id="time_Appointment" class="form-control" value="14:30" disabled />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Building Name</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_BuildingName" class="form-label">Building Name</label>
+                                <select id="ddl_BuildingName" class="form-control form-select" disabled>
                                     <option>Select building name</option>
                                     <option selected>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Unit no.</label>
-                                <select class="form-control form-select" disabled>
+                                <label for="ddl_UnitNo" class="form-label">Unit no.</label>
+                                <select id="ddl_UnitNo" class="form-control form-select" disabled>
                                     <option>Select unit number</option>
                                     <option selected>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Location of Building</label>
-                                <input type="text" class="form-control" value="Jalan Mawar Bukit Tinggi Kuala Lumpur"
-                                    disabled>
+                                <label for="text_LocationBuilding" class="form-label">Location of Building</label>
+                                <input type="text" id="text_LocationBuilding" class="form-control"
+                                    value="Jalan Mawar Bukit Tinggi Kuala Lumpur" disabled>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" value="Rudy Hayes" disabled />
+                                <label for="text_PersonInCharge" class="form-label">Person In Charge</label>
+                                <input type="text" id="text_PersonInCharge" class="form-control" value="Rudy Hayes"
+                                    disabled />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -88,23 +90,23 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Username</label>
-                                <input type="text" class="form-control" value="johndoe" disabled>
+                                <label for="text_UserName" class="form-label">Username</label>
+                                <input type="text" id="text_UserName" class="form-control" value="johndoe" disabled>
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" value="B777666" disabled />
+                                <label for="text_PassportNo" class="form-label">Passport Number</label>
+                                <input type="text" id="text_PassportNo" class="form-control" value="B777666" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">IC Number</label>
-                                <input type="text" class="form-control" value="2352245613311" disabled />
+                                <label for="text_ICNo" class="form-label">IC Number</label>
+                                <input type="text" id="text_ICNo" class="form-control" value="2352245613311" disabled />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Nationality</label>
-                                <select type="text" list="nation" class="form-control  form-select"
+                                <label for="ddl_Nationality" class="form-label">Nationality</label>
+                                <select type="text" id="ddl_Nationality" list="nation" class="form-control form-select"
                                     placeholder="eg: Malaysian" disabled>
                                     <datalist id="nation">
                                         <option value="Afghanistan">Afghanistan</option>
@@ -364,8 +366,8 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Gender</label>
-                                <select class="form-select" disabled>
+                                <label for="ddl_Gender" class="form-label">Gender</label>
+                                <select class="form-select" id="ddl_Gender" disabled>
                                     <option>Select your gender</option>
                                     <option selected>Male</option>
                                     <option>Female</option>
@@ -374,7 +376,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Age</label>
-                                <input type="number" class="form-control" value="33" disabled />
+                                <input type="number" id="text_Age" class="form-control" value="33" disabled />
                             </div>
                         </div>
                         <hr class="my-4" />
@@ -382,7 +384,7 @@
 
                             <div class="col-md-4 col-6">
                                 <label class="form-label">Status Of Appointment</label>
-                                <select class="form-select" disabled>
+                                <select class="form-select" id="ddl_StatusAppointment" disabled>
                                     <option>Select status</option>
                                     <option selected>Scheduled</option>
                                     <option>Completed</option>

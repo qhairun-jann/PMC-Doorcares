@@ -31,8 +31,8 @@
                     <form class="needs-validation text-start">
                         <div class="row g-3 mt-3">
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Category of Appointment</label>
-                                <select class="form-control form-select">
+                                <label for="ddl_CategoryAppointment" class="form-label">Category of Appointment</label>
+                                <select id="ddl_CategoryAppointment" class="form-select">
                                     <option selected>Select category</option>
                                     <option>Plumbing</option>
                                     <option>Appliances</option>
@@ -45,39 +45,39 @@
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Date of Appointment</label>
-                                <input type="date" class="form-control" placeholder=" eg: 2018-07-22" />
+                                <label for="date_Appointment" class="form-label">Date of Appointment</label>
+                                <input type="date" id="date_Appointment" class="form-control" placeholder=" eg: 2018-07-22" />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Time of Appointment</label>
-                                <input type="time" class="form-control" placeholder=" eg: 14:30" />
+                                <label for="time_Appointment" class="form-label">Time of Appointment</label>
+                                <input type="time" id="time_Appointment" class="form-control" placeholder=" eg: 14:30" />
 
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Building Name</label>
-                                <select class="form-control form-select">
+                                <label for="ddl_BuildingName" class="form-label">Building Name</label>
+                                <select id="ddl_BuildingName" class="form-select">
                                     <option selected>Select building name</option>
                                     <option>Paradise Residence</option>
                                     <option>Kingkong Residence</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Unit no.</label>
-                                <select class="form-control form-select">
+                                <label for="ddl_UnitNo" class="form-label">Unit no.</label>
+                                <select id="ddl_UnitNo" class="form-select">
                                     <option selected>Select unit number</option>
                                     <option>B1713</option>
                                     <option>D1811</option>
                                 </select>
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Location of Building</label>
-                                <input type="text" class="form-control"
+                                <label for="text_LocationBuilding" class="form-label">Location of Building</label>
+                                <input type="text" id="text_LocationBuilding" class="form-control"
                                     placeholder=" eg: Jalan Mawar Bukit Tinggi Kuala Lumpur">
                             </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Person In Charge</label>
-                                <input type="text" class="form-control" placeholder=" eg: Rudy Hayes" />
+                                <label for="text_PersonInCharge" class="form-label">Person In Charge</label>
+                                <input type="text" id="text_PersonInCharge" class="form-control" placeholder=" eg: Rudy Hayes" />
                             </div>
                         </div>
                         <hr class="my-4">
@@ -87,8 +87,8 @@
                             </div>
                             <div class="col-12"> <img src="/assets/img/avatar.svg" width="60px"> </div>
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Username</label>
-                                <input class="form-control form-select" list="usernameListOptions" id="usernameList"
+                                <label for="text_UserName" class="form-label">Username</label>
+                                <input id="text_UserName" class="form-select" list="usernameListOptions" id="usernameList"
                                     placeholder="Type to search username.">
                                 <datalist id="usernameListOptions">
                                     <option value="Wana Maharani">
@@ -100,18 +100,18 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Passport Number</label>
-                                <input type="text" class="form-control" placeholder="eg: B777666" />
+                                <label for="text_PassportNo" class="form-label">Passport Number</label>
+                                <input type="text" id="text_PassportNo" class="form-control" placeholder="eg: B777666" />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">IC Number</label>
-                                <input type="text" class="form-control" placeholder="eg: 2352245613311" />
+                                <label for="text_ICNo" class="form-label">IC Number</label>
+                                <input type="text" id="text_ICNo" class="form-control" placeholder="eg: 2352245613311" />
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Nationality</label>
-                                <input type="text" list="nation" class="form-control form-select"
+                                <label for="ddl_Nationality" class="form-label">Nationality</label>
+                                <input id="ddl_Nationality" type="text" list="nation" class="form-select"
                                     placeholder="eg: Malaysian" />
                                 <datalist id="nation">
                                     <option selected value="Select Nationality">Select Nationality</option>
@@ -371,8 +371,8 @@
                             </div>
 
                             <div class="col-md-4 col-6">
-                                <label class="form-label">Gender</label>
-                                <select class="form-select">
+                                <label for="ddl_Gender" class="form-label">Gender</label>
+                                <select id="ddl_Gender" class="form-select">
                                     <option selected>Select your gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
