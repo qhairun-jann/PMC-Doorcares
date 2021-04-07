@@ -41,13 +41,13 @@
                                         <p class="text-muted">Last edited 21-12-2020, 12:12 PM by (name) </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <label class="form-label">Role</label>
-                                        <input type="text" class="form-control" value="-">
+                                        <label for="txt_role" class="form-label">Role</label>
+                                        <input type="text" id="txt_role" class="form-control" value="-">
 
                                     </div>
                                     <div class="col-md-3">
-                                        <label class="form-label">Verification Status</label>
-                                        <select class="form-control form-select" id="status">
+                                        <label for="ddl_verificationStatus" class="form-label">Verification Status</label>
+                                        <select id="ddl_verificationStatus" class="form-control form-select" id="status">
                                             <option value="" selected> select </option>
                                             <option>Verified</option>
                                             <option>Not verified</option>
@@ -81,9 +81,9 @@
                                 <input type="text" id="txt_username" class="form-control" placeholder="username">
                             </fieldset>
                             <fieldset class="col-6 col-xl-3">
-                                <label for="txt_family/SurName" class="form-label text-white">Family/Sur Name
+                                <label for="txt_familySurName" class="form-label text-white">Family/Sur Name
                                     (Optional)</label>
-                                <input type="text" id="txt_family/SurName" class="form-control" placeholder="family">
+                                <input type="text" id="txt_familySurName" class="form-control" placeholder="family">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3">
@@ -191,13 +191,13 @@
                                 <h2>Bank Details</h2>
                             </div>
                             <fieldset class="col-6 col-xl-3">
-                                <label for="bank_name" class="form-label text-white">Bank Name</label>
-                                <input id="bank_name" type="text" class="form-control" placeholder="Bank Name">
+                                <label for="txt_bankName" class="form-label text-white">Bank Name</label>
+                                <input type="text" id="txt_bankName" class="form-control" placeholder="Bank Name">
                             </fieldset>
 
                             <fieldset class="col-6 col-xl-3">
-                                <label for="bank_account_nr" class="form-label text-white">Bank Account NR.</label>
-                                <input id="bank_account_nr" type="text" class="form-control" placeholder="12345676890">
+                                <label for="txt_bankAccNr" class="form-label text-white">Bank Account NR.</label>
+                                <input type="text" id="txt_bankAccNr" class="form-control" placeholder="12345676890">
                             </fieldset>
                         </section>
 
@@ -228,59 +228,59 @@
                                     PM</strong></p>
 
                             <fieldset class="col-6">
-                                <label class="form-label text-white">Budget</label>
-                                <input type="text" class="form-control" id="budget" placeholder="Budget">
+                                <label for="txt_budget" class="form-label text-white">Budget</label>
+                                <input type="text" id="txt_budget" class="form-control" placeholder="Budget">
                             </fieldset>
                             <fieldset class="col-6">
-                                <label class="form-label text-white" for="beds">Beds</label>
-                                <input type="text" class="form-control" id="beds" placeholder="Beds">
+                                <label for="txt_beds" class="form-label text-white">Beds</label>
+                                <input type="text" id="txt_beds" class="form-control" placeholder="Beds">
                             </fieldset>
 
                             <fieldset class="col-6">
-                                <label class="form-label text-white" for="furnishing">Furnishing</label>
-                                <input type="text" class="form-control" id="furnishing" placeholder="Furnishing">
+                                <label for="txt_furnishing" class="form-label text-white">Furnishing</label>
+                                <input type="text" id="txt_furnishing" class="form-control" placeholder="Furnishing">
                             </fieldset>
                             <fieldset class="col-6">
-                                <label class="form-label text-white" for="Proposed-move-in-date">Proposed move in
+                                <label for="date_moveIn" class="form-label text-white">Proposed move in
                                     date</label>
-                                <input type="text" class="form-control" placeholder="Proposed move in date"
+                                <input type="text" id="date_moveIn" class="form-control" placeholder="Proposed move in date"
                                     id="Proposed-move-in-date">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white" id="total-occupation">Total occupation</label>
-                                <input type="text" class="form-control" for="total-occupation"
+                                <label for="txt_totalOccupation" class="form-label text-white">Total occupation</label>
+                                <input type="text" id="txt_totalOccupation" class="form-control"
                                     placeholder="Total occupation">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Occupation</label>
-                                <input type="text" class="form-control" placeholder="Occupation">
+                                <label for="txt_occupation" class="form-label text-white">Occupation</label>
+                                <input type="text" id="txt_occupation" class="form-control" placeholder="Occupation">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Nationality</label>
-                                <input type="text" class="form-control" placeholder="Nationality">
+                                <label for="txt_nationality" class="form-label text-white">Nationality</label>
+                                <input type="text" id="txt_nationality" class="form-control" placeholder="Nationality">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Gender</label>
-                                <input type="text" class="form-control" placeholder="Gender">
+                                <label for="txt_gender" class="form-label text-white">Gender</label>
+                                <input type="text" id="txt_gender" class="form-control" placeholder="Gender">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Duration of tenancy </label>
-                                <input type="text" class="form-control" placeholder="Duration of tenancy">
+                                <label for="txt_durationTenancy" class="form-label text-white">Duration of tenancy </label>
+                                <input type="text" id="txt_durationTenancy" class="form-control" placeholder="Duration of tenancy">
                             </fieldset>
 
                             <fieldset class="col-6 ">
-                                <label class="form-label text-white">Pets</label>
-                                <input type="text" class="form-control" placeholder="pets">
+                                <label for="txt_pets" class="form-label text-white">Pets</label>
+                                <input type="text" id="txt_pets" class="form-control" placeholder="pets">
                             </fieldset>
 
                             <fieldset class="col-12 ">
-                                <label for="other_remark" class="form-label text-white">Other remark </label>
-                                <textarea class="form-control" id="other_remark" rows="5">
+                                <label for="txt_otherRemarks" class="form-label text-white">Other Remarks</label>
+                                <textarea class="form-control" id="txt_otherRemarks" rows="5">
 Lorem ipsum commodo ut esse aute velit cillum cillum magna nostrud velit consectetur. Culpa mollit enim pariatur pariatur eu aute deserunt qui cillum.
 Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore aliquip.
                                 </textarea>
@@ -806,8 +806,8 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                         <div class="row g-3">
                             <div class="col-sm-6 text-start">
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="passportcheck">Passport copy</label><br />
+                                    <input type="checkbox" id="cb_passportCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_passportCopy" class="form-check-label">Passport copy</label><br />
 
                                     <img id="passportImg" src="/assets/img/passport-sample.jpg" class="rounded mt-3"
                                         alt="Passport" width="300px" />
@@ -817,8 +817,8 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled>
-                                    <label class="form-check-label" for="studentcheck">Student Visa</label><br />
+                                    <input type="checkbox" id="cb_studentVisa" checked class="form-check-input" disabled>
+                                    <label for="cb_studentVisa" class="form-check-label">Student Visa</label><br />
 
                                     <img id="studentVisaImg" src="/assets/img/visa-sample-canada.jpg"
                                         class="rounded mt-3" alt="Student Visa" width="300px" />
@@ -827,13 +827,13 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             </div>
                             <div class="col-12 mt-3">
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled>
-                                    <label class="form-check-label" for="studentId">Student ID</label>
+                                    <input type="checkbox" id="cb_studentId" checked class="form-check-input" disabled>
+                                    <label for="cb_studentId" class="form-check-label">Student ID</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" id="uniOffer" disabled>
-                                    <label class="form-check-label" for="uniOffer">University Offer Letter</label>
+                                    <input type="checkbox" id="cb_uniOffer" checked class="form-check-input"disabled>
+                                    <label for="cb_uniOffer" class="form-check-label">University Offer Letter</label>
                                 </div>
                             </div>
 
@@ -843,42 +843,42 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                             <div class="col-6">
                                 <h4 class="mb-3">Employee</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="employeePassport">Passport Copy</label>
+                                    <input type="checkbox" id="cb_passportCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_passportCopy" class="form-check-label">Passport Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="employmentLetter">Employment Letter
+                                    <input type="checkbox" id="cb_employementLetter" checked class="form-check-input" disabled />
+                                    <label for="cb_employementLetter" class="form-check-label">Employment Letter
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="workPermit">Work Permit</label>
+                                    <input type="checkbox" id="cb_workPermit" checked class="form-check-input" disabled />
+                                    <label for="cb_workPermit" class="form-check-label">Work Permit</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="employeeId">Employee ID</label>
+                                    <input type="checkbox" id="cb_employeeId" checked class="form-check-input" disabled />
+                                    <label for="cb_employeeId" class="form-check-label">Employee ID</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h4 class="mb-3">Self Employed(freelancer)</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="freelancerIc">IC Copy</label>
+                                    <input type="checkbox" id="cb_icCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_icCopy" class="form-check-label">IC Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="frelancerPassport">Passport Copy
+                                    <input type="checkbox" id="cb_passportCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_passportCopy" class="form-check-label">Passport Copy
                                     </label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="freelancerBizCard">Business Card</label>
+                                    <input type="checkbox" id="cb_businessCard" checked class="form-check-input" disabled />
+                                    <label for="cb_businessCard" class="form-check-label">Business Card</label>
                                 </div>
                             </div>
                         </div>
@@ -888,37 +888,37 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
 
                                 <h4 class="mb-3">Self Employed(business)</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="bizIc">IC Copy</label>
+                                    <input type="checkbox" id="cb_icCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_icCopy" class="form-check-label">IC Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="bizPassport">Passport Copy</label>
+                                    <input type="checkbox" id="cb_passportCopy" checked class="form-check-input" disabled />
+                                    <label for="cb_passportCopy" class="form-check-label">Passport Copy</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="bizCard">Business Card</label>
+                                    <input type="checkbox" id="cb_businessCard" checked class="form-check-input" disabled />
+                                    <label for="cb_businessCard" class="form-check-label">Business Card</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="compRegForm">Company Registration
+                                    <input type="checkbox" id="companyRegister" checked class="form-check-input" disabled />
+                                    <label for="companyRegister" class="form-check-label">Company Registration
                                         Form</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <h4 class="mb-3">Company</h4>
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="bizcompRegForm">Company Registration
+                                    <input type="checkbox" id="cb_companyRegister" checked class="form-check-input" disabled />
+                                    <label for="cb_companyRegister" class="form-check-label">Company Registration
                                         form</label>
                                 </div>
 
                                 <div class="form-check">
-                                    <input type="checkbox" checked class="form-check-input" disabled />
-                                    <label class="form-check-label" for="bizListDirector">List of Directors
+                                    <input type="checkbox" id="cb_listOfDirectors" checked class="form-check-input" disabled />
+                                    <label for="cb_listOfDirectors" class="form-check-label">List of Directors
                                     </label>
                                 </div>
                             </div>
@@ -931,12 +931,12 @@ Culpa quis qui pariatur magna magna sint nisi enim officia sit ullamco dolore al
                         <hr />
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <label class="form-label">Role</label>
-                                <input type="text" class="form-control" value="Prospect(tenant)" disabled />
+                                <label for="txt_role" class="form-label">Role</label>
+                                <input type="text" id="txt_role" class="form-control" value="Prospect(tenant)" disabled />
                             </div>
                             <div class="col-sm-6">
-                                <label class="form-label">Date of role creation</label>
-                                <input type="text" class="form-control" value="21-12-2021" disabled>
+                                <label for="date_roleCreation" class="form-label">Date of role creation</label>
+                                <input type="date" id="date_roleCreation" class="form-control" value="21-12-2021" disabled>
                             </div>
                         </div>
 

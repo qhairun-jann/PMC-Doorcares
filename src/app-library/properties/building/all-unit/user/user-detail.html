@@ -55,7 +55,7 @@
                                             <h5 class="fw-bold text-start text-white">LANDLORD LONG NAME</h5>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-4 my-1 text-lg-start ">
-                                            <select class="form-control form-select py-1" id="status">
+                                            <select id="ddl_statusVerification" class="form-control form-select py-1">
                                                 <option value="" selected>Verification status</option>
                                                 <option>Verified</option>
                                                 <option>Not verified</option>
@@ -71,69 +71,69 @@
                             </section>
                             <section class="row my-child-1">
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Username</label>
-                                    <input type="text" class="form-control" placeholder="Username">
+                                    <label for="txt_userName" class="form-label text-white">Username</label>
+                                    <input type="text" id="txt_userName" class="form-control" placeholder="Username">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="Role" class="form-label text-white">Role</label>
-                                    <input type="text" class="form-control" placeholder="role">
+                                    <label for="txt_role" class="form-label text-white">Role</label>
+                                    <input type="text" id="txt_role" class="form-control" placeholder="role">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Email ID</label>
-                                    <input type="text" class="form-control" placeholder="email ">
+                                    <label for="txt_emailId" class="form-label text-white">Email ID</label>
+                                    <input type="text" id="txt_emailId" class="form-control" placeholder="email ">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Contact number</label>
-                                    <input type="text" class="form-control" placeholder="contact number">
+                                    <label for="txt_contactNo" class="form-label text-white">Contact number</label>
+                                    <input type="text" id="txt_contactNo" class="form-control" placeholder="contact number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Gender</label>
-                                    <input type="text" class="form-control" placeholder="Gender">
+                                    <label for="txt_gender" class="form-label text-white">Gender</label>
+                                    <input type="text" id="txt_gender" class="form-control" placeholder="Gender">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Nationality</label>
-                                    <input type="text" class="form-control" placeholder="Nationality">
-                                </fieldset>
-
-                                <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="dob" class="form-label text-white">Date of Birth</label>
-                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                    <label for="txt_nationality" class="form-label text-white">Nationality</label>
+                                    <input type="text" id="txt_nationality" class="form-control" placeholder="Nationality">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Passport number</label>
-                                    <input type="text" class="form-control" placeholder="Passport number">
+                                    <label for="date_birth" class="form-label text-white">Date of Birth</label>
+                                    <input type="date" id="date_birth" class="form-control" placeholder="Date of Birth">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">IC number</label>
-                                    <input type="text" class="form-control" placeholder="IC number">
-                                </fieldset>
-                                <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Bank name</label>
-                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                    <label for="txt_passportNo" class="form-label text-white">Passport number</label>
+                                    <input type="text" id="txt_passportNo" class="form-control" placeholder="Passport number">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="dob" class="form-label text-white">Bank account number</label>
-                                    <input type="text" class="form-control" placeholder="Bank account number">
+                                    <label for="txt_icNo" class="form-label text-white">IC number</label>
+                                    <input type="text" id="txt_icNo" class="form-control" placeholder="IC number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="txt_bankName" class="form-label text-white">Bank name</label>
+                                    <input type="text" id="txt_bankName" class="form-control" placeholder="Bank Name">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Credit card number</label>
-                                    <input type="text" class="form-control" placeholder="Credit card number">
+                                    <label for="txt_bankAccNo" class="form-label text-white">Bank account number</label>
+                                    <input type="text" id="txt_bankAccNo" class="form-control" placeholder="Bank account number">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Company name</label>
-                                    <input type="text" class="form-control" placeholder="Company name">
+                                    <label for="txt_creditCardNo" class="form-label text-white">Credit card number</label>
+                                    <input type="text" id="txt_creditCardNo" class="form-control" placeholder="Credit card number">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="txt_companyName" class="form-label text-white">Company name</label>
+                                    <input type="text" id="txt_companyName" class="form-control" placeholder="Company name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Occupation</label>
-                                    <input type="text" class="form-control" placeholder="Occupation">
+                                    <label for="txt_occupation" class="form-label text-white">Occupation</label>
+                                    <input type="text" id="txt_occupation" class="form-control" placeholder="Occupation">
                                 </fieldset>
                             </section>
                             <hr class="bg-white" />
@@ -142,48 +142,48 @@
                                     <h2 class="text-white">Corresponding address</h2>
                                 </div>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Block</label>
-                                    <input type="text" class="form-control" placeholder="Block">
+                                    <label for="txt_block" class="form-label text-white">Block</label>
+                                    <input type="text" for="txt_block" class="form-control" placeholder="Block">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Level</label>
-                                    <input type="text" class="form-control" placeholder="Level">
+                                    <label for="txt_level" class="form-label text-white">Level</label>
+                                    <input type="text" id="txt_level" class="form-control" placeholder="Level">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Unit</label>
-                                    <input type="text" class="form-control" placeholder="Unit">
+                                    <label for="txt_unit" class="form-label text-white">Unit</label>
+                                    <input type="text" id="txt_unit" class="form-control" placeholder="Unit">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Building name</label>
-                                    <input type="text" class="form-control" placeholder="Building name">
+                                    <label for="txt_buildingName" class="form-label text-white">Building name</label>
+                                    <input type="text" id="txt_buildingName" class="form-control" placeholder="Building name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Lot/unit number</label>
-                                    <input type="text" class="form-control" placeholder="Lot/unit number">
+                                    <label for="txt_lotUnitNo" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" id="txt_lotUnitNo" class="form-control" placeholder="Lot/unit number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Street name</label>
-                                    <input type="text" class="form-control" placeholder="Street name">
+                                    <label for="txt_streetName" class="form-label text-white">Street name</label>
+                                    <input type="text" id="txt_streetName" class="form-control" placeholder="Street name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Residential area</label>
+                                    <label for="txt_residentalArea" class="form-label text-white">Residential area</label>
                                     <input type="text" class="form-control" placeholder="Residential area">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Post code</label>
-                                    <input type="text" class="form-control" placeholder="Post code">
+                                    <label for="txt_postCode" class="form-label text-white">Post code</label>
+                                    <input type="text" id="txt_postCode" class="form-control" placeholder="Post code">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">City</label>
-                                    <input type="text" class="form-control" placeholder="City">
+                                    <label for="txt_city" class="form-label text-white">City</label>
+                                    <input type="text" id="txt_city"  class="form-control" placeholder="City">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">State</label>
-                                    <input type="text" class="form-control" placeholder="State">
+                                    <label for="txt_state" class="form-label text-white">State</label>
+                                    <input type="text" id="txt_state" class="form-control" placeholder="State">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Country</label>
-                                    <input type="text" class="form-control" placeholder="Country">
+                                    <label for="txt_country" class="form-label text-white">Country</label>
+                                    <input type="text" id="txt_country" class="form-control" placeholder="Country">
                                 </fieldset>
                             </section>
                         </article>
@@ -203,7 +203,7 @@
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-3 text-end m-0 mt-1 mt-md-0">
 
-                                            <select class="form-control form-select py-1" id="status">
+                                            <select id="ddl_verificationStatus" class="form-control form-select py-1">
                                                 <option value="" selected>Verification status</option>
                                                 <option>Verified</option>
                                                 <option>Not verified</option>
@@ -215,69 +215,69 @@
                             </section>
                             <section class=" row my-child-1">
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Username</label>
-                                    <input type="text" class="form-control" placeholder="Username">
+                                    <label for="txt_userName" class="form-label text-white">Username</label>
+                                    <input type="text" id="txt_userName" class="form-control" placeholder="Username">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="Role" class="form-label text-white">Role</label>
-                                    <input type="text" class="form-control" placeholder="role">
+                                    <label for="txt_role" class="form-label text-white">Role</label>
+                                    <input type="text" id="txt_role" class="form-control" placeholder="role">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Email ID</label>
-                                    <input type="text" class="form-control" placeholder="email">
+                                    <label for="txt_emailId" class="form-label text-white">Email ID</label>
+                                    <input type="text" id="txt_emailId" class="form-control" placeholder="email">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Contact number</label>
-                                    <input type="text" class="form-control" placeholder="contact number">
+                                    <label for="txt_contactNo" class="form-label text-white">Contact number</label>
+                                    <input type="text" id="txt_contactNo" class="form-control" placeholder="contact number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Gender</label>
-                                    <input type="text" class="form-control" placeholder="Gender">
+                                    <label for="txt_gender" class="form-label text-white">Gender</label>
+                                    <input type="text" id="txt_gender" class="form-control" placeholder="Gender">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Nationality</label>
-                                    <input type="text" class="form-control" placeholder="Username">
-                                </fieldset>
-
-                                <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="dob" class="form-label text-white">Date of Birth</label>
-                                    <input type="date" class="form-control" placeholder="Date of Birth">
+                                    <label for="txt_nationality" class="form-label text-white">Nationality</label>
+                                    <input type="text" id="txt_nationality" class="form-control" placeholder="Username">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Passport number</label>
-                                    <input type="text" class="form-control" placeholder="Passport number">
+                                    <label for="date_birth" class="form-label text-white">Date of Birth</label>
+                                    <input type="date" id="date_birth" class="form-control" placeholder="Date of Birth">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">IC number</label>
-                                    <input type="text" class="form-control" placeholder="IC number">
-                                </fieldset>
-                                <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Bank name</label>
-                                    <input type="text" class="form-control" placeholder="Bank Name">
+                                    <label for="txt_passportNo" class="form-label text-white">Passport number</label>
+                                    <input type="text" id="txt_passportNo" class="form-control" placeholder="Passport number">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="dob" class="form-label text-white">Bank account number</label>
-                                    <input type="text" class="form-control" placeholder="Bank account number">
+                                    <label for="txt_icNo" class="form-label text-white">IC number</label>
+                                    <input type="text" id="txt_icNo" class="form-control" placeholder="IC number">
+                                </fieldset>
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="txt_bankName" class="form-label text-white">Bank name</label>
+                                    <input type="text" id="txt_bankName" class="form-control" placeholder="Bank Name">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Credit card number</label>
-                                    <input type="text" class="form-control" placeholder="Credit card number">
+                                    <label for="txt_bankAccNo" class="form-label text-white">Bank account number</label>
+                                    <input type="text" id="txt_bankAccNo" class="form-control" placeholder="Bank account number">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Company name</label>
-                                    <input type="text" class="form-control" placeholder="Company name">
+                                    <label for="txt_creditCardNo" class="form-label text-white">Credit card number</label>
+                                    <input type="text" id="txt_creditCardNo" class="form-control" placeholder="Credit card number">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="txt_companyName" class="form-label text-white">Company name</label>
+                                    <input type="text" id="txt_companyName" class="form-control" placeholder="Company name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Occupation</label>
-                                    <input type="text" class="form-control" placeholder="Occupation">
+                                    <label for="txt_occupation" class="form-label text-white">Occupation</label>
+                                    <input type="text" id="txt_occupation" class="form-control" placeholder="Occupation">
                                 </fieldset>
                                 <hr class="bg-white" />
                             </section>
@@ -286,53 +286,53 @@
                                     <h2 class="text-white">Corresponding address</h2>
                                 </div>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Block</label>
-                                    <input type="text" class="form-control" placeholder="Block">
+                                    <label for="txt_block" class="form-label text-white">Block</label>
+                                    <input type="text" id="txt_block"  class="form-control" placeholder="Block">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Level</label>
-                                    <input type="text" class="form-control" placeholder="Level">
-                                </fieldset>
-
-                                <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Unit</label>
-                                    <input type="text" class="form-control" placeholder="Unit">
+                                    <label for="txt_level" class="form-label text-white">Level</label>
+                                    <input type="text" id="txt_level" class="form-control" placeholder="Level">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Building name</label>
-                                    <input type="text" class="form-control" placeholder="Building name">
+                                    <label for="txt_unit" class="form-label text-white">Unit</label>
+                                    <input type="text" id="txt_unit" class="form-control" placeholder="Unit">
+                                </fieldset>
+
+                                <fieldset class="col-12 col-md-6 col-xl-3">
+                                    <label for="txt_buildingName" class="form-label text-white">Building name</label>
+                                    <input type="text" id="txt_buildingName" class="form-control" placeholder="Building name">
                                 </fieldset>
 
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Lot/unit number</label>
-                                    <input type="text" class="form-control" placeholder="Lot/unit number">
+                                    <label for="txt_lotUnitNo" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" id="txt_lotUnitNo" class="form-control" placeholder="Lot/unit number">
                                 </fieldset>
 
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Street name</label>
-                                    <input type="text" class="form-control" placeholder="Street name">
+                                    <label for="txt_streetName" class="form-label text-white">Street name</label>
+                                    <input type="text" id="txt_streetName" class="form-control" placeholder="Street name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Residential area</label>
-                                    <input type="text" class="form-control" placeholder="Residential area">
+                                    <label for="txt_residentalArea" class="form-label text-white">Residential area</label>
+                                    <input type="text" id="txt_residentalArea" class="form-control" placeholder="Residential area">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Post code</label>
-                                    <input type="text" class="form-control" placeholder="Post code">
+                                    <label for="txt_postCode" class="form-label text-white">Post code</label>
+                                    <input type="text" id="txt_postCode" class="form-control" placeholder="Post code">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">City</label>
-                                    <input type="text" class="form-control" placeholder="City">
+                                    <label for="txt_city" class="form-label text-white">City</label>
+                                    <input type="text" id="txt_city" class="form-control" placeholder="City">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">State</label>
-                                    <input type="text" class="form-control" placeholder="State">
+                                    <label for="txt_state" class="form-label text-white">State</label>
+                                    <input type="text" id="txt_state" class="form-control" placeholder="State">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Country</label>
-                                    <input type="text" class="form-control" placeholder="Country">
+                                    <label for="txt_country" class="form-label text-white">Country</label>
+                                    <input type="text" id="txt_country" class="form-control" placeholder="Country">
                                 </fieldset>
                             </section>
 
@@ -354,56 +354,56 @@
                                 </section>
                                 <hr class="col-12 mt-2 mb-3">
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Username</label>
-                                    <input type="text" class="form-control" placeholder="Username">
+                                    <label for="txt_userName" class="form-label text-white">Username</label>
+                                    <input type="text" id="txt_userName" class="form-control" placeholder="Username">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Role</label>
-                                    <input type="text" class="form-control" placeholder="Role">
+                                    <label for="txt_role" class="form-label text-white">Role</label>
+                                    <input type="text" id="txt_role" class="form-control" placeholder="Role">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Email ID</label>
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <label for="txt_emailId" class="form-label text-white">Email ID</label>
+                                    <input type="text" id="txt_emailId" class="form-control" placeholder="Email">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Contact Number</label>
-                                    <input type="text" class="form-control" placeholder="contact number">
+                                    <label for="txt_contactNo" class="form-label text-white">Contact Number</label>
+                                    <input type="text" id="txt_contactNo" class="form-control" placeholder="contact number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Gender</label>
-                                    <input type="text" class="form-control" placeholder="Gender">
+                                    <label for="txt_gender" class="form-label text-white">Gender</label>
+                                    <input type="text" id="txt_gender" class="form-control" placeholder="Gender">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Nationality</label>
-                                    <input type="text" class="form-control" placeholder="Nationality">
+                                    <label for="txt_nationality" class="form-label text-white">Nationality</label>
+                                    <input type="text" id="txt_nationality" class="form-control" placeholder="Nationality">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Date of birth</label>
-                                    <input type="date" class="form-control" placeholder="Date of birth">
+                                    <label for="date_birth" class="form-label text-white">Date of birth</label>
+                                    <input type="date" id="date_birth" class="form-control" placeholder="Date of birth">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Passport number</label>
-                                    <input type="text" class="form-control" placeholder="Passport number">
+                                    <label for="txt_passportNo" class="form-label text-white">Passport number</label>
+                                    <input type="text" id="txt_passportNo" class="form-control" placeholder="Passport number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">IC number</label>
-                                    <input type="text" class="form-control" placeholder="IC numbe">
+                                    <label for="txt_icNo" class="form-label text-white">IC number</label>
+                                    <input type="text" id="txt_icNo" class="form-control" placeholder="IC numbe">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Bank name</label>
-                                    <input type="text" class="form-control" placeholder="Bank name">
+                                    <label for="txt_bankName" class="form-label text-white">Bank name</label>
+                                    <input type="text" id="txt_bankName" class="form-control" placeholder="Bank name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Bank account number</label>
-                                    <input type="text" class="form-control" placeholder="Bank account number">
+                                    <label for="txt_bankAccNo" class="form-label text-white">Bank account number</label>
+                                    <input type="text" id="txt_bankAccNo" class="form-control" placeholder="Bank account number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">Credit card number</label>
-                                    <input type="text" class="form-control" placeholder="Credit card number">
+                                    <label for="txt_creditCardNo" class="form-label text-white">Credit card number</label>
+                                    <input type="text" id="txt_creditCardNo" class="form-control" placeholder="Credit card number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label class="form-label text-white">REN number</label>
-                                    <input type="text" class="form-control" placeholder="REN number">
+                                    <label for="txt_renNo" class="form-label text-white">REN number</label>
+                                    <input type="text" id="txt_renNo" class="form-control" placeholder="REN number">
                                 </fieldset>
                                 <hr class="bg-white" />
                             </section>
@@ -412,48 +412,48 @@
                                     <h2 class="text-white">Corresponding address</h2>
                                 </div>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Block</label>
-                                    <input type="text" class="form-control" placeholder="Block">
+                                    <label for="txt_block" class="form-label text-white">Block</label>
+                                    <input type="text" id="txt_block" class="form-control" placeholder="Block">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Level</label>
-                                    <input type="text" class="form-control" placeholder="Level">
+                                    <label for="txt_level" class="form-label text-white">Level</label>
+                                    <input type="text" id="txt_level" class="form-control" placeholder="Level">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Unit</label>
-                                    <input type="text" class="form-control" placeholder="Unit">
+                                    <label for="txt_unit" class="form-label text-white">Unit</label>
+                                    <input type="text" id="txt_unit" class="form-control" placeholder="Unit">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Building name</label>
-                                    <input type="text" class="form-control" placeholder="Building name">
+                                    <label for="txt_buildingName" class="form-label text-white">Building name</label>
+                                    <input type="text" id="txt_buildingName" class="form-control" placeholder="Building name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Lot/unit number</label>
-                                    <input type="text" class="form-control" placeholder="Lot/unit number">
+                                    <label for="txt_lotUnitNo" class="form-label text-white">Lot/unit number</label>
+                                    <input type="text" id="txt_lotUnitNo" class="form-control" placeholder="Lot/unit number">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Street name</label>
-                                    <input type="text" class="form-control" placeholder="Street name">
+                                    <label for="txt_streetName" class="form-label text-white">Street name</label>
+                                    <input type="text" id="txt_streetName" class="form-control" placeholder="Street name">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Residential area</label>
-                                    <input type="text" class="form-control" placeholder="Residential area">
+                                    <label for="txt_residentalArea" class="form-label text-white">Residential area</label>
+                                    <input type="text" id="txt_residentalArea" class="form-control" placeholder="Residential area">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Post code</label>
-                                    <input type="text" class="form-control" placeholder="Post code">
+                                    <label for="txt_postCode" class="form-label text-white">Post code</label>
+                                    <input type="text" id="txt_postCode" class="form-control" placeholder="Post code">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">City</label>
-                                    <input type="text" class="form-control" placeholder="City">
+                                    <label for="txt_city" class="form-label text-white">City</label>
+                                    <input type="text" id="txt_city" class="form-control" placeholder="City">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">State</label>
-                                    <input type="text" class="form-control" placeholder="State">
+                                    <label for="txt_state" class="form-label text-white">State</label>
+                                    <input type="text" id="txt_state" class="form-control" placeholder="State">
                                 </fieldset>
                                 <fieldset class="col-12 col-md-6 col-xl-3">
-                                    <label for="email" class="form-label text-white">Country</label>
-                                    <input type="text" class="form-control" placeholder="Country">
+                                    <label for="txt_country" class="form-label text-white">Country</label>
+                                    <input type="text" id="txt_country"  class="form-control" placeholder="Country">
                                 </fieldset>
                             </section>
                         </article>
